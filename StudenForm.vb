@@ -64,4 +64,9 @@ Public Class StudenForm
             Me.Close()
         End If
     End Sub
+
+    Private Sub btnTorF_Click(sender As Object, e As EventArgs) Handles btnTorF.Click
+        Dim TF = New Formtf3
+        TF.Show()
+    End Sub
 End Class

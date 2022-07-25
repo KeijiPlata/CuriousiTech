@@ -19,7 +19,7 @@ Public Class ClassForm
         con.Open()
         Try
             'SELECT TABLE
-            sql = "SELECT Room,LastName,FirstName FROM TbJunction INNER JOIN TbUser ON TbUser.UserID = TbJunction.UserID"
+            sql = "SELECT Class,Student FROM TbJunctionTeacher INNER JOIN TbUser ON TbUser.UserID = TbJunctionTeacher.TeacherID WHERE TeacherID=" & UserID & ""
             cmd.Connection = con
             cmd.CommandText = sql
             da.SelectCommand = cmd

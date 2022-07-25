@@ -22,7 +22,7 @@ Partial Class StudenForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnTorF = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -47,14 +47,14 @@ Partial Class StudenForm
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnTorF
         '
-        Me.Button1.Location = New System.Drawing.Point(310, 96)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(415, 116)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnTorF.Location = New System.Drawing.Point(310, 96)
+        Me.btnTorF.Name = "btnTorF"
+        Me.btnTorF.Size = New System.Drawing.Size(415, 116)
+        Me.btnTorF.TabIndex = 0
+        Me.btnTorF.Text = "True or False"
+        Me.btnTorF.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -252,7 +252,7 @@ Partial Class StudenForm
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnTorF)
         Me.Name = "StudenForm"
         Me.Text = "Form2"
         Me.GroupBox1.ResumeLayout(False)
@@ -264,7 +264,7 @@ Partial Class StudenForm
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnTorF As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents GroupBox1 As GroupBox
