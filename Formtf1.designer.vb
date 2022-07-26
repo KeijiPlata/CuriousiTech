@@ -50,7 +50,7 @@ Partial Class Formtf1
         Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(327, 153)
+        Me.Button2.Location = New System.Drawing.Point(365, 203)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(219, 120)
         Me.Button2.TabIndex = 1
@@ -113,7 +113,7 @@ Partial Class Formtf1
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Score"
         '
-        'Formtf1
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -127,7 +127,7 @@ Partial Class Formtf1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Name = "Formtf1"
+        Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
