@@ -79,6 +79,12 @@
     <Compile Include="ClassForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormLB.Designer.vb">
+      <DependentUpon>FormLB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLB.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formtf1.designer.vb">
       <DependentUpon>Formtf1.vb</DependentUpon>
     </Compile>
@@ -168,6 +174,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ClassForm.resx">
       <DependentUpon>ClassForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLB.resx">
+      <DependentUpon>FormLB.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formtf1.resx">
       <DependentUpon>Formtf1.vb</DependentUpon>
