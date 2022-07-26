@@ -27,16 +27,16 @@ Public Class LogInForm
             myreader = cmd.ExecuteReader
             myreader.Read()
 
-            If txtPassword.Text = myreader("Password") And myreader("UserType") = "STUDENT" Then
+            If txtPassword.Text = myreader("UserPassword") And myreader("UserType") = "STUDENT" Then
                 'LOGIN AS STUDENT
                 Dim MainMenu = New StudenForm(myreader("LastName"), myreader("FirstName"), myreader("MiddleName"), myreader("UserName"), myreader("StudentID"), myreader("UserID"))
                 MainMenu.Show()
-
-            ElseIf txtPassword.Text = myreader("Password") And myreader("UserType") = "TEACHER" Then
+                Me.Hide()
+            ElseIf txtPassword.Text = myreader("UserPassword") And myreader("UserType") = "TEACHER" Then
                 'LOGIN AS TEACHER
                 Dim MainMenu = New TeacherForm(myreader("LastName"), myreader("FirstName"), myreader("MiddleName"), myreader("UserName"), myreader("UserID"))
                 MainMenu.Show()
-
+                Me.Hide()
             Else
                 MsgBox("wrong usersname or password")
             End If
@@ -45,11 +45,13 @@ Public Class LogInForm
             MsgBox(ex.Message)
         Finally
             con.Close()
-            Me.Hide()
         End Try
 
 
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+    End Sub
 End Class
 

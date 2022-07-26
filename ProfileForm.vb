@@ -65,8 +65,7 @@ Public Class ProfileForm
             Dim sql As String
             Dim cmd As New OleDb.OleDbCommand
             con.Open()
-            'sql = "UPDATE TbUser SET Password='" & txtBoxPassword.Text & "' WHERE UserID=" & UserID & ""
-            sql = "UPDATE TbUser SET Password='qqqq' WHERE UserID=771415476 "
+            sql = "UPDATE TbUser SET UserPassword='" & txtBoxPassword.Text & "' WHERE UserID=" & UserID & ""
             cmd.Connection = con
             cmd.CommandText = sql
             txtBoxPassword.Text = ""
