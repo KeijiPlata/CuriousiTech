@@ -33,7 +33,7 @@ Partial Class Formmcq3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(166, 109)
+        Me.Label1.Location = New System.Drawing.Point(265, 114)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(51, 13)
         Me.Label1.TabIndex = 0
@@ -41,9 +41,9 @@ Partial Class Formmcq3
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(367, 104)
+        Me.Button1.Location = New System.Drawing.Point(128, 282)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(163, 59)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Start"
         Me.Button1.UseVisualStyleBackColor = True
@@ -51,7 +51,7 @@ Partial Class Formmcq3
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(166, 184)
+        Me.Label2.Location = New System.Drawing.Point(208, 184)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 13)
         Me.Label2.TabIndex = 2
@@ -60,7 +60,7 @@ Partial Class Formmcq3
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(364, 184)
+        Me.Label3.Location = New System.Drawing.Point(335, 184)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 2
@@ -68,9 +68,9 @@ Partial Class Formmcq3
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(210, 310)
+        Me.Button2.Location = New System.Drawing.Point(313, 282)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(176, 59)
+        Me.Button2.Size = New System.Drawing.Size(163, 59)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Quit"
         Me.Button2.UseVisualStyleBackColor = True
