@@ -68,7 +68,7 @@ Partial Class Formmcq3
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(435, 309)
+        Me.Button2.Location = New System.Drawing.Point(210, 310)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(176, 59)
         Me.Button2.TabIndex = 3
