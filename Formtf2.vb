@@ -22,6 +22,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ' opens mainmenu
         Formtf3.highest() ' This will refresh the highscore
+        Formtf3.showScore() ' This will refresh the leaderboard
         Formtf3.Show()
         Me.Close()
 

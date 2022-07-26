@@ -6,16 +6,17 @@ Public Class Formtf3
     Dim con As New OleDb.OleDbConnection(My.Settings.QuestionsConnectionString)
     Dim con2 As New OleDb.OleDbConnection(My.Settings.leaderboardConnectionString)
     Dim highscore As Integer
+    Dim Username As String = LogInForm.getUserNamee.ToString
     Public Function highest()
         Dim sql As String
         Dim cmd As New OleDb.OleDbCommand
         Dim myreader As OleDbDataReader
 
         ' Open connection between database
-        con.Open()
+        con2.Open()
         ' This will get the highscore from the database
-        sql = "Select HighScore from HighestScore where id = 1"
-        cmd.Connection = con
+        sql = "Select * from leaderboardtruefalse where UserName = '" & Username.ToString & "'"
+        cmd.Connection = con2
         cmd.CommandText = sql
 
         ' read
@@ -23,14 +24,14 @@ Public Class Formtf3
         myreader.Read()
 
         ' convert to int to compare 
-        highscore = Convert.ToInt32(myreader("HighScore"))
-        con.Close()
+        highscore = Convert.ToInt32(myreader("Score"))
+        con2.Close()
         Label3.Text = highscore.ToString
         Return Nothing
     End Function
 
 
-    Private Sub showScore()
+    Public Sub showScore()
         Dim scores(10) As Integer
         Dim names(10) As String
         Dim sql As String
@@ -41,10 +42,10 @@ Public Class Formtf3
         ' This will get the score from the database
         sql = "Select TOP 10 * from leaderboardtruefalse Order By Score DESC"
         cmd.Connection = con2
-            cmd.CommandText = sql
+        cmd.CommandText = sql
 
-            ' read
-            myreader = cmd.ExecuteReader
+        ' read
+        myreader = cmd.ExecuteReader
 
         If myreader.HasRows Then
             For i As Integer = 1 To 10 Step 1

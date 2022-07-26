@@ -3,13 +3,14 @@ Imports System.Data
 Imports System.Data.OleDb
 Public Class Formtf1
     ' Connection
-
+    Dim con2 As New OleDb.OleDbConnection(My.Settings.leaderboardConnectionString)
     Dim con As New OleDb.OleDbConnection(My.Settings.QuestionsConnectionString)
     Dim convtf As Boolean
     Dim score As Integer
     Dim highscore As Integer
     Dim count1 As Integer
     Dim timee As Integer
+    Dim Username As String = LogInForm.getUserNamee.ToString
 
     Private Sub getTimer()
         Dim sql As String
@@ -106,10 +107,10 @@ Public Class Formtf1
         Dim myreader As OleDbDataReader
 
         ' Open connection between database
-        con.Open()
+        con2.Open()
         ' This will get the highscore from the database
-        sql = "Select HighScore from HighestScore where id = 1"
-        cmd.Connection = con
+        sql = "Select * from leaderboardtruefalse where UserName = '" & Username.ToString & "'"
+        cmd.Connection = con2
         cmd.CommandText = sql
 
         ' read
@@ -117,8 +118,8 @@ Public Class Formtf1
         myreader.Read()
 
         ' convert to int to compare 
-        highscore = Convert.ToInt32(myreader("HighScore"))
-        con.Close()
+        highscore = Convert.ToInt32(myreader("Score"))
+        con2.Close()
 
         ' get the highscore and pass it to form2
         Formtf2.highscore2 = highscore
@@ -131,16 +132,16 @@ Public Class Formtf1
             Formtf2.newhighscore = highscore
 
             ' Open connection between database
-            con.Open()
+            con2.Open()
 
             ' We only have one highscore so ID 1 only updates when there is a new highscore
-            sql = "Update HighestScore set HighScore=" & highscore & " where id = 1" & ""
-            cmd.Connection = con
+            sql = "Update leaderboardtruefalse set Score=" & highscore & " where UserName = '" & Username.ToString & "'"
+            cmd.Connection = con2
             cmd.CommandText = sql
             cmd.ExecuteNonQuery()
 
             'close the connection
-            con.Close()
+            con2.Close()
         End If
         Return Nothing
     End Function

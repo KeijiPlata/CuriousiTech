@@ -5,6 +5,9 @@ Imports System.Data.OleDb.OleDbDataReader
 
 Public Class LogInForm
     Dim con As New OleDbConnection(My.Settings.loginConnectionString)
+    ' This will get the value of user - Ginalaw ni miacky eto lang
+    Public getUserNamee As String
+
 
     'FOR TESTING
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -12,9 +15,15 @@ Public Class LogInForm
         txtPassword.Text = "1234"
     End Sub
 
+
+
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         'LOGIN BUTTON
         'LOGIN BUTTON
+
+        'get the username 
+        getUserNamee = txtUserName.Text
+
         Try
             Dim sql As String
             Dim cmd As New OleDbCommand
