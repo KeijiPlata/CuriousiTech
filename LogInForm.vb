@@ -53,7 +53,12 @@ Public Class LogInForm
     End Sub
 
 
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+        Me.Close()
+    End Sub
 
-
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
 

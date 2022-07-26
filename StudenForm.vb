@@ -69,4 +69,8 @@ Public Class StudenForm
         Dim TF = New Formtf3
         TF.Show()
     End Sub
+
+    Private Sub lblFullName_Click(sender As Object, e As EventArgs) Handles lblFullName.Click
+
+    End Sub
 End Class
