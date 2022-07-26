@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
-Public Class Form1
+Public Class FormtfEdit1
     Dim con As New OleDb.OleDbConnection(My.Settings.QuestionsConnectionString)
     Dim question As String
     Dim answer As String
@@ -113,5 +113,12 @@ Public Class Form1
             'refresh datagrid
             bind_data()
         End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        FormtfEdit2.Show()
+        Me.Hide()
+
+
     End Sub
 End Class

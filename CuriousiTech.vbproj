@@ -97,10 +97,16 @@
     <Compile Include="Formtf3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormtfEdit.designer.vb">
-      <DependentUpon>FormtfEdit.vb</DependentUpon>
+    <Compile Include="FormtfEdit1.designer.vb">
+      <DependentUpon>FormtfEdit1.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormtfEdit.vb">
+    <Compile Include="FormtfEdit1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormtfEdit2.Designer.vb">
+      <DependentUpon>FormtfEdit2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormtfEdit2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="leaderboardDataSet.Designer.vb">
@@ -172,8 +178,11 @@
     <EmbeddedResource Include="Formtf3.resx">
       <DependentUpon>Formtf3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormtfEdit.resx">
-      <DependentUpon>FormtfEdit.vb</DependentUpon>
+    <EmbeddedResource Include="FormtfEdit1.resx">
+      <DependentUpon>FormtfEdit1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormtfEdit2.resx">
+      <DependentUpon>FormtfEdit2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.vb</DependentUpon>
