@@ -11,8 +11,10 @@ Public Class LogInForm
         txtUserName.Text = "John"
         txtPassword.Text = "1234"
     End Sub
-    'LOGIN BUTTON
-    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        'LOGIN BUTTON
+        'LOGIN BUTTON
         Try
             Dim sql As String
             Dim cmd As New OleDbCommand
@@ -50,8 +52,8 @@ Public Class LogInForm
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
-    End Sub
+
+
+
 End Class
 
