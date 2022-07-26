@@ -50,10 +50,10 @@ Partial Class Formtf3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(53, 140)
+        Me.Label1.Font = New System.Drawing.Font("AngryBirds", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(38, 128)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(181, 31)
+        Me.Label1.Size = New System.Drawing.Size(223, 43)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "True Or False"
         '
@@ -77,17 +77,17 @@ Partial Class Formtf3
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "0"
         '
-        'Form3
+        'Formtf3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(877, 384)
+        Me.ClientSize = New System.Drawing.Size(504, 324)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Form3"
+        Me.Name = "Formtf3"
         Me.Text = "Form3"
         Me.ResumeLayout(False)
         Me.PerformLayout()
