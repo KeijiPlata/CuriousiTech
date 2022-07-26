@@ -16,7 +16,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassForm.designer.vb">
+      <DependentUpon>ClassForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formtf1.designer.vb">
       <DependentUpon>Formtf1.vb</DependentUpon>
     </Compile>
@@ -96,6 +102,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>leaderboardDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="loginDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.designer.vb">
+      <DependentUpon>LogInForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -112,13 +129,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ProfileForm.designer.vb">
+      <DependentUpon>ProfileForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QuestionsDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuestionsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="StudenForm.designer.vb">
+      <DependentUpon>StudenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherForm.designer.vb">
+      <DependentUpon>TeacherForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ClassForm.resx">
+      <DependentUpon>ClassForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formtf1.resx">
       <DependentUpon>Formtf1.vb</DependentUpon>
     </EmbeddedResource>
@@ -128,11 +166,23 @@
     <EmbeddedResource Include="Formtf3.resx">
       <DependentUpon>Formtf3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudenForm.resx">
+      <DependentUpon>StudenForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherForm.resx">
+      <DependentUpon>TeacherForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +196,17 @@
     </None>
     <None Include="leaderboardDataSet.xss">
       <DependentUpon>leaderboardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -171,6 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="leaderboard.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="login.accdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Questions.accdb">
