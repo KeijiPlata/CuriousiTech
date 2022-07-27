@@ -87,16 +87,36 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        BlurredBG.Show()
         Oppsie.Show()
 
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+        BlurredBG.Show()
         TrueorFalseInstruction.Show()
 
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Guna2PictureBox4_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox4.Click
+        BlurredBG.Show()
+        QuiziItUpInstructions.Show()
+
+    End Sub
+
+    Private Sub Guna2PictureBox3_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox3.Click
+        BlurredBG.Show()
+        TheWhatInstructions.Show()
+    End Sub
+
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        BlurredBG.Show()
+        AboutUs.Show()
+
 
     End Sub
 End Class

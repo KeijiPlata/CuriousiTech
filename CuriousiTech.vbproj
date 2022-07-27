@@ -78,6 +78,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.Designer.vb">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlurredBG.Designer.vb">
+      <DependentUpon>BlurredBG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlurredBG.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClassForm.designer.vb">
       <DependentUpon>ClassForm.vb</DependentUpon>
     </Compile>
@@ -169,6 +181,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuestionsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuiziItUpInstructions.Designer.vb">
+      <DependentUpon>QuiziItUpInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuiziItUpInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StudenForm.designer.vb">
       <DependentUpon>StudenForm.vb</DependentUpon>
     </Compile>
@@ -181,6 +199,12 @@
     <Compile Include="TeacherForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TheWhatInstructions.Designer.vb">
+      <DependentUpon>TheWhatInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TheWhatInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TrueorFalseInstruction.Designer.vb">
       <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
     </Compile>
@@ -189,6 +213,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlurredBG.resx">
+      <DependentUpon>BlurredBG.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassForm.resx">
       <DependentUpon>ClassForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -225,11 +255,17 @@
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuiziItUpInstructions.resx">
+      <DependentUpon>QuiziItUpInstructions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudenForm.resx">
       <DependentUpon>StudenForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheWhatInstructions.resx">
+      <DependentUpon>TheWhatInstructions.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrueorFalseInstruction.resx">
       <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
