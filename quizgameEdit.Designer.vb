@@ -127,7 +127,9 @@ Partial Class quizgameEdit
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"A", "B", "C", "D"})
         Me.ComboBox1.Location = New System.Drawing.Point(95, 222)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(188, 21)
@@ -153,6 +155,7 @@ Partial Class quizgameEdit
         '
         'TextBox6
         '
+        Me.TextBox6.Enabled = False
         Me.TextBox6.Location = New System.Drawing.Point(332, 225)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(214, 20)
@@ -215,7 +218,7 @@ Partial Class quizgameEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(577, 501)
+        Me.ClientSize = New System.Drawing.Size(577, 491)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
