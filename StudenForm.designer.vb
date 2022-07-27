@@ -45,6 +45,15 @@ Partial Class StudenForm
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,11 +63,14 @@ Partial Class StudenForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(1264, 359)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Rubik Medium", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(1220, 235)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 16)
+        Me.Label3.Size = New System.Drawing.Size(140, 19)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Label3"
+        Me.Label3.Text = "Ledesma, Jeriel"
         '
         'Guna2Elipse1
         '
@@ -72,7 +84,7 @@ Partial Class StudenForm
         Me.lblFullName.ForeColor = System.Drawing.Color.Transparent
         Me.lblFullName.Location = New System.Drawing.Point(120, 207)
         Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(203, 46)
+        Me.lblFullName.Size = New System.Drawing.Size(167, 37)
         Me.lblFullName.TabIndex = 0
         Me.lblFullName.Text = "Full name"
         '
@@ -84,7 +96,7 @@ Partial Class StudenForm
         Me.lblSection.ForeColor = System.Drawing.Color.Transparent
         Me.lblSection.Location = New System.Drawing.Point(160, 247)
         Me.lblSection.Name = "lblSection"
-        Me.lblSection.Size = New System.Drawing.Size(105, 31)
+        Me.lblSection.Size = New System.Drawing.Size(84, 25)
         Me.lblSection.TabIndex = 1
         Me.lblSection.Text = "Section"
         '
@@ -245,7 +257,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(455, 500)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(117, 27)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel1.TabIndex = 21
         Me.Guna2HtmlLabel1.Text = "High Score:"
         '
@@ -256,7 +268,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(565, 495)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(31, 31)
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel2.TabIndex = 22
         Me.Guna2HtmlLabel2.Text = "10"
         '
@@ -267,7 +279,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(562, 717)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(31, 31)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel3.TabIndex = 26
         Me.Guna2HtmlLabel3.Text = "10"
         '
@@ -278,7 +290,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(452, 722)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(117, 27)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel4.TabIndex = 25
         Me.Guna2HtmlLabel4.Text = "High Score:"
         '
@@ -367,7 +379,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(565, 285)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(31, 31)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel5.TabIndex = 30
         Me.Guna2HtmlLabel5.Text = "10"
         '
@@ -378,9 +390,117 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(455, 290)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(117, 27)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel6.TabIndex = 29
         Me.Guna2HtmlLabel6.Text = "High Score:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Rubik", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(1259, 198)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 34)
+        Me.Label1.TabIndex = 31
+        Me.Label1.Text = "125"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Rubik Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(1086, 257)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(109, 16)
+        Me.Label2.TabIndex = 32
+        Me.Label2.Text = "Ramos, Jherdi"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Rubik", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(1115, 226)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(53, 30)
+        Me.Label4.TabIndex = 33
+        Me.Label4.Text = "118"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Rubik", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(1412, 235)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(53, 30)
+        Me.Label5.TabIndex = 35
+        Me.Label5.Text = "116"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Rubik Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(1394, 265)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(85, 16)
+        Me.Label6.TabIndex = 34
+        Me.Label6.Text = "Lord, Plata"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Rubik", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(1115, 342)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(53, 30)
+        Me.Label7.TabIndex = 37
+        Me.Label7.Text = "115"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Rubik Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(1214, 349)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(158, 16)
+        Me.Label8.TabIndex = 36
+        Me.Label8.Text = "Eriguel, Jesse Renne"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Rubik", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(1115, 403)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(53, 30)
+        Me.Label9.TabIndex = 39
+        Me.Label9.Text = "112"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Rubik Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(1214, 411)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(158, 16)
+        Me.Label10.TabIndex = 38
+        Me.Label10.Text = "Eriguel, Jesse Renne"
         '
         'StudenForm
         '
@@ -389,6 +509,15 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Controls.Add(Me.Guna2PictureBox4)
@@ -442,4 +571,13 @@ Partial Class StudenForm
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class

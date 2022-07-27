@@ -53,8 +53,6 @@ Public Class StudenForm
 
     End Sub
 
-
-
     Private Sub btnTorF_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -95,6 +93,10 @@ Public Class StudenForm
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
         TrueorFalseInstruction.Show()
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class
