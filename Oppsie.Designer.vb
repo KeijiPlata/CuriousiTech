@@ -31,7 +31,7 @@ Partial Class Oppsie
         '
         'Guna2Elipse1
         '
-        Me.Guna2Elipse1.BorderRadius = 70
+        Me.Guna2Elipse1.BorderRadius = 100
         Me.Guna2Elipse1.TargetControl = Me
         '
         'Guna2PictureBox2
@@ -41,7 +41,7 @@ Partial Class Oppsie
         Me.Guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(481, 25)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(668, 40)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(29, 28)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -55,10 +55,12 @@ Partial Class Oppsie
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(537, 368)
+        Me.ClientSize = New System.Drawing.Size(742, 519)
         Me.Controls.Add(Me.Guna2PictureBox2)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Oppsie"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Oppsie"
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

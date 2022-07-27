@@ -87,4 +87,14 @@ Public Class StudenForm
         Dim TF = New Formtf3
         TF.Show()
     End Sub
+
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Oppsie.Show()
+
+    End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+        TrueorFalseInstruction.Show()
+
+    End Sub
 End Class
