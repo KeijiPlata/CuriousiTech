@@ -8,7 +8,7 @@ Public Class quizgameEdit
         Dim da As New OleDbDataAdapter
         Dim tablee As New DataTable
 
-        sql = "Select * from MCQ"
+        sql = "Select Question, Answer, A, B, C, D from MCQ"
         cmd.Connection = con
         cmd.CommandText = sql
 
