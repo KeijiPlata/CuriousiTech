@@ -224,7 +224,7 @@ Public Class Formmcq1
             Button4.BackColor = Color.Green
         End If
 
-        If timePenalty < 0 Then
+        If timePenalty < -1 Then
             Timer2.Stop()
             printer()
             Button1.Enabled = True
