@@ -49,13 +49,25 @@ Public Class StudenForm
         End Try
     End Sub
 
-    Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
-        'OPENS PROFILE FORM
-        Dim profile = New ProfileForm(LastName, FirstName, MiddleName, UserName, StudentID, UserID)
-        profile.Show()
+    Private Sub btnProfile_Click(sender As Object, e As EventArgs)
+
     End Sub
 
-    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+
+
+    Private Sub btnTorF_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub lblFullName_Click(sender As Object, e As EventArgs) Handles lblFullName.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         Dim answer As Integer
 
         answer = MsgBox("are you sure you want to log out?", vbQuestion + vbYesNo + vbDefaultButton2, "LOG OUT")
@@ -65,12 +77,14 @@ Public Class StudenForm
         End If
     End Sub
 
-    Private Sub btnTorF_Click(sender As Object, e As EventArgs) Handles btnTorF.Click
-        Dim TF = New Formtf3
-        TF.Show()
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        'OPENS PROFILE FORM
+        Dim profile = New ProfileForm(LastName, FirstName, MiddleName, UserName, StudentID, UserID)
+        profile.Show()
     End Sub
 
-    Private Sub lblFullName_Click(sender As Object, e As EventArgs) Handles lblFullName.Click
-
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Dim TF = New Formtf3
+        TF.Show()
     End Sub
 End Class

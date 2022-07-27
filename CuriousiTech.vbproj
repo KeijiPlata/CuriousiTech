@@ -152,6 +152,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Oppsie.Designer.vb">
+      <DependentUpon>Oppsie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Oppsie.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProfileForm.designer.vb">
       <DependentUpon>ProfileForm.vb</DependentUpon>
     </Compile>
@@ -173,6 +179,12 @@
       <DependentUpon>TeacherForm.vb</DependentUpon>
     </Compile>
     <Compile Include="TeacherForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueorFalseInstruction.Designer.vb">
+      <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrueorFalseInstruction.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -207,6 +219,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Oppsie.resx">
+      <DependentUpon>Oppsie.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueorFalseInstruction.resx">
+      <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
