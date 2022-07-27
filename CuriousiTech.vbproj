@@ -93,6 +93,12 @@
     <Compile Include="Formmcq1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formmcq2.designer.vb">
+      <DependentUpon>Formmcq2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formmcq2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formtf1.designer.vb">
       <DependentUpon>Formtf1.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ClassForm.resx">
       <DependentUpon>ClassForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formmcq2.resx">
+      <DependentUpon>Formmcq2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formtf1.resx">
       <DependentUpon>Formtf1.vb</DependentUpon>
