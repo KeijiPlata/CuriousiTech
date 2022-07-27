@@ -77,8 +77,7 @@ Public Class FormtfEdit1
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If TextBox1.Text = "" Or ComboBox1.SelectedIndex = -1 Then
             MsgBox("Please select something from datafield before updating!", vbOKOnly + vbCritical, "Input fields")
-        ElseIf TextBox1.Text = question Then
-            MsgBox("Please change the question", vbOKOnly + vbCritical, "Input fields")
+
         Else
             'updates data
             Dim cmd As New OleDb.OleDbCommand
