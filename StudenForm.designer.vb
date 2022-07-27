@@ -68,11 +68,11 @@ Partial Class StudenForm
         '
         Me.lblFullName.AutoSize = True
         Me.lblFullName.BackColor = System.Drawing.Color.Transparent
-        Me.lblFullName.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFullName.Font = New System.Drawing.Font("Rubik", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFullName.ForeColor = System.Drawing.Color.Transparent
-        Me.lblFullName.Location = New System.Drawing.Point(120, 202)
+        Me.lblFullName.Location = New System.Drawing.Point(120, 207)
         Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(187, 56)
+        Me.lblFullName.Size = New System.Drawing.Size(171, 40)
         Me.lblFullName.TabIndex = 0
         Me.lblFullName.Text = "Full name"
         '
@@ -80,11 +80,11 @@ Partial Class StudenForm
         '
         Me.lblSection.AutoSize = True
         Me.lblSection.BackColor = System.Drawing.Color.Transparent
-        Me.lblSection.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSection.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSection.ForeColor = System.Drawing.Color.Transparent
         Me.lblSection.Location = New System.Drawing.Point(160, 247)
         Me.lblSection.Name = "lblSection"
-        Me.lblSection.Size = New System.Drawing.Size(94, 37)
+        Me.lblSection.Size = New System.Drawing.Size(87, 26)
         Me.lblSection.TabIndex = 1
         Me.lblSection.Text = "Section"
         '
