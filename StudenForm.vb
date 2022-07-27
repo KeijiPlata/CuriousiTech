@@ -12,6 +12,7 @@ Public Class StudenForm
     Dim UserName As String
     Dim StudentID As String
     Dim UserID As Long
+    Dim Section As String
     Public Sub New(ByVal varLastName As String, ByVal varFirstName As String, ByVal varMiddleName As String, ByVal varUserName As String, ByVal varStudentID As String, ByVal varUserID As Long)
         InitializeComponent()
         LastName = varLastName
@@ -39,8 +40,9 @@ Public Class StudenForm
             myreader = cmd.ExecuteReader
             myreader.Read()
 
+            Section = myreader("Room")
             lblFullName.Text = LastName + " " + FirstName + " " + MiddleName
-            lblSection.Text = myreader("Room")
+            lblSection.Text = Section
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -96,5 +98,10 @@ Public Class StudenForm
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
         TrueorFalseInstruction.Show()
 
+    End Sub
+
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        Dim sectionForm = New SectionForm(UserID, Section)
+        sectionForm.Show()
     End Sub
 End Class
