@@ -239,5 +239,24 @@ Namespace My.Resources
                 Return CType(obj,Byte())
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Copyright (c) 2014, Indian Type Foundry (info@indiantypefoundry.com).
+        '''
+        '''This Font Software is licensed under the SIL Open Font License, Version 1.1.
+        '''This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+        '''
+        '''-----------------------------------------------------------
+        '''SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+        '''-----------------------------------------------------------
+        '''
+        '''PREAMBLE
+        '''The goals of the Open Font License (OFL) are to stimulate worldwide development of col [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property SIL_Open_Font_License() As String
+            Get
+                Return ResourceManager.GetString("SIL_Open_Font_License", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
