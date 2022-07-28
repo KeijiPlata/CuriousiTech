@@ -46,20 +46,20 @@ Public Class Formtf1
 
         ' if the random number is an even number, it will change location
         If conv Mod 2 = 0 Then
-            Button1.Location = New Point(365, 203)
-            Button2.Location = New Point(63, 203)
+            Guna2Button2.Location = New Point(559, 687)
+            Guna2Button1.Location = New Point(47, 687)
         Else
-            Button1.Location = New Point(63, 203)
-            Button2.Location = New Point(365, 203)
+            Guna2Button2.Location = New Point(47, 687)
+            Guna2Button1.Location = New Point(559, 687)
         End If
 
         ' if the randomnumber is an even number, it will change color
         If conv2 Mod 2 = 0 Then
-            Button1.BackColor = Color.Red
-            Button2.BackColor = Color.DarkTurquoise
+            Guna2Button2.FillColor = Color.FromArgb(15, 155, 21)
+            Guna2Button1.FillColor = Color.FromArgb(200, 25, 52)
         Else
-            Button1.BackColor = Color.DarkTurquoise
-            Button2.BackColor = Color.Red
+            Guna2Button2.FillColor = Color.FromArgb(200, 25, 52)
+            Guna2Button1.FillColor = Color.FromArgb(15, 155, 21)
         End If
         Return Nothing
     End Function
@@ -169,41 +169,9 @@ Public Class Formtf1
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If convtf = True Then
-            TFsyntax()
-            ChangeButton() ' change the button location randomly
-            score = score + 1
-            getTimer() ' reset time
-            Label3.ForeColor = Color.Green
-            Label3.Text = timee.ToString
-            Label4.Text = score.ToString
-        Else
-            Highest()
-            Formtf2.displayScore = score
-            Formtf2.Show()
-            score = 0 'reset
-            Me.Close()
-        End If
-    End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If convtf = False Then
-            TFsyntax()
-            ChangeButton() ' change the button location randomly
-            score = score + 1
-            getTimer() 'reset time
-            Label3.ForeColor = Color.Green
-            Label3.Text = timee.ToString
-            Label4.Text = score.ToString
-        Else
-            Highest()
-            Formtf2.displayScore = score
-            Formtf2.Show()
-            score = 0 'reset
-            Me.Close()
-        End If
-    End Sub
+
+
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ' this will countdown the timer
@@ -219,7 +187,7 @@ Public Class Formtf1
             Formtf2.displayScore = score
             Formtf2.Show()
             score = 0 'reset
-            Me.Close()
+
         End If
 
         ' change the color 
@@ -228,5 +196,45 @@ Public Class Formtf1
         Else
             Label3.ForeColor = Color.Red
         End If
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        If convtf = True Then
+            TFsyntax()
+            ChangeButton() ' change the button location randomly
+            score = score + 1
+            getTimer() ' reset time
+            Label3.ForeColor = Color.Green
+            Label3.Text = timee.ToString
+            Label4.Text = score.ToString
+        Else
+            Highest()
+            Formtf2.displayScore = score
+            Formtf2.Show()
+            score = 0 'reset
+
+        End If
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        If convtf = False Then
+            TFsyntax()
+            ChangeButton() ' change the button location randomly
+            score = score + 1
+            getTimer() 'reset time
+            Label3.ForeColor = Color.Green
+            Label3.Text = timee.ToString
+            Label4.Text = score.ToString
+        Else
+            Highest()
+            Formtf2.displayScore = score
+            Formtf2.Show()
+            score = 0 'reset
+
+        End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class

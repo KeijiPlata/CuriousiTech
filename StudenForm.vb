@@ -25,6 +25,8 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
         Try
             'SETS LABLES
             Dim sql As String
@@ -47,6 +49,7 @@ Public Class StudenForm
         Finally
             con.Close()
         End Try
+
     End Sub
 
     Private Sub btnProfile_Click(sender As Object, e As EventArgs)
@@ -87,13 +90,17 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
-        BlurredBG.Show()
+        PictureBox1.Size = New Size(1645, 962)
+        PictureBox1.Location = New Point(-59, 0)
+        PictureBox1.Visible = True
         Oppsie.Show()
 
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
-        BlurredBG.Show()
+        PictureBox1.Size = New Size(1645, 962)
+        PictureBox1.Location = New Point(-59, 0)
+        PictureBox1.Visible = True
         TrueorFalseInstruction.Show()
 
     End Sub
@@ -103,20 +110,30 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2PictureBox4_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox4.Click
-        BlurredBG.Show()
+        PictureBox1.Size = New Size(1645, 962)
+        PictureBox1.Location = New Point(-59, 0)
+        PictureBox1.Visible = True
         QuiziItUpInstructions.Show()
 
     End Sub
 
     Private Sub Guna2PictureBox3_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox3.Click
-        BlurredBG.Show()
+        PictureBox1.Size = New Size(1645, 962)
+        PictureBox1.Location = New Point(-59, 0)
+        PictureBox1.Visible = True
         TheWhatInstructions.Show()
     End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
-        BlurredBG.Show()
+        PictureBox1.Size = New Size(1645, 962)
+        PictureBox1.Location = New Point(-59, 0)
+        PictureBox1.Visible = True
         AboutUs.Show()
 
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class

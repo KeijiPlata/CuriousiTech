@@ -35,10 +35,8 @@ Partial Class StudenForm
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -64,10 +62,14 @@ Partial Class StudenForm
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -260,23 +262,12 @@ Partial Class StudenForm
         Me.Guna2PictureBox1.TabStop = False
         Me.Guna2PictureBox1.UseTransparentBackground = True
         '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(455, 500)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(97, 22)
-        Me.Guna2HtmlLabel1.TabIndex = 21
-        Me.Guna2HtmlLabel1.Text = "High Score:"
-        '
         'Guna2HtmlLabel2
         '
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(565, 495)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(601, 500)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel2.TabIndex = 22
@@ -287,22 +278,11 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(562, 717)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(601, 720)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(25, 26)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(17, 26)
         Me.Guna2HtmlLabel3.TabIndex = 26
-        Me.Guna2HtmlLabel3.Text = "10"
-        '
-        'Guna2HtmlLabel4
-        '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(452, 722)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(97, 22)
-        Me.Guna2HtmlLabel4.TabIndex = 25
-        Me.Guna2HtmlLabel4.Text = "High Score:"
+        Me.Guna2HtmlLabel3.Text = "--"
         '
         'Guna2PictureBox3
         '
@@ -387,7 +367,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(565, 285)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(601, 290)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel5.TabIndex = 30
@@ -400,9 +380,9 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(455, 290)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(97, 22)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(140, 22)
         Me.Guna2HtmlLabel6.TabIndex = 29
-        Me.Guna2HtmlLabel6.Text = "High Score:"
+        Me.Guna2HtmlLabel6.Text = "Your High Score:"
         '
         'Label1
         '
@@ -420,11 +400,11 @@ Partial Class StudenForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Rubik", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(1077, 258)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 20)
+        Me.Label2.Size = New System.Drawing.Size(132, 20)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "Ramos, Jherdi"
         '
@@ -639,6 +619,41 @@ Partial Class StudenForm
         Me.Label22.Text = "104"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(455, 500)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(140, 22)
+        Me.Guna2HtmlLabel1.TabIndex = 51
+        Me.Guna2HtmlLabel1.Text = "Your High Score:"
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(455, 722)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(140, 22)
+        Me.Guna2HtmlLabel4.TabIndex = 52
+        Me.Guna2HtmlLabel4.Text = "Your High Score:"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-59, 871)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1645, 29)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 53
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'StudenForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -646,6 +661,9 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label19)
@@ -670,11 +688,9 @@ Partial Class StudenForm
         Me.Controls.Add(Me.Guna2PictureBox4)
         Me.Controls.Add(Me.Guna2Button7)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
-        Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2Button5)
         Me.Controls.Add(Me.Guna2Button4)
@@ -693,6 +709,7 @@ Partial Class StudenForm
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -708,10 +725,8 @@ Partial Class StudenForm
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -737,4 +752,7 @@ Partial Class StudenForm
     Friend WithEvents Label14 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
