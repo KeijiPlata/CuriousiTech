@@ -87,6 +87,12 @@
     <Compile Include="ClassForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClassPrompt.Designer.vb">
+      <DependentUpon>ClassPrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formmcq1.designer.vb">
       <DependentUpon>Formmcq1.vb</DependentUpon>
     </Compile>
@@ -229,6 +235,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ClassForm.resx">
       <DependentUpon>ClassForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPrompt.resx">
+      <DependentUpon>ClassPrompt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formmcq2.resx">
       <DependentUpon>Formmcq2.vb</DependentUpon>

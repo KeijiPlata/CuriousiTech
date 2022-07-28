@@ -49,6 +49,8 @@ Public Class StudenForm
         Finally
             con.Close()
         End Try
+        'PLAYS MUSIC
+        My.Computer.Audio.Play("C:\Waterfall.wav", AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub btnProfile_Click(sender As Object, e As EventArgs)
@@ -83,6 +85,8 @@ Public Class StudenForm
         'OPENS PROFILE FORM
         Dim profile = New ProfileForm(LastName, FirstName, MiddleName, UserName, StudentID, UserID)
         profile.Show()
+        'STOP MUSIC
+        My.Computer.Audio.Stop()
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click

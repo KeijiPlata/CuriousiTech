@@ -59,5 +59,32 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Game_Over___Sound_Effect__HD_() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Game_Over___Sound_Effect__HD_", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Lobby_sound() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Lobby_sound", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Pixelland() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Pixelland", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
