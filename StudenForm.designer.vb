@@ -83,7 +83,7 @@ Partial Class StudenForm
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(1197, 399)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 16)
+        Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 0
         '
         'Guna2Elipse1

@@ -212,4 +212,20 @@ Public Class StudenForm
         Dim sectionForm = New SectionForm(UserID, Section)
         sectionForm.Show()
     End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        timee = timee - 1
+        Label1.Text = timee.ToString
+
+        If timee = 0 Then
+            Timer1.Stop()
+            Label1.Text = "Start"
+            Dim TF = New Formtf3
+            TF.Show()
+            bg1.Visible = False
+            Label1.Visible = False
+            Me.Close()
+
+        End If
+    End Sub
 End Class
