@@ -12,6 +12,7 @@ Public Class Formtf1
     Dim timee As Integer
     Dim Username As String = LogInForm.getUserNamee.ToString
 
+
     ' This will show the leaderboards
     Public Sub showScore()
         Dim scores(10) As Integer
@@ -22,7 +23,7 @@ Public Class Formtf1
 
         con2.Open()
         ' This will get the score from the database
-        sql = "Select TOP 10 * from leaderboardtruefalse Order By Score DESC"
+        sql = "Select * from leaderboardtruefalse Order By Score DESC"
         cmd.Connection = con2
         cmd.CommandText = sql
 

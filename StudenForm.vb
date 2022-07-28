@@ -16,10 +16,52 @@ Public Class StudenForm
     Dim Section As String
     Dim timee As Integer = 3
 
-    Public Sub showScore()
+    Private Sub bothScores()
         Dim scores(10) As Integer
         Dim scores2(10) As Integer
-        Dim totalscores(10) As Integer
+        Dim addBoth(10) As Integer
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
+        Dim myreader As OleDbDataReader
+
+        For i As Integer = 1 To 10 Step 1
+            con2.Open()
+            ' This will get the score from the database
+            sql = "Select * from leaderboardtruefalse where id =" & i & ""
+            cmd.Connection = con2
+            cmd.CommandText = sql
+
+            myreader = cmd.ExecuteReader
+            myreader.Read()
+
+            scores(i) = myreader("Score")
+            con2.Close()
+
+            con2.Open()
+            ' This will get the score from the database
+            sql = "Select * from leaderboardquizgame where id =" & i & ""
+            cmd.Connection = con2
+            cmd.CommandText = sql
+
+            myreader = cmd.ExecuteReader
+            myreader.Read()
+
+            scores2(i) = myreader("Score")
+            con2.Close()
+
+            addBoth(i) = scores(i) + scores2(i)
+
+            con2.Open()
+            sql = "Update leaderboardoverall set Score=" & addBoth(i) & " where id = " & i & ""
+            cmd.Connection = con2
+            cmd.CommandText = sql
+            cmd.ExecuteNonQuery()
+            con2.Close()
+
+        Next
+    End Sub
+    Public Sub showScore()
+        Dim scores(10) As Integer
         Dim names(10) As String
         Dim sql As String
         Dim cmd As New OleDb.OleDbCommand
@@ -27,7 +69,7 @@ Public Class StudenForm
 
         con2.Open()
         ' This will get the score from the database
-        sql = "Select TOP 10 * from leaderboardtruefalse Order By Score DESC"
+        sql = "Select TOP 10 * from leaderboardoverall Order By Score DESC"
         cmd.Connection = con2
         cmd.CommandText = sql
 
@@ -80,6 +122,11 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' this will show the overall scores of both games
+        bothScores()
+        showScore()
+
+        ' hide the picturebox and label
         bg1.Visible = False
         Label1.Visible = False
         Timer1.Enabled = False
