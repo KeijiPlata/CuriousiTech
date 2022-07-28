@@ -92,7 +92,7 @@ Public Class StudenForm
 
             con.Open()
             'SELECT TABLE INPUTED USERNAME
-            sql = "SELECT Room FROM TbJunction Where UserID=" & UserID & ""
+            sql = "SELECT Room FROM TbJunction Where UserID=" & CInt(UserID) & ""
             cmd.Connection = con
             cmd.CommandText = sql
             myreader = cmd.ExecuteReader
