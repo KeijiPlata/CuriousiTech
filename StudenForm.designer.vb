@@ -56,7 +56,7 @@ Partial Class StudenForm
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(1264, 359)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 16)
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Label3"
         '
@@ -72,7 +72,7 @@ Partial Class StudenForm
         Me.lblFullName.ForeColor = System.Drawing.Color.Transparent
         Me.lblFullName.Location = New System.Drawing.Point(120, 207)
         Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(203, 46)
+        Me.lblFullName.Size = New System.Drawing.Size(167, 37)
         Me.lblFullName.TabIndex = 0
         Me.lblFullName.Text = "Full name"
         '
@@ -84,7 +84,7 @@ Partial Class StudenForm
         Me.lblSection.ForeColor = System.Drawing.Color.Transparent
         Me.lblSection.Location = New System.Drawing.Point(160, 247)
         Me.lblSection.Name = "lblSection"
-        Me.lblSection.Size = New System.Drawing.Size(105, 31)
+        Me.lblSection.Size = New System.Drawing.Size(84, 25)
         Me.lblSection.TabIndex = 1
         Me.lblSection.Text = "Section"
         '
@@ -245,7 +245,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(455, 500)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(117, 27)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel1.TabIndex = 21
         Me.Guna2HtmlLabel1.Text = "High Score:"
         '
@@ -256,7 +256,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(565, 495)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(31, 31)
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel2.TabIndex = 22
         Me.Guna2HtmlLabel2.Text = "10"
         '
@@ -267,7 +267,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(562, 717)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(31, 31)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel3.TabIndex = 26
         Me.Guna2HtmlLabel3.Text = "10"
         '
@@ -278,7 +278,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(452, 722)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(117, 27)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel4.TabIndex = 25
         Me.Guna2HtmlLabel4.Text = "High Score:"
         '
@@ -367,7 +367,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(565, 285)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(31, 31)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel5.TabIndex = 30
         Me.Guna2HtmlLabel5.Text = "10"
         '
@@ -378,7 +378,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(455, 290)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(117, 27)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel6.TabIndex = 29
         Me.Guna2HtmlLabel6.Text = "High Score:"
         '

@@ -104,4 +104,9 @@ Public Class StudenForm
         Dim sectionForm = New SectionForm(UserID, Section)
         sectionForm.Show()
     End Sub
+
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        Formmcq3.Show()
+
+    End Sub
 End Class

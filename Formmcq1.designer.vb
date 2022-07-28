@@ -41,6 +41,26 @@ Partial Class Formmcq1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label1A = New System.Windows.Forms.Label()
+        Me.Label2A = New System.Windows.Forms.Label()
+        Me.Label3A = New System.Windows.Forms.Label()
+        Me.Label4A = New System.Windows.Forms.Label()
+        Me.Label5A = New System.Windows.Forms.Label()
+        Me.Label6A = New System.Windows.Forms.Label()
+        Me.Label7A = New System.Windows.Forms.Label()
+        Me.Label8A = New System.Windows.Forms.Label()
+        Me.Label9A = New System.Windows.Forms.Label()
+        Me.Label10A = New System.Windows.Forms.Label()
+        Me.Label1B = New System.Windows.Forms.Label()
+        Me.Label2B = New System.Windows.Forms.Label()
+        Me.Label3B = New System.Windows.Forms.Label()
+        Me.Label4B = New System.Windows.Forms.Label()
+        Me.Label5B = New System.Windows.Forms.Label()
+        Me.Label6B = New System.Windows.Forms.Label()
+        Me.Label7B = New System.Windows.Forms.Label()
+        Me.Label8B = New System.Windows.Forms.Label()
+        Me.Label9B = New System.Windows.Forms.Label()
+        Me.Label10B = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -192,11 +212,231 @@ Partial Class Formmcq1
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Label10"
         '
+        'Label1A
+        '
+        Me.Label1A.AutoSize = True
+        Me.Label1A.Location = New System.Drawing.Point(771, 43)
+        Me.Label1A.Name = "Label1A"
+        Me.Label1A.Size = New System.Drawing.Size(46, 13)
+        Me.Label1A.TabIndex = 15
+        Me.Label1A.Text = "Label1A"
+        Me.Label1A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label2A
+        '
+        Me.Label2A.AutoSize = True
+        Me.Label2A.Location = New System.Drawing.Point(771, 79)
+        Me.Label2A.Name = "Label2A"
+        Me.Label2A.Size = New System.Drawing.Size(46, 13)
+        Me.Label2A.TabIndex = 17
+        Me.Label2A.Text = "Label2A"
+        Me.Label2A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label3A
+        '
+        Me.Label3A.AutoSize = True
+        Me.Label3A.Location = New System.Drawing.Point(772, 116)
+        Me.Label3A.Name = "Label3A"
+        Me.Label3A.Size = New System.Drawing.Size(46, 13)
+        Me.Label3A.TabIndex = 35
+        Me.Label3A.Text = "Label3A"
+        Me.Label3A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4A
+        '
+        Me.Label4A.AutoSize = True
+        Me.Label4A.Location = New System.Drawing.Point(771, 155)
+        Me.Label4A.Name = "Label4A"
+        Me.Label4A.Size = New System.Drawing.Size(46, 13)
+        Me.Label4A.TabIndex = 36
+        Me.Label4A.Text = "Label4A"
+        Me.Label4A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label5A
+        '
+        Me.Label5A.AutoSize = True
+        Me.Label5A.Location = New System.Drawing.Point(771, 189)
+        Me.Label5A.Name = "Label5A"
+        Me.Label5A.Size = New System.Drawing.Size(46, 13)
+        Me.Label5A.TabIndex = 37
+        Me.Label5A.Text = "Label5A"
+        Me.Label5A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label6A
+        '
+        Me.Label6A.AutoSize = True
+        Me.Label6A.Location = New System.Drawing.Point(771, 225)
+        Me.Label6A.Name = "Label6A"
+        Me.Label6A.Size = New System.Drawing.Size(46, 13)
+        Me.Label6A.TabIndex = 38
+        Me.Label6A.Text = "Label6A"
+        Me.Label6A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label7A
+        '
+        Me.Label7A.AutoSize = True
+        Me.Label7A.Location = New System.Drawing.Point(771, 259)
+        Me.Label7A.Name = "Label7A"
+        Me.Label7A.Size = New System.Drawing.Size(46, 13)
+        Me.Label7A.TabIndex = 39
+        Me.Label7A.Text = "Label7A"
+        Me.Label7A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label8A
+        '
+        Me.Label8A.AutoSize = True
+        Me.Label8A.Location = New System.Drawing.Point(771, 297)
+        Me.Label8A.Name = "Label8A"
+        Me.Label8A.Size = New System.Drawing.Size(46, 13)
+        Me.Label8A.TabIndex = 40
+        Me.Label8A.Text = "Label8A"
+        Me.Label8A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label9A
+        '
+        Me.Label9A.AutoSize = True
+        Me.Label9A.Location = New System.Drawing.Point(771, 338)
+        Me.Label9A.Name = "Label9A"
+        Me.Label9A.Size = New System.Drawing.Size(46, 13)
+        Me.Label9A.TabIndex = 41
+        Me.Label9A.Text = "Label9A"
+        Me.Label9A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label10A
+        '
+        Me.Label10A.AutoSize = True
+        Me.Label10A.Location = New System.Drawing.Point(771, 378)
+        Me.Label10A.Name = "Label10A"
+        Me.Label10A.Size = New System.Drawing.Size(52, 13)
+        Me.Label10A.TabIndex = 42
+        Me.Label10A.Text = "Label10A"
+        Me.Label10A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label1B
+        '
+        Me.Label1B.AutoSize = True
+        Me.Label1B.Location = New System.Drawing.Point(859, 43)
+        Me.Label1B.Name = "Label1B"
+        Me.Label1B.Size = New System.Drawing.Size(46, 13)
+        Me.Label1B.TabIndex = 15
+        Me.Label1B.Text = "Label1B"
+        Me.Label1B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label2B
+        '
+        Me.Label2B.AutoSize = True
+        Me.Label2B.Location = New System.Drawing.Point(859, 79)
+        Me.Label2B.Name = "Label2B"
+        Me.Label2B.Size = New System.Drawing.Size(46, 13)
+        Me.Label2B.TabIndex = 17
+        Me.Label2B.Text = "Label2B"
+        Me.Label2B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label3B
+        '
+        Me.Label3B.AutoSize = True
+        Me.Label3B.Location = New System.Drawing.Point(860, 116)
+        Me.Label3B.Name = "Label3B"
+        Me.Label3B.Size = New System.Drawing.Size(46, 13)
+        Me.Label3B.TabIndex = 35
+        Me.Label3B.Text = "Label3B"
+        Me.Label3B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4B
+        '
+        Me.Label4B.AutoSize = True
+        Me.Label4B.Location = New System.Drawing.Point(859, 155)
+        Me.Label4B.Name = "Label4B"
+        Me.Label4B.Size = New System.Drawing.Size(46, 13)
+        Me.Label4B.TabIndex = 36
+        Me.Label4B.Text = "Label4B"
+        Me.Label4B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label5B
+        '
+        Me.Label5B.AutoSize = True
+        Me.Label5B.Location = New System.Drawing.Point(859, 189)
+        Me.Label5B.Name = "Label5B"
+        Me.Label5B.Size = New System.Drawing.Size(46, 13)
+        Me.Label5B.TabIndex = 37
+        Me.Label5B.Text = "Label5B"
+        Me.Label5B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label6B
+        '
+        Me.Label6B.AutoSize = True
+        Me.Label6B.Location = New System.Drawing.Point(859, 225)
+        Me.Label6B.Name = "Label6B"
+        Me.Label6B.Size = New System.Drawing.Size(46, 13)
+        Me.Label6B.TabIndex = 38
+        Me.Label6B.Text = "Label6B"
+        Me.Label6B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label7B
+        '
+        Me.Label7B.AutoSize = True
+        Me.Label7B.Location = New System.Drawing.Point(859, 259)
+        Me.Label7B.Name = "Label7B"
+        Me.Label7B.Size = New System.Drawing.Size(46, 13)
+        Me.Label7B.TabIndex = 39
+        Me.Label7B.Text = "Label7B"
+        Me.Label7B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label8B
+        '
+        Me.Label8B.AutoSize = True
+        Me.Label8B.Location = New System.Drawing.Point(859, 297)
+        Me.Label8B.Name = "Label8B"
+        Me.Label8B.Size = New System.Drawing.Size(46, 13)
+        Me.Label8B.TabIndex = 40
+        Me.Label8B.Text = "Label8B"
+        Me.Label8B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label9B
+        '
+        Me.Label9B.AutoSize = True
+        Me.Label9B.Location = New System.Drawing.Point(859, 338)
+        Me.Label9B.Name = "Label9B"
+        Me.Label9B.Size = New System.Drawing.Size(46, 13)
+        Me.Label9B.TabIndex = 41
+        Me.Label9B.Text = "Label9B"
+        Me.Label9B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label10B
+        '
+        Me.Label10B.AutoSize = True
+        Me.Label10B.Location = New System.Drawing.Point(859, 378)
+        Me.Label10B.Name = "Label10B"
+        Me.Label10B.Size = New System.Drawing.Size(52, 13)
+        Me.Label10B.TabIndex = 42
+        Me.Label10B.Text = "Label10B"
+        Me.Label10B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Formmcq1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(700, 450)
+        Me.ClientSize = New System.Drawing.Size(966, 450)
+        Me.Controls.Add(Me.Label10B)
+        Me.Controls.Add(Me.Label10A)
+        Me.Controls.Add(Me.Label9B)
+        Me.Controls.Add(Me.Label9A)
+        Me.Controls.Add(Me.Label8B)
+        Me.Controls.Add(Me.Label8A)
+        Me.Controls.Add(Me.Label7B)
+        Me.Controls.Add(Me.Label7A)
+        Me.Controls.Add(Me.Label6B)
+        Me.Controls.Add(Me.Label6A)
+        Me.Controls.Add(Me.Label5B)
+        Me.Controls.Add(Me.Label5A)
+        Me.Controls.Add(Me.Label4B)
+        Me.Controls.Add(Me.Label3B)
+        Me.Controls.Add(Me.Label4A)
+        Me.Controls.Add(Me.Label2B)
+        Me.Controls.Add(Me.Label3A)
+        Me.Controls.Add(Me.Label1B)
+        Me.Controls.Add(Me.Label2A)
+        Me.Controls.Add(Me.Label1A)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -237,4 +477,24 @@ Partial Class Formmcq1
     Friend WithEvents Label9 As Label
     Friend WithEvents Timer3 As Timer
     Friend WithEvents Label10 As Label
+    Friend WithEvents Label1A As Label
+    Friend WithEvents Label2A As Label
+    Friend WithEvents Label3A As Label
+    Friend WithEvents Label4A As Label
+    Friend WithEvents Label5A As Label
+    Friend WithEvents Label6A As Label
+    Friend WithEvents Label7A As Label
+    Friend WithEvents Label8A As Label
+    Friend WithEvents Label9A As Label
+    Friend WithEvents Label10A As Label
+    Friend WithEvents Label1B As Label
+    Friend WithEvents Label2B As Label
+    Friend WithEvents Label3B As Label
+    Friend WithEvents Label4B As Label
+    Friend WithEvents Label5B As Label
+    Friend WithEvents Label6B As Label
+    Friend WithEvents Label7B As Label
+    Friend WithEvents Label8B As Label
+    Friend WithEvents Label9B As Label
+    Friend WithEvents Label10B As Label
 End Class
