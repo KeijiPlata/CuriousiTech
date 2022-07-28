@@ -125,8 +125,8 @@ Public Class Formmcq1
             Button4.BackColor = SystemColors.Control
 
             raTimer = 2
-            timePenalty = 2
-            Label7.Text = 2
+            timePenalty = 3
+            Label7.Text = 3
             Label5.Text = points
         End If
         Return Nothing
@@ -253,7 +253,7 @@ Public Class Formmcq1
             Button2.Enabled = False
             Button3.Enabled = False
             Button4.Enabled = False
-            timePenalty = 2
+            timePenalty = 3
             Button4.BackColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
@@ -262,7 +262,7 @@ Public Class Formmcq1
         Label6.Text = timeLimit.ToString
         timeLimit -= 1
 
-        If timeLimit = 0 Then
+        If timeLimit = -2 Then
             Timer1.Stop()
             Formmcq2.Show()
             Me.Hide()

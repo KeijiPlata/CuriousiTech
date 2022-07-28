@@ -137,7 +137,7 @@ Partial Class Formmcq1
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(13, 13)
         Me.Label7.TabIndex = 11
-        Me.Label7.Text = "2"
+        Me.Label7.Text = "3"
         '
         'Timer2
         '

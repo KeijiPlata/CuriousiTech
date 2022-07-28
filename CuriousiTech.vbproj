@@ -236,6 +236,9 @@
     <EmbeddedResource Include="ClassForm.resx">
       <DependentUpon>ClassForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formmcq1.resx">
+      <DependentUpon>Formmcq1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formmcq2.resx">
       <DependentUpon>Formmcq2.vb</DependentUpon>
     </EmbeddedResource>
