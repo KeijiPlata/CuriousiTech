@@ -30,7 +30,9 @@ Public Class Formtf3
         Return Nothing
     End Function
 
+    Public Sub overallScore()
 
+    End Sub
     Public Sub showScore()
         Dim scores(10) As Integer
         Dim names(10) As String
@@ -102,7 +104,9 @@ Public Class Formtf3
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
         Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
         StudentForm.Show()
+        Me.Close()
     End Sub
 End Class

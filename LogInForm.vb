@@ -74,7 +74,7 @@ Public Class LogInForm
         Try
 
             Dim sql As String
-            Dim cmd As New OleDbCommand
+            Dim cmd As New OleDb.OleDbCommand
             Dim myreader As OleDbDataReader
 
             con.Open()
@@ -93,6 +93,8 @@ Public Class LogInForm
         Finally
             con.Close()
         End Try
+
+        Return Nothing
     End Function
 End Class
 
