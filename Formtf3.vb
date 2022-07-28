@@ -30,7 +30,9 @@ Public Class Formtf3
         Return Nothing
     End Function
 
+    Public Sub overallScore()
 
+    End Sub
     Public Sub showScore()
         Dim scores(10) As Integer
         Dim names(10) As String
@@ -80,16 +82,12 @@ Public Class Formtf3
         LabelJ2.Text = names(10).ToString
 
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ' Exit the game
-        Me.Close()
 
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ' open the form 1 and hide the main menu
         Formtf1.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -103,5 +101,12 @@ Public Class Formtf3
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
+        StudentForm.Show()
+        Me.Close()
     End Sub
 End Class

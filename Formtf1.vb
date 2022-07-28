@@ -12,6 +12,57 @@ Public Class Formtf1
     Dim timee As Integer
     Dim Username As String = LogInForm.getUserNamee.ToString
 
+
+    ' This will show the leaderboards
+    Public Sub showScore()
+        Dim scores(10) As Integer
+        Dim names(10) As String
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
+        Dim myreader As OleDbDataReader
+
+        con2.Open()
+        ' This will get the score from the database
+        sql = "Select * from leaderboardtruefalse Order By Score DESC"
+        cmd.Connection = con2
+        cmd.CommandText = sql
+
+        ' read
+        myreader = cmd.ExecuteReader
+
+        If myreader.HasRows Then
+            For i As Integer = 1 To 10 Step 1
+                myreader.Read()
+                scores(i) = myreader("Score")
+                names(i) = myreader("UserName")
+            Next
+        End If
+
+        con2.Close()
+
+        ' put the the data inside the label
+        LabelA1.Text = scores(1).ToString
+        LabelA2.Text = names(1).ToString
+        LabelB1.Text = scores(2).ToString
+        LabelB2.Text = names(2).ToString
+        LabelC1.Text = scores(3).ToString
+        LabelC2.Text = names(3).ToString
+        LabelD1.Text = scores(4).ToString
+        LabelD2.Text = names(4).ToString
+        LabelE1.Text = scores(5).ToString
+        LabelE2.Text = names(5).ToString
+        LabelF1.Text = scores(6).ToString
+        LabelF2.Text = names(6).ToString
+        LabelG1.Text = scores(7).ToString
+        LabelG2.Text = names(7).ToString
+        LabelH1.Text = scores(8).ToString
+        LabelH2.Text = names(8).ToString
+        LabelI1.Text = scores(9).ToString
+        LabelI2.Text = names(9).ToString
+        LabelJ1.Text = scores(10).ToString
+        LabelJ2.Text = names(10).ToString
+
+    End Sub
     Private Sub getTimer()
         Dim sql As String
         Dim cmd As New OleDb.OleDbCommand
@@ -121,8 +172,7 @@ Public Class Formtf1
         highscore = Convert.ToInt32(myreader("Score"))
         con2.Close()
 
-        ' get the highscore and pass it to form2
-        Formtf2.highscore2 = highscore
+
 
         If score > highscore Then
             ' if the score is greater than highscore, it will be replaced
@@ -147,9 +197,12 @@ Public Class Formtf1
     End Function
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' This will update the leaderboard
+        showScore()
         'get time from the database
         getTimer()
         timee += 1
+
         ' Start timer
         Timer1.Start()
 
@@ -171,36 +224,44 @@ Public Class Formtf1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If convtf = True Then
-            TFsyntax()
-            ChangeButton() ' change the button location randomly
             score = score + 1
             getTimer() ' reset time
             Label3.ForeColor = Color.Green
             Label3.Text = timee.ToString
             Label4.Text = score.ToString
+            Highest()
+            showScore() ' this will refresh the leaderboard
+            TFsyntax()
+            ChangeButton() ' change the button location randomly
         Else
             Highest()
             Formtf2.displayScore = score
             Formtf2.Show()
             score = 0 'reset
+            ' get the highscore and pass it to form2
+            Formtf2.highscore2 = highscore
             Me.Close()
         End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If convtf = False Then
-            TFsyntax()
-            ChangeButton() ' change the button location randomly
             score = score + 1
             getTimer() 'reset time
             Label3.ForeColor = Color.Green
             Label3.Text = timee.ToString
             Label4.Text = score.ToString
+            Highest()
+            showScore() ' this will refresh the leaderboard
+            TFsyntax()
+            ChangeButton() ' change the button location randomly
         Else
             Highest()
             Formtf2.displayScore = score
             Formtf2.Show()
             score = 0 'reset
+            ' get the highscore and pass it to form2
+            Formtf2.highscore2 = highscore
             Me.Close()
         End If
     End Sub
