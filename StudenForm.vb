@@ -15,7 +15,50 @@ Public Class StudenForm
     Dim UserID As Long
     Dim Section As String
     Dim timee As Integer = 3
+    Dim usernamee As String = LogInForm.getUserNamee.ToString
+    Dim openn As Boolean = False
+    Dim openn2 As Boolean = False
 
+    ' get the true or false highscore base on username
+    Private Sub getTrueFalseScore()
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
+        Dim myreader As OleDbDataReader
+
+        con2.Open()
+        ' This will get the score from the database
+        sql = "Select * from leaderboardtruefalse where UserName='" & usernamee & "'"
+        cmd.Connection = con2
+        cmd.CommandText = sql
+
+        myreader = cmd.ExecuteReader
+        myreader.Read()
+
+        Guna2HtmlLabel2.Text = myreader("Score")
+        con2.Close()
+
+
+    End Sub
+
+    Private Sub getQuizGameScore()
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
+        Dim myreader As OleDbDataReader
+
+        con2.Open()
+        ' This will get the score from the database
+        sql = "Select * from leaderboardquizgame where UserName='" & usernamee & "'"
+        cmd.Connection = con2
+        cmd.CommandText = sql
+
+        myreader = cmd.ExecuteReader
+        myreader.Read()
+
+        Guna2HtmlLabel5.Text = myreader("Score")
+        con2.Close()
+
+
+    End Sub
     Private Sub bothScores()
         Dim scores(10) As Integer
         Dim scores2(10) As Integer
@@ -122,6 +165,13 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' this will show the highscore for Quiz game 
+        getQuizGameScore()
+
+        ' this will show the highscore for true or false
+        getTrueFalseScore()
+
+
         ' this will show the overall scores of both games
         bothScores()
         showScore()
@@ -191,9 +241,13 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        ' this will open the true or false game
+        Timer1.Enabled = True
         bg1.Visible = True
         Label1.Visible = True
         Timer1.Start()
+        openn = True
+
 
 
     End Sub
@@ -214,7 +268,12 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
-        Formmcq1.Show()
+        ' show the quiz game and exit main menu
+        Timer1.Enabled = True
+        bg1.Visible = True
+        Label1.Visible = True
+        Timer1.Start()
+        openn2 = True
 
     End Sub
 
@@ -227,13 +286,21 @@ Public Class StudenForm
         Label1.Text = timee.ToString
 
         If timee = 0 Then
-            Timer1.Stop()
-            Label1.Text = "Start"
-            Dim TF = New Formtf3
-            TF.Show()
-            bg1.Visible = False
-            Label1.Visible = False
-            Me.Close()
+            Label1.Text = "Start!!"
         End If
+
+        If timee = -1 Then
+            If openn = True Then
+                Timer1.Stop()
+                Formtf1.Show()
+                Me.Close()
+            ElseIf openn2 = True Then
+                Timer1.Stop()
+                Formmcq1.Show()
+                Me.Close()
+            End If
+
+        End If
+
     End Sub
 End Class
