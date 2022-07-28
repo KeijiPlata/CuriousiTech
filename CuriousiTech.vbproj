@@ -189,6 +189,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuestionsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="quizgameEdit.Designer.vb">
+      <DependentUpon>quizgameEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SectionForm.Designer.vb">
       <DependentUpon>SectionForm.vb</DependentUpon>
     </Compile>
@@ -253,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quizgameEdit.resx">
+      <DependentUpon>quizgameEdit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SectionForm.resx">
       <DependentUpon>SectionForm.vb</DependentUpon>
