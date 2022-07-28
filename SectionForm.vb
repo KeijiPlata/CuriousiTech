@@ -20,7 +20,7 @@ Public Class SectionForm
         con.Open()
         Try
             'SELECT TABLE
-            sql = "SELECT Students FROM TbSection WHERE ClassSection='" & Section & "'"
+            sql = "SELECT ClassSection,LastName,FirstName,MiddleName FROM TbUser INNER JOIN TbSection ON TbUser.UserID = TbSection.StudentID WHERE ClassSection='" & Section & "'"
             cmd.Connection = con
             cmd.CommandText = sql
             da.SelectCommand = cmd
