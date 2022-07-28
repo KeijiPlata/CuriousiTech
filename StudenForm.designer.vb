@@ -616,9 +616,9 @@ Partial Class StudenForm
         '
         Me.bg1.BackColor = System.Drawing.Color.Transparent
         Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
-        Me.bg1.Location = New System.Drawing.Point(-1401, -24)
+        Me.bg1.Location = New System.Drawing.Point(-2615, -50)
         Me.bg1.Name = "bg1"
-        Me.bg1.Size = New System.Drawing.Size(2998, 922)
+        Me.bg1.Size = New System.Drawing.Size(4194, 922)
         Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.bg1.TabIndex = 54
         Me.bg1.TabStop = False
@@ -631,7 +631,7 @@ Partial Class StudenForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(777, 464)
+        Me.Label1.Location = New System.Drawing.Point(705, 419)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 73)
         Me.Label1.TabIndex = 55

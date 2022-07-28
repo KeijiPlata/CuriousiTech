@@ -150,7 +150,30 @@ Public Class Formtf1
         con.Close()
         Return Nothing
     End Function
+    Private Sub compare()
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
 
+        If score > highscore Then
+            ' if the score is greater than highscore, it will be replaced
+            highscore = score
+
+            ''get the new highscore and pass it to form2
+            'Formtf2.newhighscore = highscore
+
+            ' Open connection between database
+            con2.Open()
+
+            ' We only have one highscore so ID 1 only updates when there is a new highscore
+            sql = "Update leaderboardtruefalse set Score=" & highscore & " where UserName = '" & Username.ToString & "'"
+            cmd.Connection = con2
+            cmd.CommandText = sql
+            cmd.ExecuteNonQuery()
+
+            'close the connection
+            con2.Close()
+        End If
+    End Sub
     ' updates the score if there is a highscore
     Private Function Highest()
         Dim sql As String
@@ -172,31 +195,19 @@ Public Class Formtf1
         highscore = Convert.ToInt32(myreader("Score"))
         con2.Close()
 
+        '' get the highscore and pass it to form2
+        'Formtf2.highscore2 = highscore
 
+        'If score > highscore Then
+        '    Formtf2.newhighscore = highscore
+        'End If
 
-        If score > highscore Then
-            ' if the score is greater than highscore, it will be replaced
-            highscore = score
-
-            'get the new highscore and pass it to form2
-            Formtf2.newhighscore = highscore
-
-            ' Open connection between database
-            con2.Open()
-
-            ' We only have one highscore so ID 1 only updates when there is a new highscore
-            sql = "Update leaderboardtruefalse set Score=" & highscore & " where UserName = '" & Username.ToString & "'"
-            cmd.Connection = con2
-            cmd.CommandText = sql
-            cmd.ExecuteNonQuery()
-
-            'close the connection
-            con2.Close()
-        End If
         Return Nothing
     End Function
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'get the score from database
+        Highest()
         ' This will update the leaderboard
         showScore()
         'get time from the database
@@ -229,17 +240,16 @@ Public Class Formtf1
             Label3.ForeColor = Color.Green
             Label3.Text = timee.ToString
             Label4.Text = score.ToString
-            Highest()
+            compare()
             showScore() ' this will refresh the leaderboard
             TFsyntax()
             ChangeButton() ' change the button location randomly
         Else
-            Highest()
+
             Formtf2.displayScore = score
             Formtf2.Show()
             score = 0 'reset
-            ' get the highscore and pass it to form2
-            Formtf2.highscore2 = highscore
+
             Me.Close()
         End If
     End Sub
@@ -251,17 +261,16 @@ Public Class Formtf1
             Label3.ForeColor = Color.Green
             Label3.Text = timee.ToString
             Label4.Text = score.ToString
-            Highest()
+            compare()
             showScore() ' this will refresh the leaderboard
             TFsyntax()
             ChangeButton() ' change the button location randomly
         Else
-            Highest()
+
             Formtf2.displayScore = score
             Formtf2.Show()
             score = 0 'reset
-            ' get the highscore and pass it to form2
-            Formtf2.highscore2 = highscore
+
             Me.Close()
         End If
     End Sub

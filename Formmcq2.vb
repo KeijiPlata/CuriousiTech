@@ -66,8 +66,8 @@ Public Class Formmcq2
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Formmcq3.printer() ' REFRESHER ORB
-        'Formmcq3.Show()
+        Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
+        StudentForm.Show()
         Me.Close()
     End Sub
 End Class
