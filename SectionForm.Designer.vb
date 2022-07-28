@@ -33,14 +33,14 @@ Partial Class SectionForm
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(259, 426)
+        Me.DataGridView1.Size = New System.Drawing.Size(1002, 426)
         Me.DataGridView1.TabIndex = 0
         '
         'SectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(299, 450)
+        Me.ClientSize = New System.Drawing.Size(1026, 450)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "SectionForm"
         Me.Text = "SectionForm"
