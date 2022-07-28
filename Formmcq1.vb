@@ -265,7 +265,7 @@ Public Class Formmcq1
         If timeLimit = -2 Then
             Timer1.Stop()
             Formmcq2.Show()
-            Me.Hide()
+            Me.Close()
 
         End If
     End Sub
@@ -319,7 +319,6 @@ Public Class Formmcq1
 
         End If
     End Sub
-
 
 
 
