@@ -2,8 +2,9 @@
 Imports System.Data.OleDb
 
 Public Class Formmcq2
-    Dim con As New OleDb.OleDbConnection(My.Settings.mcqqConnectionString)
+    Dim con As New OleDb.OleDbConnection(My.Settings.leaderboardConnectionString)
     Public highScore As Integer
+    Dim Username As String = LogInForm.getUserNamee.ToString
 
     '   compare currentScore and highScore
     Private Sub compare()
@@ -13,7 +14,7 @@ Public Class Formmcq2
             highScore = Formmcq1.points
 
             con.Open()
-            sql = "Update LeaderBoards set Score =" & highScore & " where id = 1"
+            sql = "Update leaderboardquizgame set Score=" & highScore & " where UserName = '" & Username.ToString & "'"
             cmd.Connection = con
             cmd.CommandText = sql
             cmd.ExecuteNonQuery()
@@ -30,7 +31,7 @@ Public Class Formmcq2
 
         con.Open()
 
-        sql = "Select Score from LeaderBoards where id = 1"
+        sql = "Select * from leaderboardquizgame where UserName = '" & Username.ToString & "'"
         cmd.Connection = con
         cmd.CommandText = sql
 
@@ -47,6 +48,7 @@ Public Class Formmcq2
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Formmcq3.printer() ' REFRESHER ORB
         Formmcq3.Show()
         Me.Close()
     End Sub

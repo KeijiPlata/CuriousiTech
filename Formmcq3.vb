@@ -2,16 +2,17 @@
 Imports System.Data
 Imports System.Data.OleDb
 Public Class Formmcq3
-    Dim con As New OleDb.OleDbConnection(My.Settings.mcqqConnectionString)
+    Dim con As New OleDb.OleDbConnection(My.Settings.leaderboardConnectionString)
+    Dim Username As String = LogInForm.getUserNamee.ToString
 
-    Private Sub printer()
+    Public Sub printer()
         Dim sql As String
         Dim cmd As New OleDb.OleDbCommand
         Dim myreader As OleDbDataReader
 
         con.Open()
 
-        sql = "Select Score from LeaderBoards where id = 1"
+        sql = "Select * from leaderboardquizgame where UserName = '" & Username.ToString & "'"
         cmd.Connection = con
         cmd.CommandText = sql
 

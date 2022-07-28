@@ -3,6 +3,7 @@ Imports System.Data
 Imports System.Data.OleDb
 Public Class Formmcq1
     Dim con As New OleDb.OleDbConnection(My.Settings.mcqqConnectionString)
+    Dim con2 As New OleDb.OleDbConnection(My.Settings.leaderboardConnectionString)
     Dim userAnswer As String
     Dim count1 As Integer
     Dim cQuestion As Integer '  countQuestion asked
@@ -11,6 +12,57 @@ Public Class Formmcq1
     Dim timeLimit As Integer
     Dim timePenalty As Integer = 1 '    TIMEPENALTY
     Dim raTimer As Integer = 2   ' GREENLIGHT
+
+
+    Private Sub showLeaderboard()
+        Dim scores(10) As Integer
+        Dim names(10) As String
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
+        Dim myreader As OleDbDataReader
+
+        con2.Open()
+
+        sql = "Select TOP 10 * from leaderboardquizgame Order by Score DESC"
+        cmd.Connection = con2
+        cmd.CommandText = sql
+
+        ' read
+        myreader = cmd.ExecuteReader
+
+        If myreader.HasRows Then
+            For i As Integer = 1 To 10 Step 1
+                myreader.Read()
+                scores(i) = myreader("Score")
+                names(i) = myreader("UserName")
+            Next
+        End If
+
+        con2.Close()
+
+        ' put the the data inside the label
+        Label1A.Text = scores(1).ToString
+        Label1B.Text = names(1).ToString
+        Label2A.Text = scores(2).ToString
+        Label2B.Text = names(2).ToString
+        Label3A.Text = scores(3).ToString
+        Label3B.Text = names(3).ToString
+        Label4A.Text = scores(4).ToString
+        Label4B.Text = names(4).ToString
+        Label5A.Text = scores(5).ToString
+        Label5B.Text = names(5).ToString
+        Label6A.Text = scores(6).ToString
+        Label6B.Text = names(6).ToString
+        Label7A.Text = scores(7).ToString
+        Label7B.Text = names(7).ToString
+        Label8A.Text = scores(8).ToString
+        Label8B.Text = names(8).ToString
+        Label9A.Text = scores(9).ToString
+        Label9B.Text = names(9).ToString
+        Label10A.Text = scores(10).ToString
+        Label10B.Text = names(10).ToString
+
+    End Sub
 
     '   read time limit given by instructor
     Private Sub timer()
@@ -90,6 +142,7 @@ Public Class Formmcq1
 
         'timer
         timer()
+        showLeaderboard()
 
         '   open connnection database
         con.Open()
