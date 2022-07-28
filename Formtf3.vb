@@ -80,16 +80,12 @@ Public Class Formtf3
         LabelJ2.Text = names(10).ToString
 
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ' Exit the game
-        Me.Close()
 
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ' open the form 1 and hide the main menu
         Formtf1.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -102,6 +98,10 @@ Public Class Formtf3
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
     End Sub
 End Class

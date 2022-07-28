@@ -68,10 +68,14 @@ Partial Class StudenForm
         Me.top10score = New System.Windows.Forms.Label()
         Me.top9name = New System.Windows.Forms.Label()
         Me.top9score = New System.Windows.Forms.Label()
+        Me.bg1 = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bg1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -608,6 +612,31 @@ Partial Class StudenForm
         Me.top9score.TabIndex = 50
         Me.top9score.Text = "top9score"
         '
+        'bg1
+        '
+        Me.bg1.BackColor = System.Drawing.Color.Transparent
+        Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
+        Me.bg1.Location = New System.Drawing.Point(-1401, -24)
+        Me.bg1.Name = "bg1"
+        Me.bg1.Size = New System.Drawing.Size(2998, 922)
+        Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.bg1.TabIndex = 54
+        Me.bg1.TabStop = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(777, 464)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(68, 73)
+        Me.Label1.TabIndex = 55
+        Me.Label1.Text = "3"
+        '
         'StudenForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -615,6 +644,8 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.bg1)
         Me.Controls.Add(Me.top10name)
         Me.Controls.Add(Me.top10score)
         Me.Controls.Add(Me.top9name)
@@ -666,6 +697,7 @@ Partial Class StudenForm
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bg1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -714,4 +746,7 @@ Partial Class StudenForm
     Friend WithEvents top10score As Label
     Friend WithEvents top9name As Label
     Friend WithEvents top9score As Label
+    Friend WithEvents bg1 As PictureBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label1 As Label
 End Class

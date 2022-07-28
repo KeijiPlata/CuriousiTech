@@ -14,6 +14,7 @@ Public Class StudenForm
     Dim StudentID As String
     Dim UserID As Long
     Dim Section As String
+    Dim timee As Integer = 3
 
     Public Sub showScore()
         Dim scores(10) As Integer
@@ -79,6 +80,10 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        bg1.Visible = False
+        Label1.Visible = False
+        Timer1.Enabled = False
+
         Try
             'SETS LABLES
             Dim sql As String
@@ -139,8 +144,11 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
-        Dim TF = New Formtf3
-        TF.Show()
+        bg1.Visible = True
+        Label1.Visible = True
+        Timer1.Start()
+
+
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
@@ -164,5 +172,23 @@ Public Class StudenForm
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles top1score.Click
 
+    End Sub
+
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        timee = timee - 1
+        Label1.Text = timee.ToString
+
+        If timee = -1 Then
+            Timer1.Stop()
+            Label1.Text = "Start"
+            Dim TF = New Formtf3
+            TF.Show()
+            bg1.Visible = False
+            Label1.Visible = False
+            Me.Close()
+
+        End If
     End Sub
 End Class
