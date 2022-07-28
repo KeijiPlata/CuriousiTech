@@ -61,6 +61,12 @@ Partial Class Formmcq1
         Me.Label8B = New System.Windows.Forms.Label()
         Me.Label9B = New System.Windows.Forms.Label()
         Me.Label10B = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.LeaderboardDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LeaderboardDataSet = New CuriousiTech.leaderboardDataSet()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LeaderboardDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LeaderboardDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -412,11 +418,30 @@ Partial Class Formmcq1
         Me.Label10B.Text = "Label10B"
         Me.Label10B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(148, 441)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(646, 174)
+        Me.DataGridView1.TabIndex = 43
+        '
+        'LeaderboardDataSetBindingSource
+        '
+        Me.LeaderboardDataSetBindingSource.DataSource = Me.LeaderboardDataSet
+        Me.LeaderboardDataSetBindingSource.Position = 0
+        '
+        'LeaderboardDataSet
+        '
+        Me.LeaderboardDataSet.DataSetName = "leaderboardDataSet"
+        Me.LeaderboardDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Formmcq1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(966, 450)
+        Me.ClientSize = New System.Drawing.Size(966, 636)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label10B)
         Me.Controls.Add(Me.Label10A)
         Me.Controls.Add(Me.Label9B)
@@ -454,6 +479,9 @@ Partial Class Formmcq1
         Me.Controls.Add(Me.Button1)
         Me.Name = "Formmcq1"
         Me.Text = "Form1"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LeaderboardDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LeaderboardDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -497,4 +525,7 @@ Partial Class Formmcq1
     Friend WithEvents Label8B As Label
     Friend WithEvents Label9B As Label
     Friend WithEvents Label10B As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents LeaderboardDataSetBindingSource As BindingSource
+    Friend WithEvents LeaderboardDataSet As leaderboardDataSet
 End Class

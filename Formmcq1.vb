@@ -13,6 +13,23 @@ Public Class Formmcq1
     Dim timePenalty As Integer = 1 '    TIMEPENALTY
     Dim raTimer As Integer = 2   ' GREENLIGHT
 
+    ''temporary
+    Private Sub bind_data()
+        Dim sql As String
+        Dim cmd As New OleDb.OleDbCommand
+        Dim tablee As New DataTable
+        Dim da As New OleDb.OleDbDataAdapter
+
+        sql = "Select * from leaderboardquizgame"
+        cmd.Connection = con2
+        cmd.CommandText = sql
+
+        da.SelectCommand = cmd
+        tablee.Clear()
+        da.Fill(tablee)
+        DataGridView1.DataSource = tablee
+
+    End Sub
 
     Private Sub showLeaderboard()
         Dim scores(10) As Integer
@@ -139,6 +156,7 @@ Public Class Formmcq1
         Dim sql As String
         Dim cmd As New OleDb.OleDbCommand
         cQuestion = 1
+        bind_data()
 
         'timer
         timer()
@@ -170,6 +188,10 @@ Public Class Formmcq1
             points += 1
             cQuestion += 1 ' binibilang yung natatanong
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+            bind_data()
 
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
@@ -191,6 +213,11 @@ Public Class Formmcq1
             cQuestion += 1 ' binibilang yung natatanong
             points += 1
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+            bind_data()
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
@@ -211,6 +238,11 @@ Public Class Formmcq1
             cQuestion += 1 ' binibilang yung natatanong
             points += 1
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+            bind_data()
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
@@ -231,6 +263,11 @@ Public Class Formmcq1
             cQuestion += 1 ' binibilang yung natatanong
             points += 1
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+            bind_data()
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
@@ -310,4 +347,8 @@ Public Class Formmcq1
 
         End If
     End Sub
+
+
+
+
 End Class
