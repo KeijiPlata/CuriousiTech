@@ -213,18 +213,8 @@ Public Class StudenForm
         sectionForm.Show()
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        timee = timee - 1
-        Label1.Text = timee.ToString
-
-        If timee = 0 Then
-            Timer1.Stop()
-            Label1.Text = "Start"
-            Dim TF = New Formtf3
-            TF.Show()
-            bg1.Visible = False
-            Label1.Visible = False
-            Me.Close()
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        Formmcq3.Show()
 
         End If
     End Sub

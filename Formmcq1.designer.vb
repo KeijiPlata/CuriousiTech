@@ -28,11 +28,7 @@ Partial Class Formmcq1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -40,7 +36,6 @@ Partial Class Formmcq1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1A = New System.Windows.Forms.Label()
         Me.Label2A = New System.Windows.Forms.Label()
         Me.Label3A = New System.Windows.Forms.Label()
@@ -61,11 +56,15 @@ Partial Class Formmcq1
         Me.Label8B = New System.Windows.Forms.Label()
         Me.Label9B = New System.Windows.Forms.Label()
         Me.Label10B = New System.Windows.Forms.Label()
+        Me.LeaderboardDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LeaderboardDataSet = New CuriousiTech.leaderboardDataSet()
+        CType(Me.LeaderboardDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LeaderboardDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(119, 234)
+        Me.Button1.Location = New System.Drawing.Point(13, 219)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(155, 62)
         Me.Button1.TabIndex = 0
@@ -74,7 +73,7 @@ Partial Class Formmcq1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(293, 234)
+        Me.Button2.Location = New System.Drawing.Point(187, 219)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(155, 62)
         Me.Button2.TabIndex = 1
@@ -83,7 +82,7 @@ Partial Class Formmcq1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(119, 313)
+        Me.Button3.Location = New System.Drawing.Point(13, 298)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(155, 62)
         Me.Button3.TabIndex = 2
@@ -92,7 +91,7 @@ Partial Class Formmcq1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(293, 313)
+        Me.Button4.Location = New System.Drawing.Point(187, 298)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(155, 62)
         Me.Button4.TabIndex = 3
@@ -102,56 +101,20 @@ Partial Class Formmcq1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(152, 132)
+        Me.Label1.Location = New System.Drawing.Point(46, 117)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "tanong"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 79)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(554, 307)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Label3"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(154, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Label4"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(349, 9)
+        Me.Label5.Location = New System.Drawing.Point(237, 33)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Label5"
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(595, 391)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 9
-        Me.Button5.Text = "Skip"
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -161,7 +124,7 @@ Partial Class Formmcq1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(554, 234)
+        Me.Label6.Location = New System.Drawing.Point(409, 218)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 10
@@ -170,7 +133,7 @@ Partial Class Formmcq1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(584, 79)
+        Me.Label7.Location = New System.Drawing.Point(423, 66)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(13, 13)
         Me.Label7.TabIndex = 11
@@ -184,7 +147,7 @@ Partial Class Formmcq1
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(554, 43)
+        Me.Label8.Location = New System.Drawing.Point(393, 30)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(116, 16)
         Me.Label8.TabIndex = 12
@@ -194,7 +157,7 @@ Partial Class Formmcq1
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(538, 201)
+        Me.Label9.Location = New System.Drawing.Point(393, 185)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(85, 16)
         Me.Label9.TabIndex = 13
@@ -203,19 +166,10 @@ Partial Class Formmcq1
         'Timer3
         '
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(31, 400)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
-        Me.Label10.TabIndex = 14
-        Me.Label10.Text = "Label10"
-        '
         'Label1A
         '
         Me.Label1A.AutoSize = True
-        Me.Label1A.Location = New System.Drawing.Point(771, 43)
+        Me.Label1A.Location = New System.Drawing.Point(551, 14)
         Me.Label1A.Name = "Label1A"
         Me.Label1A.Size = New System.Drawing.Size(46, 13)
         Me.Label1A.TabIndex = 15
@@ -225,7 +179,7 @@ Partial Class Formmcq1
         'Label2A
         '
         Me.Label2A.AutoSize = True
-        Me.Label2A.Location = New System.Drawing.Point(771, 79)
+        Me.Label2A.Location = New System.Drawing.Point(551, 50)
         Me.Label2A.Name = "Label2A"
         Me.Label2A.Size = New System.Drawing.Size(46, 13)
         Me.Label2A.TabIndex = 17
@@ -235,7 +189,7 @@ Partial Class Formmcq1
         'Label3A
         '
         Me.Label3A.AutoSize = True
-        Me.Label3A.Location = New System.Drawing.Point(772, 116)
+        Me.Label3A.Location = New System.Drawing.Point(552, 87)
         Me.Label3A.Name = "Label3A"
         Me.Label3A.Size = New System.Drawing.Size(46, 13)
         Me.Label3A.TabIndex = 35
@@ -245,7 +199,7 @@ Partial Class Formmcq1
         'Label4A
         '
         Me.Label4A.AutoSize = True
-        Me.Label4A.Location = New System.Drawing.Point(771, 155)
+        Me.Label4A.Location = New System.Drawing.Point(551, 126)
         Me.Label4A.Name = "Label4A"
         Me.Label4A.Size = New System.Drawing.Size(46, 13)
         Me.Label4A.TabIndex = 36
@@ -255,7 +209,7 @@ Partial Class Formmcq1
         'Label5A
         '
         Me.Label5A.AutoSize = True
-        Me.Label5A.Location = New System.Drawing.Point(771, 189)
+        Me.Label5A.Location = New System.Drawing.Point(551, 160)
         Me.Label5A.Name = "Label5A"
         Me.Label5A.Size = New System.Drawing.Size(46, 13)
         Me.Label5A.TabIndex = 37
@@ -265,7 +219,7 @@ Partial Class Formmcq1
         'Label6A
         '
         Me.Label6A.AutoSize = True
-        Me.Label6A.Location = New System.Drawing.Point(771, 225)
+        Me.Label6A.Location = New System.Drawing.Point(551, 196)
         Me.Label6A.Name = "Label6A"
         Me.Label6A.Size = New System.Drawing.Size(46, 13)
         Me.Label6A.TabIndex = 38
@@ -275,7 +229,7 @@ Partial Class Formmcq1
         'Label7A
         '
         Me.Label7A.AutoSize = True
-        Me.Label7A.Location = New System.Drawing.Point(771, 259)
+        Me.Label7A.Location = New System.Drawing.Point(551, 230)
         Me.Label7A.Name = "Label7A"
         Me.Label7A.Size = New System.Drawing.Size(46, 13)
         Me.Label7A.TabIndex = 39
@@ -285,7 +239,7 @@ Partial Class Formmcq1
         'Label8A
         '
         Me.Label8A.AutoSize = True
-        Me.Label8A.Location = New System.Drawing.Point(771, 297)
+        Me.Label8A.Location = New System.Drawing.Point(551, 268)
         Me.Label8A.Name = "Label8A"
         Me.Label8A.Size = New System.Drawing.Size(46, 13)
         Me.Label8A.TabIndex = 40
@@ -295,7 +249,7 @@ Partial Class Formmcq1
         'Label9A
         '
         Me.Label9A.AutoSize = True
-        Me.Label9A.Location = New System.Drawing.Point(771, 338)
+        Me.Label9A.Location = New System.Drawing.Point(551, 309)
         Me.Label9A.Name = "Label9A"
         Me.Label9A.Size = New System.Drawing.Size(46, 13)
         Me.Label9A.TabIndex = 41
@@ -305,7 +259,7 @@ Partial Class Formmcq1
         'Label10A
         '
         Me.Label10A.AutoSize = True
-        Me.Label10A.Location = New System.Drawing.Point(771, 378)
+        Me.Label10A.Location = New System.Drawing.Point(551, 349)
         Me.Label10A.Name = "Label10A"
         Me.Label10A.Size = New System.Drawing.Size(52, 13)
         Me.Label10A.TabIndex = 42
@@ -315,7 +269,7 @@ Partial Class Formmcq1
         'Label1B
         '
         Me.Label1B.AutoSize = True
-        Me.Label1B.Location = New System.Drawing.Point(859, 43)
+        Me.Label1B.Location = New System.Drawing.Point(639, 14)
         Me.Label1B.Name = "Label1B"
         Me.Label1B.Size = New System.Drawing.Size(46, 13)
         Me.Label1B.TabIndex = 15
@@ -325,7 +279,7 @@ Partial Class Formmcq1
         'Label2B
         '
         Me.Label2B.AutoSize = True
-        Me.Label2B.Location = New System.Drawing.Point(859, 79)
+        Me.Label2B.Location = New System.Drawing.Point(639, 50)
         Me.Label2B.Name = "Label2B"
         Me.Label2B.Size = New System.Drawing.Size(46, 13)
         Me.Label2B.TabIndex = 17
@@ -335,7 +289,7 @@ Partial Class Formmcq1
         'Label3B
         '
         Me.Label3B.AutoSize = True
-        Me.Label3B.Location = New System.Drawing.Point(860, 116)
+        Me.Label3B.Location = New System.Drawing.Point(640, 87)
         Me.Label3B.Name = "Label3B"
         Me.Label3B.Size = New System.Drawing.Size(46, 13)
         Me.Label3B.TabIndex = 35
@@ -345,7 +299,7 @@ Partial Class Formmcq1
         'Label4B
         '
         Me.Label4B.AutoSize = True
-        Me.Label4B.Location = New System.Drawing.Point(859, 155)
+        Me.Label4B.Location = New System.Drawing.Point(639, 126)
         Me.Label4B.Name = "Label4B"
         Me.Label4B.Size = New System.Drawing.Size(46, 13)
         Me.Label4B.TabIndex = 36
@@ -355,7 +309,7 @@ Partial Class Formmcq1
         'Label5B
         '
         Me.Label5B.AutoSize = True
-        Me.Label5B.Location = New System.Drawing.Point(859, 189)
+        Me.Label5B.Location = New System.Drawing.Point(639, 160)
         Me.Label5B.Name = "Label5B"
         Me.Label5B.Size = New System.Drawing.Size(46, 13)
         Me.Label5B.TabIndex = 37
@@ -365,7 +319,7 @@ Partial Class Formmcq1
         'Label6B
         '
         Me.Label6B.AutoSize = True
-        Me.Label6B.Location = New System.Drawing.Point(859, 225)
+        Me.Label6B.Location = New System.Drawing.Point(639, 196)
         Me.Label6B.Name = "Label6B"
         Me.Label6B.Size = New System.Drawing.Size(46, 13)
         Me.Label6B.TabIndex = 38
@@ -375,7 +329,7 @@ Partial Class Formmcq1
         'Label7B
         '
         Me.Label7B.AutoSize = True
-        Me.Label7B.Location = New System.Drawing.Point(859, 259)
+        Me.Label7B.Location = New System.Drawing.Point(639, 230)
         Me.Label7B.Name = "Label7B"
         Me.Label7B.Size = New System.Drawing.Size(46, 13)
         Me.Label7B.TabIndex = 39
@@ -385,7 +339,7 @@ Partial Class Formmcq1
         'Label8B
         '
         Me.Label8B.AutoSize = True
-        Me.Label8B.Location = New System.Drawing.Point(859, 297)
+        Me.Label8B.Location = New System.Drawing.Point(639, 268)
         Me.Label8B.Name = "Label8B"
         Me.Label8B.Size = New System.Drawing.Size(46, 13)
         Me.Label8B.TabIndex = 40
@@ -395,7 +349,7 @@ Partial Class Formmcq1
         'Label9B
         '
         Me.Label9B.AutoSize = True
-        Me.Label9B.Location = New System.Drawing.Point(859, 338)
+        Me.Label9B.Location = New System.Drawing.Point(639, 309)
         Me.Label9B.Name = "Label9B"
         Me.Label9B.Size = New System.Drawing.Size(46, 13)
         Me.Label9B.TabIndex = 41
@@ -405,18 +359,28 @@ Partial Class Formmcq1
         'Label10B
         '
         Me.Label10B.AutoSize = True
-        Me.Label10B.Location = New System.Drawing.Point(859, 378)
+        Me.Label10B.Location = New System.Drawing.Point(639, 349)
         Me.Label10B.Name = "Label10B"
         Me.Label10B.Size = New System.Drawing.Size(52, 13)
         Me.Label10B.TabIndex = 42
         Me.Label10B.Text = "Label10B"
         Me.Label10B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'LeaderboardDataSetBindingSource
+        '
+        Me.LeaderboardDataSetBindingSource.DataSource = Me.LeaderboardDataSet
+        Me.LeaderboardDataSetBindingSource.Position = 0
+        '
+        'LeaderboardDataSet
+        '
+        Me.LeaderboardDataSet.DataSetName = "leaderboardDataSet"
+        Me.LeaderboardDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Formmcq1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(966, 450)
+        Me.ClientSize = New System.Drawing.Size(719, 413)
         Me.Controls.Add(Me.Label10B)
         Me.Controls.Add(Me.Label10A)
         Me.Controls.Add(Me.Label9B)
@@ -437,16 +401,11 @@ Partial Class Formmcq1
         Me.Controls.Add(Me.Label1B)
         Me.Controls.Add(Me.Label2A)
         Me.Controls.Add(Me.Label1A)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -454,6 +413,8 @@ Partial Class Formmcq1
         Me.Controls.Add(Me.Button1)
         Me.Name = "Formmcq1"
         Me.Text = "Form1"
+        CType(Me.LeaderboardDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LeaderboardDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -464,11 +425,7 @@ Partial Class Formmcq1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button5 As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -476,7 +433,6 @@ Partial Class Formmcq1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Timer3 As Timer
-    Friend WithEvents Label10 As Label
     Friend WithEvents Label1A As Label
     Friend WithEvents Label2A As Label
     Friend WithEvents Label3A As Label
@@ -497,4 +453,6 @@ Partial Class Formmcq1
     Friend WithEvents Label8B As Label
     Friend WithEvents Label9B As Label
     Friend WithEvents Label10B As Label
+    Friend WithEvents LeaderboardDataSetBindingSource As BindingSource
+    Friend WithEvents LeaderboardDataSet As leaderboardDataSet
 End Class

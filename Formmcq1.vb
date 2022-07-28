@@ -14,6 +14,7 @@ Public Class Formmcq1
     Dim raTimer As Integer = 2   ' GREENLIGHT
 
 
+
     Private Sub showLeaderboard()
         Dim scores(10) As Integer
         Dim names(10) As String
@@ -115,11 +116,6 @@ Public Class Formmcq1
             '   value of the fcking answer
             rightAnswer = myreader("Answer")
 
-            '   TEMPORARY
-            Label2.Text = cQuestion
-            Label4.Text = myreader("Answer") '   cheat
-            Label5.Text = points '   score
-
             con.Close()
 
             '   IBALIK SA NORMAL COLOR NG BUTTON
@@ -131,7 +127,7 @@ Public Class Formmcq1
             raTimer = 2
             timePenalty = 2
             Label7.Text = 2
-
+            Label5.Text = points
         End If
         Return Nothing
     End Function
@@ -159,7 +155,7 @@ Public Class Formmcq1
 
         Label6.Text = timeLimit
         Label7.Text = timePenalty
-        Label3.Text = count1
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -170,6 +166,10 @@ Public Class Formmcq1
             points += 1
             cQuestion += 1 ' binibilang yung natatanong
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+
 
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
@@ -191,6 +191,10 @@ Public Class Formmcq1
             cQuestion += 1 ' binibilang yung natatanong
             points += 1
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
@@ -211,6 +215,11 @@ Public Class Formmcq1
             cQuestion += 1 ' binibilang yung natatanong
             points += 1
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
@@ -231,6 +240,11 @@ Public Class Formmcq1
             cQuestion += 1 ' binibilang yung natatanong
             points += 1
             printer()
+            '   wait
+            Formmcq2.compare()
+            showLeaderboard()
+
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
@@ -242,11 +256,6 @@ Public Class Formmcq1
             timePenalty = 2
             Button4.BackColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
         End If
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Formmcq2.Show()
-        Me.Close()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -288,7 +297,7 @@ Public Class Formmcq1
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        Label10.Text = raTimer.ToString
+
         If userAnswer = "A" Then
             Button1.BackColor = Color.Green '   greenlight
         ElseIf userAnswer = "B" Then
@@ -310,4 +319,8 @@ Public Class Formmcq1
 
         End If
     End Sub
+
+
+
+
 End Class
