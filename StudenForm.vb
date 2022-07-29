@@ -165,6 +165,10 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'transparent
+        Me.PictureBox1.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.PictureBox1.Location))
+        Me.PictureBox1.Parent = Me.bg1
+
         PictureBox1.Visible = False
         Guna2PictureBox5.Visible = False
 
