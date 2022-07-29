@@ -156,6 +156,7 @@ Public Class Formmcq1
         Label6.Text = timeLimit
         Label7.Text = timePenalty
 
+        My.Computer.Audio.Play(My.Resources.Pixelland, AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -264,6 +265,7 @@ Public Class Formmcq1
 
         If timeLimit = -2 Then
             Timer1.Stop()
+            My.Computer.Audio.Stop()
             Formmcq2.Show()
             Me.Close()
 

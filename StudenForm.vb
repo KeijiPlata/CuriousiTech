@@ -207,24 +207,8 @@ Public Class StudenForm
         Finally
             con.Close()
         End Try
-    End Sub
 
-    Private Sub btnProfile_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-
-    Private Sub btnTorF_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub lblFullName_Click(sender As Object, e As EventArgs) Handles lblFullName.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
+        My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
@@ -251,13 +235,12 @@ Public Class StudenForm
         Timer1.Start()
         openn = True
 
-
+        My.Computer.Audio.Stop()
 
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
         Oppsie.Show()
-
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
@@ -282,6 +265,8 @@ Public Class StudenForm
         Label1.Visible = True
         Timer1.Start()
         openn2 = True
+
+        My.Computer.Audio.Stop()
 
     End Sub
 

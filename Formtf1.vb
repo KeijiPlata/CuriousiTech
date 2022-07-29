@@ -233,6 +233,8 @@ Public Class Formtf1
         count1 = Convert.ToInt32(cmd.ExecuteScalar)
         con.Close()
 
+
+        My.Computer.Audio.Play(My.Resources.Pixelland, AudioPlayMode.BackgroundLoop)
     End Sub
 
 
@@ -248,9 +250,11 @@ Public Class Formtf1
 
             '' get the score and pass it to next form
             'Highest()
+            My.Computer.Audio.Stop()
             Formtf2.displayScore = score
             Formtf2.Show()
             'score = 0 'reset
+
             Me.Close()
         End If
 
@@ -259,6 +263,7 @@ Public Class Formtf1
             Label3.ForeColor = Color.Green
         Else
             Label3.ForeColor = Color.Red
+
         End If
     End Sub
 
@@ -274,6 +279,7 @@ Public Class Formtf1
             TFsyntax()
             ChangeButton() ' change the button location randomly
         Else
+            My.Computer.Audio.Stop()
 
             Formtf2.displayScore = score
             Formtf2.Show()
@@ -295,7 +301,7 @@ Public Class Formtf1
             TFsyntax()
             ChangeButton() ' change the button location randomly
         Else
-
+            My.Computer.Audio.Stop()
             Formtf2.displayScore = score
             Formtf2.Show()
             'score = 0 'reset

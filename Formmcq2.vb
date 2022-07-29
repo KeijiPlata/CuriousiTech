@@ -63,6 +63,8 @@ Public Class Formmcq2
         Label2.Text = Formmcq1.points
 
         Label4.Text = highScore
+
+        My.Computer.Audio.Play(My.Resources.Game_Over___Sound_Effect__HD_, AudioPlayMode.WaitToComplete)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
