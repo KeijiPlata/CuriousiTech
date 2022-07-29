@@ -170,6 +170,15 @@ Public Class StudenForm
         Me.PictureBox1.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.PictureBox1.Location))
         Me.PictureBox1.Parent = Me.bg1
 
+        Label2.Visible = False
+
+        Me.Label2.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.Label2.Location))
+        Me.Label2.Parent = Me.bg1
+
+
+        Me.Label1.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.Label1.Location))
+        Me.Label1.Parent = Me.bg1
+
         PictureBox1.Visible = False
         Guna2PictureBox5.Visible = False
 
@@ -346,5 +355,9 @@ Public Class StudenForm
             My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
             MusicIsPlaying = True
         End If
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
     End Sub
 End Class

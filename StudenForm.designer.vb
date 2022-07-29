@@ -74,6 +74,7 @@ Partial Class StudenForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -636,6 +637,7 @@ Partial Class StudenForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Window
         Me.Label1.Location = New System.Drawing.Point(705, 419)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 73)
@@ -677,6 +679,18 @@ Partial Class StudenForm
         Me.Button1.Text = "Mute"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label2.Location = New System.Drawing.Point(594, 419)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(296, 73)
+        Me.Label2.TabIndex = 59
+        Me.Label2.Text = "START!!!"
+        '
         'StudenForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -684,6 +698,7 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Guna2PictureBox5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
@@ -797,4 +812,5 @@ Partial Class StudenForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
 End Class

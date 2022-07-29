@@ -126,7 +126,7 @@ Public Class Formmcq1
 
             raTimer = 2
             timePenalty = 3
-            Label7.Text = 3
+            Label8.Text = 3
             Label5.Text = points
         End If
         Return Nothing
@@ -154,7 +154,7 @@ Public Class Formmcq1
         printer()
 
         Label6.Text = timeLimit
-        Label7.Text = timePenalty
+        Label8.Text = timePenalty
 
         My.Computer.Audio.Play(My.Resources.Pixelland, AudioPlayMode.BackgroundLoop)
     End Sub
@@ -273,7 +273,7 @@ Public Class Formmcq1
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        Label7.Text = timePenalty.ToString
+        Label8.Text = timePenalty.ToString
         timePenalty -= 1
         ' PENALTY TIME
 
