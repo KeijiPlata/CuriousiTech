@@ -318,4 +318,8 @@ Public Class StudenForm
         PictureBox1.Visible = True
         Guna2PictureBox5.Visible = True
     End Sub
+
+    Private Sub bg1_Click(sender As Object, e As EventArgs) Handles bg1.Click
+
+    End Sub
 End Class

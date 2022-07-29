@@ -81,9 +81,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property Pixelland() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property pixelland() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("Pixelland", resourceCulture)
+                Return ResourceManager.GetStream("pixelland", resourceCulture)
             End Get
         End Property
         

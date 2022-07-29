@@ -234,7 +234,7 @@ Public Class Formtf1
         con.Close()
 
 
-        My.Computer.Audio.Play(My.Resources.Pixelland, AudioPlayMode.BackgroundLoop)
+        My.Computer.Audio.Play(My.Resources.pixelland, AudioPlayMode.BackgroundLoop)
     End Sub
 
 
