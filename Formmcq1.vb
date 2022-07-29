@@ -12,6 +12,7 @@ Public Class Formmcq1
     Dim timeLimit As Integer
     Dim timePenalty As Integer = 1 '    TIMEPENALTY
     Dim raTimer As Integer = 2   ' GREENLIGHT
+    Dim MusicIsPlaying As Boolean
 
 
 
@@ -322,6 +323,15 @@ Public Class Formmcq1
         End If
     End Sub
 
-
-
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If MusicIsPlaying Then
+            Button5.Text = "Unmute"
+            My.Computer.Audio.Stop()
+            MusicIsPlaying = False
+        Else
+            Button5.Text = "Mute"
+            My.Computer.Audio.Play(My.Resources.pixelland, AudioPlayMode.BackgroundLoop)
+            MusicIsPlaying = True
+        End If
+    End Sub
 End Class

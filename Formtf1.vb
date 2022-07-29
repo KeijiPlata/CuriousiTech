@@ -11,6 +11,7 @@ Public Class Formtf1
     Dim count1 As Integer
     Dim timee As Integer
     Dim Username As String = LogInForm.getUserNamee.ToString
+    Dim MusicIsPlaying As Boolean
 
 
     ' This will show the leaderboards
@@ -307,6 +308,18 @@ Public Class Formtf1
             'score = 0 'reset
 
             Me.Close()
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If MusicIsPlaying Then
+            Button1.Text = "Unmute"
+            My.Computer.Audio.Stop()
+            MusicIsPlaying = False
+        Else
+            Button1.Text = "Mute"
+            My.Computer.Audio.Play(My.Resources.pixelland, AudioPlayMode.BackgroundLoop)
+            MusicIsPlaying = True
         End If
     End Sub
 End Class
