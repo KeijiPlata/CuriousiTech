@@ -87,4 +87,8 @@ Public Class Formtf2
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+        Me.Close()
+    End Sub
 End Class

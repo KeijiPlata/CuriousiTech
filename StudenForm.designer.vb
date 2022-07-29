@@ -24,7 +24,6 @@ Partial Class StudenForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StudenForm))
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.lblFullName = New System.Windows.Forms.Label()
         Me.lblSection = New System.Windows.Forms.Label()
@@ -53,17 +52,14 @@ Partial Class StudenForm
         Me.top4score = New System.Windows.Forms.Label()
         Me.top3name = New System.Windows.Forms.Label()
         Me.top3score = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.top8name = New System.Windows.Forms.Label()
         Me.top8score = New System.Windows.Forms.Label()
         Me.top7name = New System.Windows.Forms.Label()
         Me.top7score = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.top6name = New System.Windows.Forms.Label()
         Me.top6score = New System.Windows.Forms.Label()
         Me.top5name = New System.Windows.Forms.Label()
         Me.top5score = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
         Me.top10name = New System.Windows.Forms.Label()
         Me.top10score = New System.Windows.Forms.Label()
         Me.top9name = New System.Windows.Forms.Label()
@@ -71,20 +67,13 @@ Partial Class StudenForm
         Me.bg1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bg1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(1197, 399)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(0, 13)
-        Me.Label3.TabIndex = 0
         '
         'Guna2Elipse1
         '
@@ -94,11 +83,11 @@ Partial Class StudenForm
         '
         Me.lblFullName.AutoSize = True
         Me.lblFullName.BackColor = System.Drawing.Color.Transparent
-        Me.lblFullName.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFullName.Font = New System.Drawing.Font("Rubik", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFullName.ForeColor = System.Drawing.Color.Transparent
         Me.lblFullName.Location = New System.Drawing.Point(120, 207)
         Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(167, 37)
+        Me.lblFullName.Size = New System.Drawing.Size(171, 40)
         Me.lblFullName.TabIndex = 0
         Me.lblFullName.Text = "Full name"
         '
@@ -106,11 +95,11 @@ Partial Class StudenForm
         '
         Me.lblSection.AutoSize = True
         Me.lblSection.BackColor = System.Drawing.Color.Transparent
-        Me.lblSection.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSection.Font = New System.Drawing.Font("Rubik Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSection.ForeColor = System.Drawing.Color.Transparent
         Me.lblSection.Location = New System.Drawing.Point(160, 247)
         Me.lblSection.Name = "lblSection"
-        Me.lblSection.Size = New System.Drawing.Size(84, 25)
+        Me.lblSection.Size = New System.Drawing.Size(97, 26)
         Me.lblSection.TabIndex = 1
         Me.lblSection.Text = "Section"
         '
@@ -411,212 +400,248 @@ Partial Class StudenForm
         'top1score
         '
         Me.top1score.AutoSize = True
-        Me.top1score.Location = New System.Drawing.Point(1234, 207)
+        Me.top1score.BackColor = System.Drawing.Color.Transparent
+        Me.top1score.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top1score.ForeColor = System.Drawing.Color.White
+        Me.top1score.Location = New System.Drawing.Point(1257, 201)
         Me.top1score.Name = "top1score"
-        Me.top1score.Size = New System.Drawing.Size(54, 13)
+        Me.top1score.Size = New System.Drawing.Size(72, 37)
         Me.top1score.TabIndex = 31
-        Me.top1score.Text = "top1score"
+        Me.top1score.Text = "100"
         '
         'top1name
         '
         Me.top1name.AutoSize = True
-        Me.top1name.Location = New System.Drawing.Point(1296, 208)
+        Me.top1name.BackColor = System.Drawing.Color.Transparent
+        Me.top1name.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top1name.ForeColor = System.Drawing.Color.White
+        Me.top1name.Location = New System.Drawing.Point(1229, 238)
         Me.top1name.Name = "top1name"
-        Me.top1name.Size = New System.Drawing.Size(54, 13)
+        Me.top1name.Size = New System.Drawing.Size(134, 31)
         Me.top1name.TabIndex = 32
         Me.top1name.Text = "top1name"
         '
         'top2name
         '
         Me.top2name.AutoSize = True
-        Me.top2name.Location = New System.Drawing.Point(1142, 248)
+        Me.top2name.BackColor = System.Drawing.Color.Transparent
+        Me.top2name.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top2name.ForeColor = System.Drawing.Color.White
+        Me.top2name.Location = New System.Drawing.Point(1078, 257)
         Me.top2name.Name = "top2name"
-        Me.top2name.Size = New System.Drawing.Size(54, 13)
+        Me.top2name.Size = New System.Drawing.Size(120, 29)
         Me.top2name.TabIndex = 34
         Me.top2name.Text = "top2name"
         '
         'top2score
         '
         Me.top2score.AutoSize = True
-        Me.top2score.Location = New System.Drawing.Point(1080, 247)
+        Me.top2score.BackColor = System.Drawing.Color.Transparent
+        Me.top2score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top2score.ForeColor = System.Drawing.Color.White
+        Me.top2score.Location = New System.Drawing.Point(1107, 228)
         Me.top2score.Name = "top2score"
-        Me.top2score.Size = New System.Drawing.Size(54, 13)
+        Me.top2score.Size = New System.Drawing.Size(62, 31)
         Me.top2score.TabIndex = 33
-        Me.top2score.Text = "top2score"
+        Me.top2score.Text = "100"
         '
         'top4name
         '
         Me.top4name.AutoSize = True
-        Me.top4name.Location = New System.Drawing.Point(1296, 353)
+        Me.top4name.BackColor = System.Drawing.Color.Transparent
+        Me.top4name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top4name.ForeColor = System.Drawing.Color.White
+        Me.top4name.Location = New System.Drawing.Point(1135, 344)
         Me.top4name.Name = "top4name"
-        Me.top4name.Size = New System.Drawing.Size(54, 13)
+        Me.top4name.Size = New System.Drawing.Size(115, 25)
         Me.top4name.TabIndex = 39
         Me.top4name.Text = "top4name"
         '
         'top4score
         '
         Me.top4score.AutoSize = True
-        Me.top4score.Location = New System.Drawing.Point(1166, 353)
+        Me.top4score.BackColor = System.Drawing.Color.Transparent
+        Me.top4score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top4score.ForeColor = System.Drawing.Color.White
+        Me.top4score.Location = New System.Drawing.Point(1350, 344)
         Me.top4score.Name = "top4score"
-        Me.top4score.Size = New System.Drawing.Size(54, 13)
+        Me.top4score.Size = New System.Drawing.Size(44, 31)
         Me.top4score.TabIndex = 38
-        Me.top4score.Text = "top4score"
+        Me.top4score.Text = "10"
         '
         'top3name
         '
         Me.top3name.AutoSize = True
-        Me.top3name.Location = New System.Drawing.Point(1439, 256)
+        Me.top3name.BackColor = System.Drawing.Color.Transparent
+        Me.top3name.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top3name.ForeColor = System.Drawing.Color.White
+        Me.top3name.Location = New System.Drawing.Point(1381, 257)
         Me.top3name.Name = "top3name"
-        Me.top3name.Size = New System.Drawing.Size(54, 13)
+        Me.top3name.Size = New System.Drawing.Size(120, 29)
         Me.top3name.TabIndex = 37
         Me.top3name.Text = "top3name"
         '
         'top3score
         '
         Me.top3score.AutoSize = True
-        Me.top3score.Location = New System.Drawing.Point(1377, 255)
+        Me.top3score.BackColor = System.Drawing.Color.Transparent
+        Me.top3score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top3score.ForeColor = System.Drawing.Color.White
+        Me.top3score.Location = New System.Drawing.Point(1410, 232)
         Me.top3score.Name = "top3score"
-        Me.top3score.Size = New System.Drawing.Size(54, 13)
+        Me.top3score.Size = New System.Drawing.Size(62, 31)
         Me.top3score.TabIndex = 36
-        Me.top3score.Text = "top3score"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(1197, 473)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(0, 13)
-        Me.Label10.TabIndex = 35
+        Me.top3score.Text = "100"
         '
         'top8name
         '
         Me.top8name.AutoSize = True
-        Me.top8name.Location = New System.Drawing.Point(1296, 609)
+        Me.top8name.BackColor = System.Drawing.Color.Transparent
+        Me.top8name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top8name.ForeColor = System.Drawing.Color.White
+        Me.top8name.Location = New System.Drawing.Point(1135, 604)
         Me.top8name.Name = "top8name"
-        Me.top8name.Size = New System.Drawing.Size(54, 13)
+        Me.top8name.Size = New System.Drawing.Size(115, 25)
         Me.top8name.TabIndex = 49
         Me.top8name.Text = "top8name"
         '
         'top8score
         '
         Me.top8score.AutoSize = True
-        Me.top8score.Location = New System.Drawing.Point(1166, 609)
+        Me.top8score.BackColor = System.Drawing.Color.Transparent
+        Me.top8score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top8score.ForeColor = System.Drawing.Color.White
+        Me.top8score.Location = New System.Drawing.Point(1350, 604)
         Me.top8score.Name = "top8score"
-        Me.top8score.Size = New System.Drawing.Size(54, 13)
+        Me.top8score.Size = New System.Drawing.Size(44, 31)
         Me.top8score.TabIndex = 48
-        Me.top8score.Text = "top8score"
+        Me.top8score.Text = "10"
         '
         'top7name
         '
         Me.top7name.AutoSize = True
-        Me.top7name.Location = New System.Drawing.Point(1296, 544)
+        Me.top7name.BackColor = System.Drawing.Color.Transparent
+        Me.top7name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top7name.ForeColor = System.Drawing.Color.White
+        Me.top7name.Location = New System.Drawing.Point(1135, 536)
         Me.top7name.Name = "top7name"
-        Me.top7name.Size = New System.Drawing.Size(54, 13)
+        Me.top7name.Size = New System.Drawing.Size(115, 25)
         Me.top7name.TabIndex = 47
         Me.top7name.Text = "top7name"
         '
         'top7score
         '
         Me.top7score.AutoSize = True
-        Me.top7score.Location = New System.Drawing.Point(1166, 545)
+        Me.top7score.BackColor = System.Drawing.Color.Transparent
+        Me.top7score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top7score.ForeColor = System.Drawing.Color.White
+        Me.top7score.Location = New System.Drawing.Point(1350, 536)
         Me.top7score.Name = "top7score"
-        Me.top7score.Size = New System.Drawing.Size(54, 13)
+        Me.top7score.Size = New System.Drawing.Size(44, 31)
         Me.top7score.TabIndex = 46
-        Me.top7score.Text = "top7score"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(1197, 619)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(0, 13)
-        Me.Label15.TabIndex = 45
+        Me.top7score.Text = "10"
         '
         'top6name
         '
         Me.top6name.AutoSize = True
-        Me.top6name.Location = New System.Drawing.Point(1296, 479)
+        Me.top6name.BackColor = System.Drawing.Color.Transparent
+        Me.top6name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top6name.ForeColor = System.Drawing.Color.White
+        Me.top6name.Location = New System.Drawing.Point(1135, 464)
         Me.top6name.Name = "top6name"
-        Me.top6name.Size = New System.Drawing.Size(54, 13)
+        Me.top6name.Size = New System.Drawing.Size(115, 25)
         Me.top6name.TabIndex = 44
         Me.top6name.Text = "top6name"
         '
         'top6score
         '
         Me.top6score.AutoSize = True
-        Me.top6score.Location = New System.Drawing.Point(1166, 480)
+        Me.top6score.BackColor = System.Drawing.Color.Transparent
+        Me.top6score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top6score.ForeColor = System.Drawing.Color.White
+        Me.top6score.Location = New System.Drawing.Point(1350, 471)
         Me.top6score.Name = "top6score"
-        Me.top6score.Size = New System.Drawing.Size(54, 13)
+        Me.top6score.Size = New System.Drawing.Size(44, 31)
         Me.top6score.TabIndex = 43
-        Me.top6score.Text = "top6score"
+        Me.top6score.Text = "10"
         '
         'top5name
         '
         Me.top5name.AutoSize = True
-        Me.top5name.Location = New System.Drawing.Point(1296, 413)
+        Me.top5name.BackColor = System.Drawing.Color.Transparent
+        Me.top5name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top5name.ForeColor = System.Drawing.Color.White
+        Me.top5name.Location = New System.Drawing.Point(1135, 410)
         Me.top5name.Name = "top5name"
-        Me.top5name.Size = New System.Drawing.Size(54, 13)
+        Me.top5name.Size = New System.Drawing.Size(115, 25)
         Me.top5name.TabIndex = 42
         Me.top5name.Text = "top5name"
         '
         'top5score
         '
         Me.top5score.AutoSize = True
-        Me.top5score.Location = New System.Drawing.Point(1166, 419)
+        Me.top5score.BackColor = System.Drawing.Color.Transparent
+        Me.top5score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top5score.ForeColor = System.Drawing.Color.White
+        Me.top5score.Location = New System.Drawing.Point(1350, 410)
         Me.top5score.Name = "top5score"
-        Me.top5score.Size = New System.Drawing.Size(54, 13)
+        Me.top5score.Size = New System.Drawing.Size(44, 31)
         Me.top5score.TabIndex = 41
-        Me.top5score.Text = "top5score"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(1197, 545)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(0, 13)
-        Me.Label20.TabIndex = 40
+        Me.top5score.Text = "10"
         '
         'top10name
         '
         Me.top10name.AutoSize = True
-        Me.top10name.Location = New System.Drawing.Point(1296, 732)
+        Me.top10name.BackColor = System.Drawing.Color.Transparent
+        Me.top10name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top10name.ForeColor = System.Drawing.Color.White
+        Me.top10name.Location = New System.Drawing.Point(1135, 737)
         Me.top10name.Name = "top10name"
-        Me.top10name.Size = New System.Drawing.Size(60, 13)
+        Me.top10name.Size = New System.Drawing.Size(128, 25)
         Me.top10name.TabIndex = 53
         Me.top10name.Text = "top10name"
         '
         'top10score
         '
         Me.top10score.AutoSize = True
-        Me.top10score.Location = New System.Drawing.Point(1230, 732)
+        Me.top10score.BackColor = System.Drawing.Color.Transparent
+        Me.top10score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top10score.ForeColor = System.Drawing.Color.White
+        Me.top10score.Location = New System.Drawing.Point(1350, 737)
         Me.top10score.Name = "top10score"
-        Me.top10score.Size = New System.Drawing.Size(60, 13)
+        Me.top10score.Size = New System.Drawing.Size(44, 31)
         Me.top10score.TabIndex = 52
-        Me.top10score.Text = "top10score"
+        Me.top10score.Text = "10"
         '
         'top9name
         '
         Me.top9name.AutoSize = True
-        Me.top9name.Location = New System.Drawing.Point(1296, 677)
+        Me.top9name.BackColor = System.Drawing.Color.Transparent
+        Me.top9name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top9name.ForeColor = System.Drawing.Color.White
+        Me.top9name.Location = New System.Drawing.Point(1135, 668)
         Me.top9name.Name = "top9name"
-        Me.top9name.Size = New System.Drawing.Size(54, 13)
+        Me.top9name.Size = New System.Drawing.Size(115, 25)
         Me.top9name.TabIndex = 51
         Me.top9name.Text = "top9name"
         '
         'top9score
         '
         Me.top9score.AutoSize = True
-        Me.top9score.Location = New System.Drawing.Point(1166, 677)
+        Me.top9score.BackColor = System.Drawing.Color.Transparent
+        Me.top9score.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.top9score.ForeColor = System.Drawing.Color.White
+        Me.top9score.Location = New System.Drawing.Point(1350, 668)
         Me.top9score.Name = "top9score"
-        Me.top9score.Size = New System.Drawing.Size(54, 13)
+        Me.top9score.Size = New System.Drawing.Size(44, 31)
         Me.top9score.TabIndex = 50
-        Me.top9score.Text = "top9score"
+        Me.top9score.Text = "10"
         '
         'bg1
         '
         Me.bg1.BackColor = System.Drawing.Color.Transparent
         Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
-        Me.bg1.Location = New System.Drawing.Point(-10, 371)
+        Me.bg1.Location = New System.Drawing.Point(-398, -50)
         Me.bg1.Name = "bg1"
         Me.bg1.Size = New System.Drawing.Size(3110, 922)
         Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -631,13 +656,27 @@ Partial Class StudenForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(705, 419)
+        Me.Label1.Location = New System.Drawing.Point(715, 348)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 73)
+        Me.Label1.Size = New System.Drawing.Size(98, 108)
         Me.Label1.TabIndex = 55
         Me.Label1.Text = "3"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(543, 367)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(441, 108)
+        Me.Label2.TabIndex = 56
+        Me.Label2.Text = "START!!!"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'StudenForm
         '
@@ -646,6 +685,7 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.bg1)
         Me.Controls.Add(Me.top10name)
@@ -656,17 +696,14 @@ Partial Class StudenForm
         Me.Controls.Add(Me.top8score)
         Me.Controls.Add(Me.top7name)
         Me.Controls.Add(Me.top7score)
-        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.top6name)
         Me.Controls.Add(Me.top6score)
         Me.Controls.Add(Me.top5name)
         Me.Controls.Add(Me.top5score)
-        Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.top4name)
         Me.Controls.Add(Me.top4score)
         Me.Controls.Add(Me.top3name)
         Me.Controls.Add(Me.top3score)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.top2name)
         Me.Controls.Add(Me.top2score)
         Me.Controls.Add(Me.top1name)
@@ -690,11 +727,10 @@ Partial Class StudenForm
         Me.Controls.Add(Me.lblSection)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.lblFullName)
-        Me.Controls.Add(Me.Label3)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "StudenForm"
-        Me.Text = "Form2"
+        Me.Text = "100"
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -704,7 +740,6 @@ Partial Class StudenForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label3 As Label
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents lblSection As Label
     Friend WithEvents lblFullName As Label
@@ -729,17 +764,14 @@ Partial Class StudenForm
     Friend WithEvents top8score As Label
     Friend WithEvents top7name As Label
     Friend WithEvents top7score As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents top6name As Label
     Friend WithEvents top6score As Label
     Friend WithEvents top5name As Label
     Friend WithEvents top5score As Label
-    Friend WithEvents Label20 As Label
     Friend WithEvents top4name As Label
     Friend WithEvents top4score As Label
     Friend WithEvents top3name As Label
     Friend WithEvents top3score As Label
-    Friend WithEvents Label10 As Label
     Friend WithEvents top2name As Label
     Friend WithEvents top2score As Label
     Friend WithEvents top1name As Label
@@ -751,4 +783,5 @@ Partial Class StudenForm
     Friend WithEvents bg1 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

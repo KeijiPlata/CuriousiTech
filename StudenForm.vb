@@ -165,6 +165,12 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label2.Visible = False
+
+        Me.Label2.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.Label2.Location))
+        Me.Label2.Parent = Me.bg1
+
+
         Me.Label1.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.Label1.Location))
         Me.Label1.Parent = Me.bg1
 
@@ -223,7 +229,7 @@ Public Class StudenForm
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -286,7 +292,8 @@ Public Class StudenForm
         Label1.Text = timee.ToString
 
         If timee = 0 Then
-            Label1.Text = "Start!!"
+            Label2.Visible = True
+            Label1.Visible = False
         End If
 
         If timee = -1 Then
@@ -299,7 +306,6 @@ Public Class StudenForm
                 Formmcq1.Show()
                 Me.Close()
             End If
-
         End If
 
     End Sub
@@ -311,5 +317,9 @@ Public Class StudenForm
 
     Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
         Oppsie.Show()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class
