@@ -34,6 +34,7 @@ Public Class Formtf2
 
 
 
+        My.Computer.Audio.Play(My.Resources.Game_Over, AudioPlayMode.WaitToComplete)
         ' get the database score
         Highest()
 
@@ -53,7 +54,6 @@ Public Class Formtf2
             Label3.Text = "Score"
         End If
 
-        My.Computer.Audio.Play(My.Resources.Pixelland, AudioPlayMode.WaitToComplete)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs)
