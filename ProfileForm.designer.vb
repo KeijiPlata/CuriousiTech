@@ -30,6 +30,8 @@ Partial Class ProfileForm
         Me.txtBoxPassword = New System.Windows.Forms.TextBox()
         Me.lblStudentID = New System.Windows.Forms.Label()
         Me.lblUserName = New System.Windows.Forms.Label()
+        Me.lblLastName = New System.Windows.Forms.Label()
+        Me.lblFirstName = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnChangePassword
@@ -100,11 +102,31 @@ Partial Class ProfileForm
         Me.lblUserName.TabIndex = 0
         Me.lblUserName.Text = "UserName"
         '
-        'Form5
+        'lblLastName
+        '
+        Me.lblLastName.AutoSize = True
+        Me.lblLastName.Location = New System.Drawing.Point(192, 38)
+        Me.lblLastName.Name = "lblLastName"
+        Me.lblLastName.Size = New System.Drawing.Size(69, 16)
+        Me.lblLastName.TabIndex = 9
+        Me.lblLastName.Text = "LastName"
+        '
+        'lblFirstName
+        '
+        Me.lblFirstName.AutoSize = True
+        Me.lblFirstName.Location = New System.Drawing.Point(192, 65)
+        Me.lblFirstName.Name = "lblFirstName"
+        Me.lblFirstName.Size = New System.Drawing.Size(69, 16)
+        Me.lblFirstName.TabIndex = 10
+        Me.lblFirstName.Text = "FirstName"
+        '
+        'ProfileForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(415, 303)
+        Me.Controls.Add(Me.lblFirstName)
+        Me.Controls.Add(Me.lblLastName)
         Me.Controls.Add(Me.btnChangePassword)
         Me.Controls.Add(Me.btnChangeUserName)
         Me.Controls.Add(Me.Label2)
@@ -113,7 +135,7 @@ Partial Class ProfileForm
         Me.Controls.Add(Me.lblStudentID)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtBoxPassword)
-        Me.Name = "Form5"
+        Me.Name = "ProfileForm"
         Me.Text = "Form5"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -128,4 +150,6 @@ Partial Class ProfileForm
     Friend WithEvents txtBoxPassword As TextBox
     Friend WithEvents lblStudentID As Label
     Friend WithEvents lblUserName As Label
+    Friend WithEvents lblLastName As Label
+    Friend WithEvents lblFirstName As Label
 End Class

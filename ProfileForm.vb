@@ -26,7 +26,13 @@ Public Class ProfileForm
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblUserName.Text = UserName
-        lblStudentID.Text = StudentID
+        If LogInForm.reader("TbUser", "UserType") = "STUDENT" Then
+            lblStudentID.Text = StudentID
+        Else
+            lblStudentID.Text = ""
+        End If
+        lblLastName.Text = LastName
+        lblFirstName.Text = FirstName
     End Sub
 
     Private Sub btnChangeUserName_Click(sender As Object, e As EventArgs) Handles btnChangeUserName.Click
