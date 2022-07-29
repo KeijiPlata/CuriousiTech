@@ -69,11 +69,12 @@ Public Class LogInForm
     Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
     Public Function reader(table As String, field As String) As String
         Try
 
             Dim sql As String
-            Dim cmd As New OleDbCommand
+            Dim cmd As New OleDb.OleDbCommand
             Dim myreader As OleDbDataReader
 
             con.Open()
@@ -92,8 +93,8 @@ Public Class LogInForm
         Finally
             con.Close()
         End Try
+
         Return Nothing
     End Function
-
 End Class
 

@@ -30,31 +30,6 @@ Partial Class Formtf1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.LabelA2 = New System.Windows.Forms.Label()
-        Me.LabelJ2 = New System.Windows.Forms.Label()
-        Me.LabelI2 = New System.Windows.Forms.Label()
-        Me.LabelH2 = New System.Windows.Forms.Label()
-        Me.LabelG2 = New System.Windows.Forms.Label()
-        Me.LabelF2 = New System.Windows.Forms.Label()
-        Me.LabelE2 = New System.Windows.Forms.Label()
-        Me.LabelD2 = New System.Windows.Forms.Label()
-        Me.LabelC2 = New System.Windows.Forms.Label()
-        Me.LabelB2 = New System.Windows.Forms.Label()
-        Me.LabelA1 = New System.Windows.Forms.Label()
-        Me.LabelJ1 = New System.Windows.Forms.Label()
-        Me.LabelI1 = New System.Windows.Forms.Label()
-        Me.LabelH1 = New System.Windows.Forms.Label()
-        Me.LabelG1 = New System.Windows.Forms.Label()
-        Me.LabelF1 = New System.Windows.Forms.Label()
-        Me.LabelE1 = New System.Windows.Forms.Label()
-        Me.LabelD1 = New System.Windows.Forms.Label()
-        Me.LabelC1 = New System.Windows.Forms.Label()
-        Me.LabelB1 = New System.Windows.Forms.Label()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -395,36 +370,13 @@ Partial Class Formtf1
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
-        'Formtf1
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1540, 884)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.Guna2Button1)
-        Me.Controls.Add(Me.LabelA2)
-        Me.Controls.Add(Me.LabelJ2)
-        Me.Controls.Add(Me.LabelI2)
-        Me.Controls.Add(Me.LabelH2)
-        Me.Controls.Add(Me.LabelG2)
-        Me.Controls.Add(Me.LabelF2)
-        Me.Controls.Add(Me.LabelE2)
-        Me.Controls.Add(Me.LabelD2)
-        Me.Controls.Add(Me.LabelC2)
-        Me.Controls.Add(Me.LabelB2)
-        Me.Controls.Add(Me.LabelA1)
-        Me.Controls.Add(Me.LabelJ1)
-        Me.Controls.Add(Me.LabelI1)
-        Me.Controls.Add(Me.LabelH1)
-        Me.Controls.Add(Me.LabelG1)
-        Me.Controls.Add(Me.LabelF1)
-        Me.Controls.Add(Me.LabelE1)
-        Me.Controls.Add(Me.LabelD1)
-        Me.Controls.Add(Me.LabelC1)
-        Me.Controls.Add(Me.LabelB1)
+        Me.ClientSize = New System.Drawing.Size(651, 354)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
@@ -432,8 +384,7 @@ Partial Class Formtf1
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Formtf1"
+        Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -446,28 +397,4 @@ Partial Class Formtf1
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
-    Friend WithEvents LabelA2 As Label
-    Friend WithEvents LabelJ2 As Label
-    Friend WithEvents LabelI2 As Label
-    Friend WithEvents LabelH2 As Label
-    Friend WithEvents LabelG2 As Label
-    Friend WithEvents LabelF2 As Label
-    Friend WithEvents LabelE2 As Label
-    Friend WithEvents LabelD2 As Label
-    Friend WithEvents LabelC2 As Label
-    Friend WithEvents LabelB2 As Label
-    Friend WithEvents LabelA1 As Label
-    Friend WithEvents LabelJ1 As Label
-    Friend WithEvents LabelI1 As Label
-    Friend WithEvents LabelH1 As Label
-    Friend WithEvents LabelG1 As Label
-    Friend WithEvents LabelF1 As Label
-    Friend WithEvents LabelE1 As Label
-    Friend WithEvents LabelD1 As Label
-    Friend WithEvents LabelC1 As Label
-    Friend WithEvents LabelB1 As Label
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents PictureBox1 As PictureBox
 End Class

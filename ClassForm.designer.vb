@@ -36,13 +36,13 @@ Partial Class ClassForm
         Me.DataGridView1.Size = New System.Drawing.Size(637, 527)
         Me.DataGridView1.TabIndex = 0
         '
-        'ClassForm1
+        'ClassForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(691, 577)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "ClassForm1"
+        Me.Name = "ClassForm"
         Me.Text = "Form4"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

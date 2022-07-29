@@ -55,6 +55,9 @@
       <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.OleDb, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.OleDb.6.0.0\lib\net461\System.Data.OleDb.dll</HintPath>
+    </Reference>
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -78,18 +81,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutUs.Designer.vb">
-      <DependentUpon>AboutUs.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AboutUs.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BlurredBG.Designer.vb">
-      <DependentUpon>BlurredBG.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BlurredBG.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ClassForm.designer.vb">
       <DependentUpon>ClassForm.vb</DependentUpon>
     </Compile>
@@ -100,6 +91,24 @@
       <DependentUpon>FormLB.vb</DependentUpon>
     </Compile>
     <Compile Include="FormLB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formmcq1.designer.vb">
+      <DependentUpon>Formmcq1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formmcq1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formmcq2.designer.vb">
+      <DependentUpon>Formmcq2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formmcq2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formmcq3.designer.vb">
+      <DependentUpon>Formmcq3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formmcq3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formtf1.designer.vb">
@@ -148,6 +157,11 @@
     <Compile Include="LogInForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mcqqDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mcqqDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -181,10 +195,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuestionsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuiziItUpInstructions.Designer.vb">
-      <DependentUpon>QuiziItUpInstructions.vb</DependentUpon>
+    <Compile Include="quizgameEdit.Designer.vb">
+      <DependentUpon>quizgameEdit.vb</DependentUpon>
     </Compile>
-    <Compile Include="QuiziItUpInstructions.vb">
+    <Compile Include="quizgameEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quizgameEdit2.Designer.vb">
+      <DependentUpon>quizgameEdit2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameEdit2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionForm.Designer.vb">
+      <DependentUpon>SectionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectionForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudenForm.designer.vb">
@@ -199,12 +225,6 @@
     <Compile Include="TeacherForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TheWhatInstructions.Designer.vb">
-      <DependentUpon>TheWhatInstructions.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TheWhatInstructions.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="TrueorFalseInstruction.Designer.vb">
       <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
     </Compile>
@@ -213,17 +233,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutUs.resx">
-      <DependentUpon>AboutUs.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BlurredBG.resx">
-      <DependentUpon>BlurredBG.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ClassForm.resx">
       <DependentUpon>ClassForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLB.resx">
-      <DependentUpon>FormLB.vb</DependentUpon>
+    <EmbeddedResource Include="Formmcq1.resx">
+      <DependentUpon>Formmcq1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formmcq2.resx">
+      <DependentUpon>Formmcq2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formmcq3.resx">
+      <DependentUpon>Formmcq3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formtf1.resx">
       <DependentUpon>Formtf1.vb</DependentUpon>
@@ -255,17 +275,20 @@
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuiziItUpInstructions.resx">
-      <DependentUpon>QuiziItUpInstructions.vb</DependentUpon>
+    <EmbeddedResource Include="quizgameEdit.resx">
+      <DependentUpon>quizgameEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quizgameEdit2.resx">
+      <DependentUpon>quizgameEdit2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionForm.resx">
+      <DependentUpon>SectionForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudenForm.resx">
       <DependentUpon>StudenForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TheWhatInstructions.resx">
-      <DependentUpon>TheWhatInstructions.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrueorFalseInstruction.resx">
       <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
@@ -293,6 +316,17 @@
     </None>
     <None Include="loginDataSet.xss">
       <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mcqqDataSet.xsc">
+      <DependentUpon>mcqqDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mcqqDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mcqqDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mcqqDataSet.xss">
+      <DependentUpon>mcqqDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -323,6 +357,9 @@
     </Content>
     <Content Include="login.accdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mcqq.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Questions.accdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

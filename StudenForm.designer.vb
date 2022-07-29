@@ -35,54 +35,56 @@ Partial Class StudenForm
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.top1score = New System.Windows.Forms.Label()
+        Me.top1name = New System.Windows.Forms.Label()
+        Me.top2name = New System.Windows.Forms.Label()
+        Me.top2score = New System.Windows.Forms.Label()
+        Me.top4name = New System.Windows.Forms.Label()
+        Me.top4score = New System.Windows.Forms.Label()
+        Me.top3name = New System.Windows.Forms.Label()
+        Me.top3score = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.top8name = New System.Windows.Forms.Label()
+        Me.top8score = New System.Windows.Forms.Label()
+        Me.top7name = New System.Windows.Forms.Label()
+        Me.top7score = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.top6name = New System.Windows.Forms.Label()
+        Me.top6score = New System.Windows.Forms.Label()
+        Me.top5name = New System.Windows.Forms.Label()
+        Me.top5score = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.top10name = New System.Windows.Forms.Label()
+        Me.top10score = New System.Windows.Forms.Label()
+        Me.top9name = New System.Windows.Forms.Label()
+        Me.top9score = New System.Windows.Forms.Label()
+        Me.bg1 = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bg1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Rubik Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1212, 231)
+        Me.Label3.Location = New System.Drawing.Point(1197, 399)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(149, 24)
+        Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Santos, Jeriel"
         '
         'Guna2Elipse1
         '
@@ -262,12 +264,23 @@ Partial Class StudenForm
         Me.Guna2PictureBox1.TabStop = False
         Me.Guna2PictureBox1.UseTransparentBackground = True
         '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(455, 500)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(97, 22)
+        Me.Guna2HtmlLabel1.TabIndex = 21
+        Me.Guna2HtmlLabel1.Text = "High Score:"
+        '
         'Guna2HtmlLabel2
         '
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(601, 500)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(565, 495)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel2.TabIndex = 22
@@ -278,11 +291,22 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(601, 720)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(562, 717)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(17, 26)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel3.TabIndex = 26
-        Me.Guna2HtmlLabel3.Text = "--"
+        Me.Guna2HtmlLabel3.Text = "10"
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(452, 722)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(97, 22)
+        Me.Guna2HtmlLabel4.TabIndex = 25
+        Me.Guna2HtmlLabel4.Text = "High Score:"
         '
         'Guna2PictureBox3
         '
@@ -367,7 +391,7 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(601, 290)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(565, 285)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(25, 26)
         Me.Guna2HtmlLabel5.TabIndex = 30
@@ -380,279 +404,238 @@ Partial Class StudenForm
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(455, 290)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(140, 22)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(97, 22)
         Me.Guna2HtmlLabel6.TabIndex = 29
-        Me.Guna2HtmlLabel6.Text = "Your High Score:"
+        Me.Guna2HtmlLabel6.Text = "High Score:"
         '
-        'Label1
+        'top1score
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Rubik", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(1256, 192)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 34)
-        Me.Label1.TabIndex = 31
-        Me.Label1.Text = "125"
+        Me.top1score.AutoSize = True
+        Me.top1score.Location = New System.Drawing.Point(1234, 207)
+        Me.top1score.Name = "top1score"
+        Me.top1score.Size = New System.Drawing.Size(54, 13)
+        Me.top1score.TabIndex = 31
+        Me.top1score.Text = "top1score"
         '
-        'Label2
+        'top1name
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1077, 258)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(132, 20)
-        Me.Label2.TabIndex = 32
-        Me.Label2.Text = "Ramos, Jherdi"
+        Me.top1name.AutoSize = True
+        Me.top1name.Location = New System.Drawing.Point(1296, 208)
+        Me.top1name.Name = "top1name"
+        Me.top1name.Size = New System.Drawing.Size(54, 13)
+        Me.top1name.TabIndex = 32
+        Me.top1name.Text = "top1name"
         '
-        'Label4
+        'top2name
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Rubik", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1116, 225)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 30)
-        Me.Label4.TabIndex = 33
-        Me.Label4.Text = "124"
+        Me.top2name.AutoSize = True
+        Me.top2name.Location = New System.Drawing.Point(1142, 248)
+        Me.top2name.Name = "top2name"
+        Me.top2name.Size = New System.Drawing.Size(54, 13)
+        Me.top2name.TabIndex = 34
+        Me.top2name.Text = "top2name"
         '
-        'Label5
+        'top2score
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Rubik", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(1412, 235)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 30)
-        Me.Label5.TabIndex = 35
-        Me.Label5.Text = "116"
+        Me.top2score.AutoSize = True
+        Me.top2score.Location = New System.Drawing.Point(1080, 247)
+        Me.top2score.Name = "top2score"
+        Me.top2score.Size = New System.Drawing.Size(54, 13)
+        Me.top2score.TabIndex = 33
+        Me.top2score.Text = "top2score"
         '
-        'Label6
+        'top4name
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(1384, 266)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(103, 20)
-        Me.Label6.TabIndex = 34
-        Me.Label6.Text = "Lord, Plata"
+        Me.top4name.AutoSize = True
+        Me.top4name.Location = New System.Drawing.Point(1296, 353)
+        Me.top4name.Name = "top4name"
+        Me.top4name.Size = New System.Drawing.Size(54, 13)
+        Me.top4name.TabIndex = 39
+        Me.top4name.Text = "top4name"
         '
-        'Label7
+        'top4score
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(1348, 348)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(48, 26)
-        Me.Label7.TabIndex = 37
-        Me.Label7.Text = "115"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.top4score.AutoSize = True
+        Me.top4score.Location = New System.Drawing.Point(1234, 352)
+        Me.top4score.Name = "top4score"
+        Me.top4score.Size = New System.Drawing.Size(54, 13)
+        Me.top4score.TabIndex = 38
+        Me.top4score.Text = "top4score"
+        '
+        'top3name
+        '
+        Me.top3name.AutoSize = True
+        Me.top3name.Location = New System.Drawing.Point(1439, 256)
+        Me.top3name.Name = "top3name"
+        Me.top3name.Size = New System.Drawing.Size(54, 13)
+        Me.top3name.TabIndex = 37
+        Me.top3name.Text = "top3name"
+        '
+        'top3score
+        '
+        Me.top3score.AutoSize = True
+        Me.top3score.Location = New System.Drawing.Point(1377, 255)
+        Me.top3score.Name = "top3score"
+        Me.top3score.Size = New System.Drawing.Size(54, 13)
+        Me.top3score.TabIndex = 36
+        Me.top3score.Text = "top3score"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(1131, 354)
+        Me.Label10.Location = New System.Drawing.Point(1197, 473)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(190, 20)
-        Me.Label10.TabIndex = 38
-        Me.Label10.Text = "Eriguel, Jesse Renne"
+        Me.Label10.Size = New System.Drawing.Size(0, 13)
+        Me.Label10.TabIndex = 35
         '
-        'Label8
+        'top8name
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(1131, 411)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(136, 20)
-        Me.Label8.TabIndex = 40
-        Me.Label8.Text = "SIlva, Matthew"
+        Me.top8name.AutoSize = True
+        Me.top8name.Location = New System.Drawing.Point(1296, 609)
+        Me.top8name.Name = "top8name"
+        Me.top8name.Size = New System.Drawing.Size(54, 13)
+        Me.top8name.TabIndex = 49
+        Me.top8name.Text = "top8name"
         '
-        'Label9
+        'top8score
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(1348, 411)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(48, 26)
-        Me.Label9.TabIndex = 39
-        Me.Label9.Text = "110"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.top8score.AutoSize = True
+        Me.top8score.Location = New System.Drawing.Point(1234, 608)
+        Me.top8score.Name = "top8score"
+        Me.top8score.Size = New System.Drawing.Size(54, 13)
+        Me.top8score.TabIndex = 48
+        Me.top8score.Text = "top8score"
         '
-        'Label11
+        'top7name
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(1131, 544)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(129, 20)
-        Me.Label11.TabIndex = 44
-        Me.Label11.Text = "Isla, Jusepain"
+        Me.top7name.AutoSize = True
+        Me.top7name.Location = New System.Drawing.Point(1296, 544)
+        Me.top7name.Name = "top7name"
+        Me.top7name.Size = New System.Drawing.Size(54, 13)
+        Me.top7name.TabIndex = 47
+        Me.top7name.Text = "top7name"
         '
-        'Label12
+        'top7score
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(1348, 543)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 26)
-        Me.Label12.TabIndex = 43
-        Me.Label12.Text = "107"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.top7score.AutoSize = True
+        Me.top7score.Location = New System.Drawing.Point(1234, 543)
+        Me.top7score.Name = "top7score"
+        Me.top7score.Size = New System.Drawing.Size(54, 13)
+        Me.top7score.TabIndex = 46
+        Me.top7score.Text = "top7score"
         '
-        'Label13
+        'Label15
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(1131, 480)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(145, 20)
-        Me.Label13.TabIndex = 42
-        Me.Label13.Text = "Go, Christopher"
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(1197, 619)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(0, 13)
+        Me.Label15.TabIndex = 45
         '
-        'Label14
+        'top6name
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(1348, 478)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(51, 26)
-        Me.Label14.TabIndex = 41
-        Me.Label14.Text = "109"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.top6name.AutoSize = True
+        Me.top6name.Location = New System.Drawing.Point(1296, 479)
+        Me.top6name.Name = "top6name"
+        Me.top6name.Size = New System.Drawing.Size(54, 13)
+        Me.top6name.TabIndex = 44
+        Me.top6name.Text = "top6name"
         '
-        'Label17
+        'top6score
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(1131, 740)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(102, 20)
-        Me.Label17.TabIndex = 50
-        Me.Label17.Text = "Bolor, Mika"
+        Me.top6score.AutoSize = True
+        Me.top6score.Location = New System.Drawing.Point(1234, 478)
+        Me.top6score.Name = "top6score"
+        Me.top6score.Size = New System.Drawing.Size(54, 13)
+        Me.top6score.TabIndex = 43
+        Me.top6score.Text = "top6score"
         '
-        'Label18
+        'top5name
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(1348, 738)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(40, 26)
-        Me.Label18.TabIndex = 49
-        Me.Label18.Text = "95"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.top5name.AutoSize = True
+        Me.top5name.Location = New System.Drawing.Point(1296, 413)
+        Me.top5name.Name = "top5name"
+        Me.top5name.Size = New System.Drawing.Size(54, 13)
+        Me.top5name.TabIndex = 42
+        Me.top5name.Text = "top5name"
         '
-        'Label19
+        'top5score
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(1131, 676)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(128, 20)
-        Me.Label19.TabIndex = 48
-        Me.Label19.Text = "Santos, Angel"
+        Me.top5score.AutoSize = True
+        Me.top5score.Location = New System.Drawing.Point(1234, 412)
+        Me.top5score.Name = "top5score"
+        Me.top5score.Size = New System.Drawing.Size(54, 13)
+        Me.top5score.TabIndex = 41
+        Me.top5score.Text = "top5score"
         '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.BackColor = System.Drawing.Color.Transparent
-        Me.Label20.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(1348, 672)
+        Me.Label20.Location = New System.Drawing.Point(1197, 545)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(40, 26)
-        Me.Label20.TabIndex = 47
-        Me.Label20.Text = "99"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.Label20.Size = New System.Drawing.Size(0, 13)
+        Me.Label20.TabIndex = 40
         '
-        'Label21
+        'top10name
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.BackColor = System.Drawing.Color.Transparent
-        Me.Label21.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(1131, 612)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(146, 20)
-        Me.Label21.TabIndex = 46
-        Me.Label21.Text = "Loremia, Hector"
+        Me.top10name.AutoSize = True
+        Me.top10name.Location = New System.Drawing.Point(1296, 732)
+        Me.top10name.Name = "top10name"
+        Me.top10name.Size = New System.Drawing.Size(60, 13)
+        Me.top10name.TabIndex = 53
+        Me.top10name.Text = "top10name"
         '
-        'Label22
+        'top10score
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.BackColor = System.Drawing.Color.Transparent
-        Me.Label22.Font = New System.Drawing.Font("Rubik", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.White
-        Me.Label22.Location = New System.Drawing.Point(1348, 606)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(51, 26)
-        Me.Label22.TabIndex = 45
-        Me.Label22.Text = "104"
-        Me.Label22.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.top10score.AutoSize = True
+        Me.top10score.Location = New System.Drawing.Point(1230, 732)
+        Me.top10score.Name = "top10score"
+        Me.top10score.Size = New System.Drawing.Size(60, 13)
+        Me.top10score.TabIndex = 52
+        Me.top10score.Text = "top10score"
         '
-        'Guna2HtmlLabel1
+        'top9name
         '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(455, 500)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(140, 22)
-        Me.Guna2HtmlLabel1.TabIndex = 51
-        Me.Guna2HtmlLabel1.Text = "Your High Score:"
+        Me.top9name.AutoSize = True
+        Me.top9name.Location = New System.Drawing.Point(1296, 677)
+        Me.top9name.Name = "top9name"
+        Me.top9name.Size = New System.Drawing.Size(54, 13)
+        Me.top9name.TabIndex = 51
+        Me.top9name.Text = "top9name"
         '
-        'Guna2HtmlLabel4
+        'top9score
         '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(455, 722)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(140, 22)
-        Me.Guna2HtmlLabel4.TabIndex = 52
-        Me.Guna2HtmlLabel4.Text = "Your High Score:"
+        Me.top9score.AutoSize = True
+        Me.top9score.Location = New System.Drawing.Point(1234, 676)
+        Me.top9score.Name = "top9score"
+        Me.top9score.Size = New System.Drawing.Size(54, 13)
+        Me.top9score.TabIndex = 50
+        Me.top9score.Text = "top9score"
         '
-        'PictureBox1
+        'bg1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-59, 871)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1645, 29)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 53
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
+        Me.bg1.BackColor = System.Drawing.Color.Transparent
+        Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
+        Me.bg1.Location = New System.Drawing.Point(-2615, -50)
+        Me.bg1.Name = "bg1"
+        Me.bg1.Size = New System.Drawing.Size(4194, 922)
+        Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.bg1.TabIndex = 54
+        Me.bg1.TabStop = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(705, 419)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(68, 73)
+        Me.Label1.TabIndex = 55
+        Me.Label1.Text = "3"
         '
         'StudenForm
         '
@@ -661,36 +644,41 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Guna2HtmlLabel4)
-        Me.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.bg1)
+        Me.Controls.Add(Me.top10name)
+        Me.Controls.Add(Me.top10score)
+        Me.Controls.Add(Me.top9name)
+        Me.Controls.Add(Me.top9score)
+        Me.Controls.Add(Me.top8name)
+        Me.Controls.Add(Me.top8score)
+        Me.Controls.Add(Me.top7name)
+        Me.Controls.Add(Me.top7score)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.top6name)
+        Me.Controls.Add(Me.top6score)
+        Me.Controls.Add(Me.top5name)
+        Me.Controls.Add(Me.top5score)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.top4name)
+        Me.Controls.Add(Me.top4score)
+        Me.Controls.Add(Me.top3name)
+        Me.Controls.Add(Me.top3score)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.top2name)
+        Me.Controls.Add(Me.top2score)
+        Me.Controls.Add(Me.top1name)
+        Me.Controls.Add(Me.top1score)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Controls.Add(Me.Guna2PictureBox4)
         Me.Controls.Add(Me.Guna2Button7)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2Button5)
         Me.Controls.Add(Me.Guna2Button4)
@@ -709,7 +697,7 @@ Partial Class StudenForm
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bg1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -725,34 +713,40 @@ Partial Class StudenForm
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
+    Friend WithEvents top8name As Label
+    Friend WithEvents top8score As Label
+    Friend WithEvents top7name As Label
+    Friend WithEvents top7score As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents top6name As Label
+    Friend WithEvents top6score As Label
+    Friend WithEvents top5name As Label
+    Friend WithEvents top5score As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents top4name As Label
+    Friend WithEvents top4score As Label
+    Friend WithEvents top3name As Label
+    Friend WithEvents top3score As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents top2name As Label
+    Friend WithEvents top2score As Label
+    Friend WithEvents top1name As Label
+    Friend WithEvents top1score As Label
+    Friend WithEvents top10name As Label
+    Friend WithEvents top10score As Label
+    Friend WithEvents top9name As Label
+    Friend WithEvents top9score As Label
+    Friend WithEvents bg1 As PictureBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label1 As Label
 End Class
