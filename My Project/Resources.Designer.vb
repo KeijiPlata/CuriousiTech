@@ -63,9 +63,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property business_3d_robot_assistant_sleeping_1() As System.Drawing.Bitmap
+        Friend ReadOnly Property Quiz_It_Up__Instructions() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("business_3d_robot_assistant_sleeping_1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Quiz_It_Up__Instructions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property The_What__Instructions() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("The_What__Instructions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property True_Or_False__Instructions() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("True_Or_False__Instructions", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
