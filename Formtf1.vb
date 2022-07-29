@@ -97,20 +97,20 @@ Public Class Formtf1
 
         ' if the random number is an even number, it will change location
         If conv Mod 2 = 0 Then
-            Button1.Location = New Point(365, 203)
-            Button2.Location = New Point(63, 203)
+            Guna2Button1.Location = New Point(47, 687)  '559, 687
+            Guna2Button2.Location = New Point(559, 687)
         Else
-            Button1.Location = New Point(63, 203)
-            Button2.Location = New Point(365, 203)
+            Guna2Button2.Location = New Point(47, 687)
+            Guna2Button1.Location = New Point(559, 687)
         End If
 
         ' if the randomnumber is an even number, it will change color
         If conv2 Mod 2 = 0 Then
-            Button1.BackColor = Color.Red
-            Button2.BackColor = Color.DarkTurquoise
+            Guna2Button2.FillColor = Color.FromArgb(200, 25, 52)
+            Guna2Button1.FillColor = Color.FromArgb(15, 155, 21)
         Else
-            Button1.BackColor = Color.DarkTurquoise
-            Button2.BackColor = Color.Red
+            Guna2Button1.FillColor = Color.FromArgb(200, 25, 52)
+            Guna2Button2.FillColor = Color.FromArgb(15, 155, 21)
         End If
         Return Nothing
     End Function
@@ -208,6 +208,8 @@ Public Class Formtf1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'get the score from database
         Highest()
+        Formtf2.highscore2 = highscore
+
         ' This will update the leaderboard
         showScore()
         'get time from the database
@@ -233,7 +235,34 @@ Public Class Formtf1
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ' this will countdown the timer
+        timee = timee - 1
+        Label3.Text = timee.ToString
+
+        If timee = 0 Then
+            ' Stops the timer so it will not go  negative
+            Timer1.Stop()
+
+            '' get the score and pass it to next form
+            'Highest()
+            Formtf2.displayScore = score
+            Formtf2.Show()
+            'score = 0 'reset
+            Me.Close()
+        End If
+
+        ' change the color 
+        If timee > 3 Then
+            Label3.ForeColor = Color.Green
+        Else
+            Label3.ForeColor = Color.Red
+        End If
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         If convtf = True Then
             score = score + 1
             getTimer() ' reset time
@@ -248,13 +277,13 @@ Public Class Formtf1
 
             Formtf2.displayScore = score
             Formtf2.Show()
-            score = 0 'reset
+            'score = 0 'reset
 
             Me.Close()
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         If convtf = False Then
             score = score + 1
             getTimer() 'reset time
@@ -269,34 +298,9 @@ Public Class Formtf1
 
             Formtf2.displayScore = score
             Formtf2.Show()
-            score = 0 'reset
+            'score = 0 'reset
 
             Me.Close()
-        End If
-    End Sub
-
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        ' this will countdown the timer
-        timee = timee - 1
-        Label3.Text = timee.ToString
-
-        If timee = 0 Then
-            ' Stops the timer so it will not go  negative
-            Timer1.Stop()
-
-            ' get the score and pass it to next form
-            Highest()
-            Formtf2.displayScore = score
-            Formtf2.Show()
-            score = 0 'reset
-            Me.Close()
-        End If
-
-        ' change the color 
-        If timee > 3 Then
-            Label3.ForeColor = Color.Green
-        Else
-            Label3.ForeColor = Color.Red
         End If
     End Sub
 End Class
