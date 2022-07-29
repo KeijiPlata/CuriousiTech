@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class ProfileForm
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class TeacherProfile
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,69 +20,74 @@ Partial Class ProfileForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ProfileForm))
-        Me.lblStudentID = New System.Windows.Forms.Label()
-        Me.lblUserName = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TeacherProfile))
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.lblFullName = New System.Windows.Forms.Label()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnChangeUserName = New Guna.UI2.WinForms.Guna2Button()
         Me.txtBoxUserName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnChangePassword = New Guna.UI2.WinForms.Guna2Button()
         Me.txtBoxPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnChangeUserName = New Guna.UI2.WinForms.Guna2Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.lblFullName = New System.Windows.Forms.Label()
+        Me.lblUserName = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblStudentID
-        '
-        Me.lblStudentID.AutoSize = True
-        Me.lblStudentID.BackColor = System.Drawing.Color.Transparent
-        Me.lblStudentID.Font = New System.Drawing.Font("Rubik Medium", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStudentID.ForeColor = System.Drawing.Color.White
-        Me.lblStudentID.Location = New System.Drawing.Point(138, 187)
-        Me.lblStudentID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblStudentID.Name = "lblStudentID"
-        Me.lblStudentID.Size = New System.Drawing.Size(193, 40)
-        Me.lblStudentID.TabIndex = 1
-        Me.lblStudentID.Text = "Student ID"
-        '
-        'lblUserName
-        '
-        Me.lblUserName.AutoSize = True
-        Me.lblUserName.BackColor = System.Drawing.Color.Transparent
-        Me.lblUserName.Font = New System.Drawing.Font("Rubik", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserName.ForeColor = System.Drawing.Color.White
-        Me.lblUserName.Location = New System.Drawing.Point(673, 393)
-        Me.lblUserName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblUserName.Name = "lblUserName"
-        Me.lblUserName.Size = New System.Drawing.Size(155, 36)
-        Me.lblUserName.TabIndex = 0
-        Me.lblUserName.Text = "UserName"
-        Me.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Guna2Elipse1
         '
         Me.Guna2Elipse1.BorderRadius = 140
         Me.Guna2Elipse1.TargetControl = Me
         '
-        'lblFullName
+        'Guna2PictureBox2
         '
-        Me.lblFullName.AutoSize = True
-        Me.lblFullName.BackColor = System.Drawing.Color.Transparent
-        Me.lblFullName.Font = New System.Drawing.Font("Rubik", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFullName.ForeColor = System.Drawing.Color.White
-        Me.lblFullName.Location = New System.Drawing.Point(134, 227)
-        Me.lblFullName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(260, 60)
-        Me.lblFullName.TabIndex = 9
-        Me.lblFullName.Text = "Full Name"
+        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(854, 44)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(41, 37)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.TabIndex = 27
+        Me.Guna2PictureBox2.TabStop = False
+        Me.Guna2PictureBox2.UseTransparentBackground = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(118, 433)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(142, 13)
+        Me.Label3.TabIndex = 26
+        Me.Label3.Text = "Change Password"
+        '
+        'btnChangeUserName
+        '
+        Me.btnChangeUserName.BackColor = System.Drawing.Color.Transparent
+        Me.btnChangeUserName.BorderColor = System.Drawing.Color.Transparent
+        Me.btnChangeUserName.BorderRadius = 10
+        Me.btnChangeUserName.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnChangeUserName.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnChangeUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnChangeUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnChangeUserName.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnChangeUserName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnChangeUserName.ForeColor = System.Drawing.Color.White
+        Me.btnChangeUserName.Location = New System.Drawing.Point(361, 378)
+        Me.btnChangeUserName.Name = "btnChangeUserName"
+        Me.btnChangeUserName.Size = New System.Drawing.Size(115, 37)
+        Me.btnChangeUserName.TabIndex = 25
+        Me.btnChangeUserName.Text = "Change"
         '
         'txtBoxUserName
         '
@@ -98,13 +103,13 @@ Partial Class ProfileForm
         Me.txtBoxUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtBoxUserName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtBoxUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtBoxUserName.Location = New System.Drawing.Point(138, 399)
+        Me.txtBoxUserName.Location = New System.Drawing.Point(121, 374)
         Me.txtBoxUserName.Name = "txtBoxUserName"
         Me.txtBoxUserName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtBoxUserName.PlaceholderText = ""
         Me.txtBoxUserName.SelectedText = ""
         Me.txtBoxUserName.Size = New System.Drawing.Size(204, 30)
-        Me.txtBoxUserName.TabIndex = 14
+        Me.txtBoxUserName.TabIndex = 24
         '
         'btnChangePassword
         '
@@ -118,10 +123,10 @@ Partial Class ProfileForm
         Me.btnChangePassword.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnChangePassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnChangePassword.ForeColor = System.Drawing.Color.White
-        Me.btnChangePassword.Location = New System.Drawing.Point(378, 478)
+        Me.btnChangePassword.Location = New System.Drawing.Point(361, 453)
         Me.btnChangePassword.Name = "btnChangePassword"
         Me.btnChangePassword.Size = New System.Drawing.Size(115, 37)
-        Me.btnChangePassword.TabIndex = 13
+        Me.btnChangePassword.TabIndex = 23
         Me.btnChangePassword.Text = "Change"
         '
         'txtBoxPassword
@@ -138,13 +143,13 @@ Partial Class ProfileForm
         Me.txtBoxPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtBoxPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtBoxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtBoxPassword.Location = New System.Drawing.Point(138, 478)
+        Me.txtBoxPassword.Location = New System.Drawing.Point(121, 453)
         Me.txtBoxPassword.Name = "txtBoxPassword"
         Me.txtBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtBoxPassword.PlaceholderText = ""
         Me.txtBoxPassword.SelectedText = ""
         Me.txtBoxPassword.Size = New System.Drawing.Size(204, 30)
-        Me.txtBoxPassword.TabIndex = 12
+        Me.txtBoxPassword.TabIndex = 22
         '
         'Label4
         '
@@ -152,58 +157,39 @@ Partial Class ProfileForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(135, 383)
+        Me.Label4.Location = New System.Drawing.Point(118, 358)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(142, 13)
-        Me.Label4.TabIndex = 10
+        Me.Label4.TabIndex = 21
         Me.Label4.Text = "Change Username"
         '
-        'btnChangeUserName
+        'lblFullName
         '
-        Me.btnChangeUserName.BackColor = System.Drawing.Color.Transparent
-        Me.btnChangeUserName.BorderColor = System.Drawing.Color.Transparent
-        Me.btnChangeUserName.BorderRadius = 10
-        Me.btnChangeUserName.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnChangeUserName.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnChangeUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnChangeUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnChangeUserName.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnChangeUserName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnChangeUserName.ForeColor = System.Drawing.Color.White
-        Me.btnChangeUserName.Location = New System.Drawing.Point(378, 403)
-        Me.btnChangeUserName.Name = "btnChangeUserName"
-        Me.btnChangeUserName.Size = New System.Drawing.Size(115, 37)
-        Me.btnChangeUserName.TabIndex = 15
-        Me.btnChangeUserName.Text = "Change"
+        Me.lblFullName.AutoSize = True
+        Me.lblFullName.BackColor = System.Drawing.Color.Transparent
+        Me.lblFullName.Font = New System.Drawing.Font("Rubik", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFullName.ForeColor = System.Drawing.Color.White
+        Me.lblFullName.Location = New System.Drawing.Point(111, 157)
+        Me.lblFullName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFullName.Name = "lblFullName"
+        Me.lblFullName.Size = New System.Drawing.Size(260, 60)
+        Me.lblFullName.TabIndex = 20
+        Me.lblFullName.Text = "Full Name"
         '
-        'Label3
+        'lblUserName
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(135, 458)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(142, 13)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "Change Password"
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(865, 48)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(41, 37)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox2.TabIndex = 17
-        Me.Guna2PictureBox2.TabStop = False
-        Me.Guna2PictureBox2.UseTransparentBackground = True
+        Me.lblUserName.AutoSize = True
+        Me.lblUserName.BackColor = System.Drawing.Color.Transparent
+        Me.lblUserName.Font = New System.Drawing.Font("Rubik", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserName.ForeColor = System.Drawing.Color.White
+        Me.lblUserName.Location = New System.Drawing.Point(657, 358)
+        Me.lblUserName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblUserName.Name = "lblUserName"
+        Me.lblUserName.Size = New System.Drawing.Size(155, 36)
+        Me.lblUserName.TabIndex = 18
+        Me.lblUserName.Text = "UserName"
+        Me.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label1
         '
@@ -211,20 +197,20 @@ Partial Class ProfileForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(658, 380)
+        Me.Label1.Location = New System.Drawing.Point(646, 340)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(79, 13)
-        Me.Label1.TabIndex = 29
+        Me.Label1.TabIndex = 28
         Me.Label1.Text = "Username"
         '
-        'ProfileForm
+        'TeacherProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(966, 607)
+        Me.ClientSize = New System.Drawing.Size(950, 568)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2PictureBox2)
         Me.Controls.Add(Me.Label3)
@@ -235,28 +221,25 @@ Partial Class ProfileForm
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblFullName)
         Me.Controls.Add(Me.lblUserName)
-        Me.Controls.Add(Me.lblStudentID)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Name = "ProfileForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form5"
+        Me.Name = "TeacherProfile"
+        Me.Text = "TeacherProfile"
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents lblStudentID As Label
-    Friend WithEvents lblUserName As Label
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
-    Friend WithEvents lblFullName As Label
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Label3 As Label
     Friend WithEvents btnChangeUserName As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtBoxUserName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnChangePassword As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtBoxPassword As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents lblFullName As Label
+    Friend WithEvents lblUserName As Label
     Friend WithEvents Label1 As Label
 End Class

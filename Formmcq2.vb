@@ -26,6 +26,7 @@ Public Class Formmcq2
         con.Close()
 
         If Formmcq1.points > highScore Then
+            Label6.Text = "New Highscore"
             highScore = Formmcq1.points
 
             con.Open()
@@ -67,9 +68,23 @@ Public Class Formmcq2
         My.Computer.Audio.Play(My.Resources.Game_Over, AudioPlayMode.WaitToComplete)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
         Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
         StudentForm.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+        Me.Hide()
+        Formmcq1.Show()
+
     End Sub
 End Class

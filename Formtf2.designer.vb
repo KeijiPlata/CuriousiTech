@@ -30,7 +30,9 @@ Partial Class Formtf2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -39,7 +41,7 @@ Partial Class Formtf2
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Courier New", 33.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(636, 289)
+        Me.Label2.Location = New System.Drawing.Point(636, 314)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 50)
         Me.Label2.TabIndex = 3
@@ -51,7 +53,7 @@ Partial Class Formtf2
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Courier New", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(301, 289)
+        Me.Label3.Location = New System.Drawing.Point(301, 314)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(143, 40)
         Me.Label3.TabIndex = 4
@@ -63,7 +65,7 @@ Partial Class Formtf2
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Courier New", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(301, 241)
+        Me.Label4.Location = New System.Drawing.Point(301, 266)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(332, 40)
         Me.Label4.TabIndex = 5
@@ -75,7 +77,7 @@ Partial Class Formtf2
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Courier New", 33.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(636, 236)
+        Me.Label5.Location = New System.Drawing.Point(636, 261)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 50)
         Me.Label5.TabIndex = 6
@@ -93,7 +95,7 @@ Partial Class Formtf2
         Me.Guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(932, 48)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(944, 37)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(45, 45)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -101,12 +103,28 @@ Partial Class Formtf2
         Me.Guna2PictureBox2.TabStop = False
         Me.Guna2PictureBox2.UseTransparentBackground = True
         '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(865, 37)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(47, 45)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 17
+        Me.Guna2PictureBox1.TabStop = False
+        Me.Guna2PictureBox1.UseTransparentBackground = True
+        '
         'Formtf2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1022, 756)
+        Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2PictureBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -117,6 +135,7 @@ Partial Class Formtf2
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -127,4 +146,5 @@ Partial Class Formtf2
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

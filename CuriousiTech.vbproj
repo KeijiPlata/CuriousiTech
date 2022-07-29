@@ -111,12 +111,6 @@
     <Compile Include="Formmcq2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formmcq3.designer.vb">
-      <DependentUpon>Formmcq3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formmcq3.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formtf1.designer.vb">
       <DependentUpon>Formtf1.vb</DependentUpon>
     </Compile>
@@ -237,6 +231,12 @@
     <Compile Include="TeacherForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TeacherProfile.Designer.vb">
+      <DependentUpon>TeacherProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TheWhatInstructions.designer.vb">
       <DependentUpon>TheWhatInstructions.vb</DependentUpon>
     </Compile>
@@ -262,9 +262,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formmcq2.resx">
       <DependentUpon>Formmcq2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formmcq3.resx">
-      <DependentUpon>Formmcq3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formtf1.resx">
       <DependentUpon>Formtf1.vb</DependentUpon>
@@ -313,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherProfile.resx">
+      <DependentUpon>TeacherProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TheWhatInstructions.resx">
       <DependentUpon>TheWhatInstructions.vb</DependentUpon>

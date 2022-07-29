@@ -53,8 +53,8 @@ Partial Class Formtf1
         Me.LabelB1 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -143,10 +143,10 @@ Partial Class Formtf1
         '
         Me.LabelJ2.AutoSize = True
         Me.LabelJ2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelJ2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelJ2.Location = New System.Drawing.Point(1090, 753)
+        Me.LabelJ2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelJ2.Location = New System.Drawing.Point(1158, 749)
         Me.LabelJ2.Name = "LabelJ2"
-        Me.LabelJ2.Size = New System.Drawing.Size(72, 20)
+        Me.LabelJ2.Size = New System.Drawing.Size(95, 25)
         Me.LabelJ2.TabIndex = 43
         Me.LabelJ2.Text = "LabelJ2"
         '
@@ -154,10 +154,10 @@ Partial Class Formtf1
         '
         Me.LabelI2.AutoSize = True
         Me.LabelI2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelI2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelI2.Location = New System.Drawing.Point(1091, 687)
+        Me.LabelI2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelI2.Location = New System.Drawing.Point(1159, 683)
         Me.LabelI2.Name = "LabelI2"
-        Me.LabelI2.Size = New System.Drawing.Size(69, 20)
+        Me.LabelI2.Size = New System.Drawing.Size(89, 25)
         Me.LabelI2.TabIndex = 42
         Me.LabelI2.Text = "LabelI2"
         '
@@ -165,10 +165,10 @@ Partial Class Formtf1
         '
         Me.LabelH2.AutoSize = True
         Me.LabelH2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelH2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelH2.Location = New System.Drawing.Point(1090, 624)
+        Me.LabelH2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelH2.Location = New System.Drawing.Point(1158, 620)
         Me.LabelH2.Name = "LabelH2"
-        Me.LabelH2.Size = New System.Drawing.Size(76, 20)
+        Me.LabelH2.Size = New System.Drawing.Size(99, 25)
         Me.LabelH2.TabIndex = 41
         Me.LabelH2.Text = "LabelH2"
         '
@@ -176,10 +176,10 @@ Partial Class Formtf1
         '
         Me.LabelG2.AutoSize = True
         Me.LabelG2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelG2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelG2.Location = New System.Drawing.Point(1090, 557)
+        Me.LabelG2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelG2.Location = New System.Drawing.Point(1158, 553)
         Me.LabelG2.Name = "LabelG2"
-        Me.LabelG2.Size = New System.Drawing.Size(77, 20)
+        Me.LabelG2.Size = New System.Drawing.Size(100, 25)
         Me.LabelG2.TabIndex = 40
         Me.LabelG2.Text = "LabelG2"
         '
@@ -187,10 +187,10 @@ Partial Class Formtf1
         '
         Me.LabelF2.AutoSize = True
         Me.LabelF2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelF2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelF2.Location = New System.Drawing.Point(1090, 491)
+        Me.LabelF2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelF2.Location = New System.Drawing.Point(1158, 487)
         Me.LabelF2.Name = "LabelF2"
-        Me.LabelF2.Size = New System.Drawing.Size(74, 20)
+        Me.LabelF2.Size = New System.Drawing.Size(97, 25)
         Me.LabelF2.TabIndex = 39
         Me.LabelF2.Text = "LabelF2"
         '
@@ -198,10 +198,10 @@ Partial Class Formtf1
         '
         Me.LabelE2.AutoSize = True
         Me.LabelE2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelE2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelE2.Location = New System.Drawing.Point(1090, 427)
+        Me.LabelE2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelE2.Location = New System.Drawing.Point(1158, 423)
         Me.LabelE2.Name = "LabelE2"
-        Me.LabelE2.Size = New System.Drawing.Size(75, 20)
+        Me.LabelE2.Size = New System.Drawing.Size(98, 25)
         Me.LabelE2.TabIndex = 38
         Me.LabelE2.Text = "LabelE2"
         '
@@ -209,10 +209,10 @@ Partial Class Formtf1
         '
         Me.LabelD2.AutoSize = True
         Me.LabelD2.BackColor = System.Drawing.Color.Transparent
-        Me.LabelD2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelD2.Location = New System.Drawing.Point(1090, 367)
+        Me.LabelD2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelD2.Location = New System.Drawing.Point(1158, 363)
         Me.LabelD2.Name = "LabelD2"
-        Me.LabelD2.Size = New System.Drawing.Size(76, 20)
+        Me.LabelD2.Size = New System.Drawing.Size(99, 25)
         Me.LabelD2.TabIndex = 37
         Me.LabelD2.Text = "LabelD2"
         '
@@ -253,78 +253,78 @@ Partial Class Formtf1
         '
         Me.LabelJ1.AutoSize = True
         Me.LabelJ1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelJ1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelJ1.Location = New System.Drawing.Point(1308, 748)
+        Me.LabelJ1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelJ1.Location = New System.Drawing.Point(1354, 748)
         Me.LabelJ1.Name = "LabelJ1"
-        Me.LabelJ1.Size = New System.Drawing.Size(95, 25)
+        Me.LabelJ1.Size = New System.Drawing.Size(41, 29)
         Me.LabelJ1.TabIndex = 33
-        Me.LabelJ1.Text = "LabelJ1"
+        Me.LabelJ1.Text = "10"
         '
         'LabelI1
         '
         Me.LabelI1.AutoSize = True
         Me.LabelI1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelI1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelI1.Location = New System.Drawing.Point(1307, 682)
+        Me.LabelI1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelI1.Location = New System.Drawing.Point(1353, 682)
         Me.LabelI1.Name = "LabelI1"
-        Me.LabelI1.Size = New System.Drawing.Size(89, 25)
+        Me.LabelI1.Size = New System.Drawing.Size(41, 29)
         Me.LabelI1.TabIndex = 32
-        Me.LabelI1.Text = "LabelI1"
+        Me.LabelI1.Text = "10"
         '
         'LabelH1
         '
         Me.LabelH1.AutoSize = True
         Me.LabelH1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelH1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelH1.Location = New System.Drawing.Point(1308, 619)
+        Me.LabelH1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelH1.Location = New System.Drawing.Point(1354, 619)
         Me.LabelH1.Name = "LabelH1"
-        Me.LabelH1.Size = New System.Drawing.Size(99, 25)
+        Me.LabelH1.Size = New System.Drawing.Size(41, 29)
         Me.LabelH1.TabIndex = 31
-        Me.LabelH1.Text = "LabelH1"
+        Me.LabelH1.Text = "10"
         '
         'LabelG1
         '
         Me.LabelG1.AutoSize = True
         Me.LabelG1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelG1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelG1.Location = New System.Drawing.Point(1308, 553)
+        Me.LabelG1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelG1.Location = New System.Drawing.Point(1354, 553)
         Me.LabelG1.Name = "LabelG1"
-        Me.LabelG1.Size = New System.Drawing.Size(100, 25)
+        Me.LabelG1.Size = New System.Drawing.Size(41, 29)
         Me.LabelG1.TabIndex = 30
-        Me.LabelG1.Text = "LabelG1"
+        Me.LabelG1.Text = "10"
         '
         'LabelF1
         '
         Me.LabelF1.AutoSize = True
         Me.LabelF1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelF1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelF1.Location = New System.Drawing.Point(1307, 486)
+        Me.LabelF1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelF1.Location = New System.Drawing.Point(1353, 486)
         Me.LabelF1.Name = "LabelF1"
-        Me.LabelF1.Size = New System.Drawing.Size(97, 25)
+        Me.LabelF1.Size = New System.Drawing.Size(41, 29)
         Me.LabelF1.TabIndex = 29
-        Me.LabelF1.Text = "LabelF1"
+        Me.LabelF1.Text = "10"
         '
         'LabelE1
         '
         Me.LabelE1.AutoSize = True
         Me.LabelE1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelE1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelE1.Location = New System.Drawing.Point(1308, 422)
+        Me.LabelE1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelE1.Location = New System.Drawing.Point(1354, 422)
         Me.LabelE1.Name = "LabelE1"
-        Me.LabelE1.Size = New System.Drawing.Size(98, 25)
+        Me.LabelE1.Size = New System.Drawing.Size(41, 29)
         Me.LabelE1.TabIndex = 28
-        Me.LabelE1.Text = "LabelE1"
+        Me.LabelE1.Text = "10"
         '
         'LabelD1
         '
         Me.LabelD1.AutoSize = True
         Me.LabelD1.BackColor = System.Drawing.Color.Transparent
-        Me.LabelD1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelD1.Location = New System.Drawing.Point(1307, 362)
+        Me.LabelD1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelD1.Location = New System.Drawing.Point(1353, 362)
         Me.LabelD1.Name = "LabelD1"
-        Me.LabelD1.Size = New System.Drawing.Size(99, 25)
+        Me.LabelD1.Size = New System.Drawing.Size(41, 29)
         Me.LabelD1.TabIndex = 27
-        Me.LabelD1.Text = "LabelD1"
+        Me.LabelD1.Text = "10"
         '
         'LabelC1
         '
@@ -382,18 +382,20 @@ Partial Class Formtf1
         Me.Guna2Button2.TabIndex = 46
         Me.Guna2Button2.Text = "True"
         '
-        'PictureBox1
+        'Guna2PictureBox2
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-59, 831)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1645, 345)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 54
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
+        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1431, 34)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(41, 37)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.TabIndex = 47
+        Me.Guna2PictureBox2.TabStop = False
+        Me.Guna2PictureBox2.UseTransparentBackground = True
         '
         'Formtf1
         '
@@ -402,7 +404,7 @@ Partial Class Formtf1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Guna2PictureBox2)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.LabelA2)
@@ -435,7 +437,7 @@ Partial Class Formtf1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Formtf1"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -469,5 +471,5 @@ Partial Class Formtf1
     Friend WithEvents LabelB1 As Label
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

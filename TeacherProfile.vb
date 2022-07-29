@@ -2,7 +2,7 @@
 Imports System.Data.OleDb
 Imports System.Data.OleDb.OleDbCommand
 Imports System.Data.OleDb.OleDbDataReader
-Public Class ProfileForm
+Public Class TeacherProfile
     Dim con As New OleDbConnection(My.Settings.loginConnectionString)
 
     Dim LastName As String
@@ -26,11 +26,8 @@ Public Class ProfileForm
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblUserName.Text = UserName
-        If LogInForm.reader("TbUser", "UserType") = "STUDENT" Then
-            lblStudentID.Text = StudentID
-        Else
-            lblStudentID.Text = ""
-        End If
+
+
         lblFullName.Text = LastName & FirstName
 
     End Sub
