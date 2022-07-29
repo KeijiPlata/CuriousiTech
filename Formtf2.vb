@@ -39,18 +39,18 @@ Public Class Formtf2
         ' display the score
         Label2.Text = displayScore.ToString
 
-        ' highscore2 always get the old highscore
+        ' highscore always get the old highscore
         Label5.Text = highscore.ToString
-        Label3.Text = "Score"
 
-        'If displayScore > highscore Then
-        '    Label3.Text = "New HighScore!"
 
-        '    ' This is the updated highscore
-        '    Label5.Text = newhighscore.ToString
-        'Else
-        '    Label3.Text = "Score"
-        'End If
+        If highscore > highscore2 Then
+            Label3.Text = "New HighScore!"
+
+            '' This is the updated highscore
+            'Label5.Text = newhighscore.ToString
+        Else
+            Label3.Text = "Score"
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

@@ -208,6 +208,8 @@ Public Class Formtf1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'get the score from database
         Highest()
+        Formtf2.highscore2 = highscore
+
         ' This will update the leaderboard
         showScore()
         'get time from the database
@@ -248,7 +250,7 @@ Public Class Formtf1
 
             Formtf2.displayScore = score
             Formtf2.Show()
-            score = 0 'reset
+            'score = 0 'reset
 
             Me.Close()
         End If
@@ -269,7 +271,7 @@ Public Class Formtf1
 
             Formtf2.displayScore = score
             Formtf2.Show()
-            score = 0 'reset
+            'score = 0 'reset
 
             Me.Close()
         End If
@@ -284,11 +286,11 @@ Public Class Formtf1
             ' Stops the timer so it will not go  negative
             Timer1.Stop()
 
-            ' get the score and pass it to next form
-            Highest()
+            '' get the score and pass it to next form
+            'Highest()
             Formtf2.displayScore = score
             Formtf2.Show()
-            score = 0 'reset
+            'score = 0 'reset
             Me.Close()
         End If
 
