@@ -18,6 +18,7 @@ Public Class StudenForm
     Dim usernamee As String = LogInForm.getUserNamee.ToString
     Dim openn As Boolean = False
     Dim openn2 As Boolean = False
+    Dim MusicIsPlaying As Boolean
 
     ' get the true or false highscore base on username
     Private Sub getTrueFalseScore()
@@ -213,6 +214,7 @@ Public Class StudenForm
         End Try
 
         My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
+        MusicIsPlaying = True
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
@@ -331,5 +333,18 @@ Public Class StudenForm
         AboutUs.Show()
         Me.Close()
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        If MusicIsPlaying Then
+            Button1.Text = "Unmute"
+            My.Computer.Audio.Stop()
+            MusicIsPlaying = False
+        Else
+            Button1.Text = "Mute"
+            My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
+            MusicIsPlaying = True
+        End If
     End Sub
 End Class
