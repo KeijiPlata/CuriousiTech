@@ -165,6 +165,9 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Label1.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.Label1.Location))
+        Me.Label1.Parent = Me.bg1
+
         ' this will show the highscore for Quiz game 
         getQuizGameScore()
 

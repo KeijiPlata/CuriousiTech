@@ -119,14 +119,13 @@ Public Class Formmcq1
             con.Close()
 
             '   IBALIK SA NORMAL COLOR NG BUTTON
-            Button1.BackColor = SystemColors.Control
-            Button2.BackColor = SystemColors.Control
-            Button3.BackColor = SystemColors.Control
-            Button4.BackColor = SystemColors.Control
+            Button1.FillColor = Color.FromArgb(0, 0, 64)
+            Button2.FillColor = Color.FromArgb(0, 0, 64)
+            Button3.FillColor = Color.FromArgb(0, 0, 64)
+            Button4.FillColor = Color.FromArgb(0, 0, 64)
 
             raTimer = 2
-            timePenalty = 3
-            Label7.Text = 3
+
             Label5.Text = points
         End If
         Return Nothing
@@ -154,11 +153,11 @@ Public Class Formmcq1
         printer()
 
         Label6.Text = timeLimit
-        Label7.Text = timePenalty
+
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         userAnswer = "A"
 
         If userAnswer = rightAnswer Then
@@ -180,11 +179,11 @@ Public Class Formmcq1
             Button3.Enabled = False
             Button4.Enabled = False
             timePenalty = 2
-            Button1.BackColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
+            Button1.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         userAnswer = "B"
 
         If userAnswer = rightAnswer Then
@@ -204,11 +203,11 @@ Public Class Formmcq1
             Button3.Enabled = False
             Button4.Enabled = False
             timePenalty = 2
-            Button2.BackColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
+            Button2.BackColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         userAnswer = "C"
 
         If userAnswer = rightAnswer Then
@@ -229,7 +228,7 @@ Public Class Formmcq1
             Button3.Enabled = False
             Button4.Enabled = False
             timePenalty = 2
-            Button3.BackColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
+            Button3.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
@@ -254,7 +253,7 @@ Public Class Formmcq1
             Button3.Enabled = False
             Button4.Enabled = False
             timePenalty = 3
-            Button4.BackColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
+            Button4.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
@@ -271,19 +270,18 @@ Public Class Formmcq1
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        Label7.Text = timePenalty.ToString
-        timePenalty -= 1
+
         ' PENALTY TIME
 
         ' SHOW ANSWER
         If rightAnswer = "A" Then
-            Button1.BackColor = Color.Green
+            Button1.FillColor = Color.FromArgb(15, 155, 21)
         ElseIf rightAnswer = "B" Then
-            Button2.BackColor = Color.Green
+            Button2.FillColor = Color.FromArgb(15, 155, 21)
         ElseIf rightAnswer = "C" Then
-            Button3.BackColor = Color.Green
+            Button3.FillColor = Color.FromArgb(15, 155, 21)
         ElseIf rightAnswer = "D" Then
-            Button4.BackColor = Color.Green
+            Button4.FillColor = Color.FromArgb(15, 155, 21)
         End If
 
         If timePenalty < -1 Then
@@ -299,27 +297,28 @@ Public Class Formmcq1
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
 
         If userAnswer = "A" Then
-            Button1.BackColor = Color.Green '   greenlight
+            Button1.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
         ElseIf userAnswer = "B" Then
 
-            Button2.BackColor = Color.Green '   greenlight
+            Button2.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
         ElseIf userAnswer = "C" Then
-            Button3.BackColor = Color.Green '   greenlight
+            Button3.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
         Else
-            Button4.BackColor = Color.Green '   greenlight
+            Button4.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
         End If
         raTimer -= 1
         If raTimer = 0 Then
             Timer3.Stop()
             '   IBALIK SA NORMAL COLOR NG BUTTON
-            Button1.BackColor = SystemColors.Control
-            Button2.BackColor = SystemColors.Control
-            Button3.BackColor = SystemColors.Control
-            Button4.BackColor = SystemColors.Control
+            Button1.BackColor = Color.FromArgb(0, 0, 64)
+            Button2.BackColor = Color.FromArgb(0, 0, 64)
+            Button3.BackColor = Color.FromArgb(0, 0, 64)
+            Button4.BackColor = Color.FromArgb(0, 0, 64)
 
         End If
     End Sub
 
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
 
-
+    End Sub
 End Class
