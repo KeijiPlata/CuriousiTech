@@ -57,6 +57,7 @@ Partial Class TheWhatInstructions
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(990, 659)
         Me.Controls.Add(Me.Guna2PictureBox2)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "TheWhatInstructions"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

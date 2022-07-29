@@ -71,11 +71,15 @@ Partial Class StudenForm
         Me.bg1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bg1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -616,7 +620,7 @@ Partial Class StudenForm
         '
         Me.bg1.BackColor = System.Drawing.Color.Transparent
         Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
-        Me.bg1.Location = New System.Drawing.Point(-1465, -11)
+        Me.bg1.Location = New System.Drawing.Point(-1413, -20)
         Me.bg1.Name = "bg1"
         Me.bg1.Size = New System.Drawing.Size(3110, 922)
         Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -637,6 +641,32 @@ Partial Class StudenForm
         Me.Label1.TabIndex = 55
         Me.Label1.Text = "3"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.CuriousiTech.My.Resources.Resources.True_Or_False__Instructions
+        Me.PictureBox1.Location = New System.Drawing.Point(379, 162)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(802, 539)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 56
+        Me.PictureBox1.TabStop = False
+        '
+        'Guna2PictureBox5
+        '
+        Me.Guna2PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2PictureBox5.Image = CType(resources.GetObject("Guna2PictureBox5.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox5.ImageRotate = 0!
+        Me.Guna2PictureBox5.Location = New System.Drawing.Point(1093, 203)
+        Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
+        Me.Guna2PictureBox5.Size = New System.Drawing.Size(45, 40)
+        Me.Guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox5.TabIndex = 57
+        Me.Guna2PictureBox5.TabStop = False
+        Me.Guna2PictureBox5.UseTransparentBackground = True
+        '
         'StudenForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -644,6 +674,8 @@ Partial Class StudenForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1540, 884)
+        Me.Controls.Add(Me.Guna2PictureBox5)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.bg1)
         Me.Controls.Add(Me.top10name)
@@ -698,6 +730,8 @@ Partial Class StudenForm
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.bg1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -749,4 +783,6 @@ Partial Class StudenForm
     Friend WithEvents bg1 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

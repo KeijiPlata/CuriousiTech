@@ -165,6 +165,9 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PictureBox1.Visible = False
+        Guna2PictureBox5.Visible = False
+
         ' this will show the highscore for Quiz game 
         getQuizGameScore()
 
@@ -258,8 +261,12 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+
+        'TrueorFalseInstruction.Show()
         bg1.Visible = True
-        TrueorFalseInstruction.Show()
+        PictureBox1.Image = My.Resources.True_Or_False__Instructions
+        PictureBox1.Visible = True
+        Guna2PictureBox5.Visible = True
 
     End Sub
 
@@ -303,10 +310,27 @@ Public Class StudenForm
 
     Private Sub Guna2PictureBox4_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox4.Click
         bg1.Visible = True
-        QuiziItUpInstructions.Show()
+        ' QuiziItUpInstructions.Show()
+        PictureBox1.Image = My.Resources.Quiz_It_Up__Instructions
+        PictureBox1.Visible = True
+        Guna2PictureBox5.Visible = True
     End Sub
 
     Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
         Oppsie.Show()
+    End Sub
+
+    Private Sub Guna2PictureBox5_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox5.Click
+        PictureBox1.Visible = False
+        bg1.Visible = False
+        Guna2PictureBox5.Visible = False
+
+    End Sub
+
+    Private Sub Guna2PictureBox3_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox3.Click
+        bg1.Visible = True
+        PictureBox1.Image = My.Resources.The_What__Instructions
+        PictureBox1.Visible = True
+        Guna2PictureBox5.Visible = True
     End Sub
 End Class

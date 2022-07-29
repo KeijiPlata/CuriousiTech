@@ -59,5 +59,45 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Quiz_It_Up__Instructions() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Quiz It Up! Instructions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property The_What__Instructions() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("The What! Instructions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property The_What__Instructions1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("The What! Instructions1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property True_Or_False__Instructions() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("True Or False_ Instructions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
