@@ -278,10 +278,6 @@ Public Class StudenForm
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         timee = timee - 1
         Label1.Text = timee.ToString
@@ -308,5 +304,9 @@ Public Class StudenForm
     Private Sub Guna2PictureBox4_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox4.Click
         bg1.Visible = True
         QuiziItUpInstructions.Show()
+    End Sub
+
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+        Oppsie.Show()
     End Sub
 End Class
