@@ -231,6 +231,12 @@
     <Compile Include="TeacherForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TheWhatInstructions.designer.vb">
+      <DependentUpon>TheWhatInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TheWhatInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TrueorFalseInstruction.Designer.vb">
       <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
     </Compile>
@@ -298,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheWhatInstructions.resx">
+      <DependentUpon>TheWhatInstructions.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrueorFalseInstruction.resx">
       <DependentUpon>TrueorFalseInstruction.vb</DependentUpon>
