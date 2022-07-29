@@ -58,7 +58,7 @@ Partial Class TeacherForm
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(110, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(183, Byte), Integer))
@@ -202,7 +202,7 @@ Partial Class TeacherForm
         Me.lblFullName.ForeColor = System.Drawing.Color.White
         Me.lblFullName.Location = New System.Drawing.Point(83, 231)
         Me.lblFullName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblFullName.MaximumSize = New System.Drawing.Size(500, 0)
+        Me.lblFullName.MaximumSize = New System.Drawing.Size(400, 0)
         Me.lblFullName.Name = "lblFullName"
         Me.lblFullName.Size = New System.Drawing.Size(257, 40)
         Me.lblFullName.TabIndex = 0
@@ -320,7 +320,7 @@ Partial Class TeacherForm
         Me.Controls.Add(Me.DataGridView1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "TeacherForm"
         Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

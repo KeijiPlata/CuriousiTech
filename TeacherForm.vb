@@ -107,4 +107,9 @@ Public Class TeacherForm
         FormtfEdit1.Show()
 
     End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Dim profile = New ProfileForm(LogInForm.reader("LastName"), LogInForm.reader("FirstName"), LogInForm.reader("MiddleName"), LogInForm.reader("UserName"), LogInForm.reader("StudentID"), LogInForm.reader("UserID"))
+        profile.Show()
+    End Sub
 End Class
