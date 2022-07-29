@@ -9,13 +9,15 @@ Public Class ProfileForm
     Dim FirstName As String
     Dim MiddleName As String
     Dim UserName As String
+    Dim StudentID As String
     Dim UserID As Integer
-    Public Sub New(ByVal varLastName As String, ByVal varFirstName As String, ByVal varMiddleName As String, ByVal varUserName As String, ByVal varUserID As String)
+    Public Sub New(ByVal varLastName As String, ByVal varFirstName As String, ByVal varMiddleName As String, ByVal varUserName As String, ByVal varStudentID As String, ByVal varUserID As String)
         InitializeComponent()
         LastName = varLastName
         FirstName = varFirstName
         MiddleName = varMiddleName
         UserName = varUserName
+        StudentID = varStudentID
         UserID = varUserID
         If MiddleName = "n/a" Then
             MiddleName = ""
@@ -24,6 +26,7 @@ Public Class ProfileForm
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblUserName.Text = UserName
+        lblStudentID.Text = StudentID
     End Sub
 
     Private Sub btnChangeUserName_Click(sender As Object, e As EventArgs) Handles btnChangeUserName.Click

@@ -28,6 +28,7 @@ Partial Class ProfileForm
         Me.txtBoxUserName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBoxPassword = New System.Windows.Forms.TextBox()
+        Me.lblStudentID = New System.Windows.Forms.Label()
         Me.lblUserName = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -81,6 +82,15 @@ Partial Class ProfileForm
         Me.txtBoxPassword.Size = New System.Drawing.Size(215, 22)
         Me.txtBoxPassword.TabIndex = 2
         '
+        'lblStudentID
+        '
+        Me.lblStudentID.AutoSize = True
+        Me.lblStudentID.Location = New System.Drawing.Point(76, 38)
+        Me.lblStudentID.Name = "lblStudentID"
+        Me.lblStudentID.Size = New System.Drawing.Size(68, 16)
+        Me.lblStudentID.TabIndex = 1
+        Me.lblStudentID.Text = "Student ID"
+        '
         'lblUserName
         '
         Me.lblUserName.AutoSize = True
@@ -90,7 +100,7 @@ Partial Class ProfileForm
         Me.lblUserName.TabIndex = 0
         Me.lblUserName.Text = "UserName"
         '
-        'ProfileForm
+        'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -100,9 +110,10 @@ Partial Class ProfileForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblUserName)
         Me.Controls.Add(Me.txtBoxUserName)
+        Me.Controls.Add(Me.lblStudentID)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtBoxPassword)
-        Me.Name = "ProfileForm"
+        Me.Name = "Form5"
         Me.Text = "Form5"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -115,5 +126,6 @@ Partial Class ProfileForm
     Friend WithEvents txtBoxUserName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtBoxPassword As TextBox
+    Friend WithEvents lblStudentID As Label
     Friend WithEvents lblUserName As Label
 End Class
