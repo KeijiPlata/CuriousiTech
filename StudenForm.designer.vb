@@ -618,7 +618,7 @@ Partial Class StudenForm
         Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
         Me.bg1.Location = New System.Drawing.Point(-2615, -50)
         Me.bg1.Name = "bg1"
-        Me.bg1.Size = New System.Drawing.Size(4194, 922)
+        Me.bg1.Size = New System.Drawing.Size(3110, 922)
         Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.bg1.TabIndex = 54
         Me.bg1.TabStop = False
