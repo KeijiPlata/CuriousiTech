@@ -31,11 +31,11 @@ Public Class ProfileForm
         Else
             lblStudentID.Text = ""
         End If
-        lblLastName.Text = LastName
-        lblFirstName.Text = FirstName
+        lblFullName.Text = LastName & FirstName
+
     End Sub
 
-    Private Sub btnChangeUserName_Click(sender As Object, e As EventArgs) Handles btnChangeUserName.Click
+    Private Sub btnChangeUserName_Click(sender As Object, e As EventArgs)
         Try
             Dim i As Integer
             Dim sql As String
@@ -65,7 +65,7 @@ Public Class ProfileForm
         End Try
     End Sub
 
-    Private Sub btnChangePassword_Click(sender As Object, e As EventArgs) Handles btnChangePassword.Click
+    Private Sub btnChangePassword_Click(sender As Object, e As EventArgs)
         Try
             Dim i As Integer
             Dim sql As String
@@ -89,5 +89,10 @@ Public Class ProfileForm
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+        Me.Hide()
+
     End Sub
 End Class
