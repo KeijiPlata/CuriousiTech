@@ -22,7 +22,7 @@ Public Class FormtfEdit1
         da.Fill(tablee)
         DataGridView1.DataSource = tablee
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         If TextBox1.Text = "" Or ComboBox1.SelectedIndex = -1 Then
             MsgBox("Please input something first before insert!", vbOKOnly + vbCritical, "Input fields")
         Else
@@ -48,12 +48,20 @@ Public Class FormtfEdit1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'ayusin mo din toh!!!!
+
+        ' get timer from database
+        'getTimer()
+
+        ' put the time inside the label text
+        'Label2.Text = timee.ToString
+
         ' load the data inside the datagridview
         bind_data()
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         ' clear the text inside the textbox
         TextBox1.Text = ""
         TextBox2.Text = ""
@@ -61,7 +69,7 @@ Public Class FormtfEdit1
 
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         ' this will make the data visible to the textbox if the cell is clicked in datagridview
         Dim index As Integer = e.RowIndex
         Dim selectedrow As DataGridViewRow = DataGridView1.Rows(index)
@@ -74,7 +82,7 @@ Public Class FormtfEdit1
         ComboBox1.Text = answer
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         If TextBox1.Text = "" Or ComboBox1.SelectedIndex = -1 Then
             MsgBox("Please select something from datafield before updating!", vbOKOnly + vbCritical, "Input fields")
 
@@ -96,7 +104,7 @@ Public Class FormtfEdit1
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         If MsgBox("Are you sure you want to delete all the rows?", MsgBoxStyle.YesNoCancel, "Delete all the row") = MsgBoxResult.Yes Then
             Dim cmd As New OleDb.OleDbCommand
             Dim sql As String
@@ -114,14 +122,27 @@ Public Class FormtfEdit1
         End If
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         FormtfEdit2.Show()
         Me.Hide()
 
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        'iedit mo ituh
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Formtf1.Show()
+    End Sub
+
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+
 
     End Sub
 End Class
