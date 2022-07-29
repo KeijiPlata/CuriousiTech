@@ -157,7 +157,7 @@ Public Class Formmcq1
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         userAnswer = "A"
 
         If userAnswer = rightAnswer Then
@@ -168,7 +168,6 @@ Public Class Formmcq1
             '   wait
             Formmcq2.compare()
             showLeaderboard()
-
 
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
@@ -183,7 +182,7 @@ Public Class Formmcq1
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+    Private Sub Button2_Click1(sender As Object, e As EventArgs) Handles Button2.Click
         userAnswer = "B"
 
         If userAnswer = rightAnswer Then
@@ -203,11 +202,11 @@ Public Class Formmcq1
             Button3.Enabled = False
             Button4.Enabled = False
             timePenalty = 2
-            Button2.BackColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
+            Button2.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
+    Private Sub Button3_Click1(sender As Object, e As EventArgs) Handles Button3.Click
         userAnswer = "C"
 
         If userAnswer = rightAnswer Then
@@ -272,7 +271,7 @@ Public Class Formmcq1
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
 
         ' PENALTY TIME
-
+        timePenalty -= 1
         ' SHOW ANSWER
         If rightAnswer = "A" Then
             Button1.FillColor = Color.FromArgb(15, 155, 21)
@@ -296,6 +295,7 @@ Public Class Formmcq1
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
 
+
         If userAnswer = "A" Then
             Button1.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
         ElseIf userAnswer = "B" Then
@@ -310,15 +310,11 @@ Public Class Formmcq1
         If raTimer = 0 Then
             Timer3.Stop()
             '   IBALIK SA NORMAL COLOR NG BUTTON
-            Button1.BackColor = Color.FromArgb(0, 0, 64)
-            Button2.BackColor = Color.FromArgb(0, 0, 64)
-            Button3.BackColor = Color.FromArgb(0, 0, 64)
-            Button4.BackColor = Color.FromArgb(0, 0, 64)
+            Button1.FillColor = Color.FromArgb(0, 0, 64)
+            Button2.FillColor = Color.FromArgb(0, 0, 64)
+            Button3.FillColor = Color.FromArgb(0, 0, 64)
+            Button4.FillColor = Color.FromArgb(0, 0, 64)
 
         End If
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
     End Sub
 End Class
