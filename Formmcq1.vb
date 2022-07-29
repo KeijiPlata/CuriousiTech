@@ -13,8 +13,6 @@ Public Class Formmcq1
     Dim timePenalty As Integer = 1 '    TIMEPENALTY
     Dim raTimer As Integer = 2   ' GREENLIGHT
 
-
-
     Private Sub showLeaderboard()
         Dim scores(10) As Integer
         Dim names(10) As String
@@ -113,10 +111,16 @@ Public Class Formmcq1
             Button3.Text = myreader("C")
             Button4.Text = myreader("D")
 
+            Guna2Button1.Text = myreader("A")
+            Guna2Button2.Text = myreader("B")
+            Guna2Button3.Text = myreader("C")
+            Guna2Button4.Text = myreader("D")
+
             '   value of the fcking answer
             rightAnswer = myreader("Answer")
 
             con.Close()
+
 
             '   IBALIK SA NORMAL COLOR NG BUTTON
             Button1.FillColor = Color.FromArgb(0, 0, 64)
@@ -124,8 +128,14 @@ Public Class Formmcq1
             Button3.FillColor = Color.FromArgb(0, 0, 64)
             Button4.FillColor = Color.FromArgb(0, 0, 64)
 
-            raTimer = 2
+            Guna2Button1.FillColor = Color.FromArgb(0, 0, 64)
+            Guna2Button2.FillColor = Color.FromArgb(0, 0, 64)
+            Guna2Button3.FillColor = Color.FromArgb(0, 0, 64)
+            Guna2Button4.FillColor = Color.FromArgb(0, 0, 64)
 
+            raTimer = 2
+            timePenalty = 3
+            Label7.Text = 3
             Label5.Text = points
         End If
         Return Nothing
@@ -153,11 +163,10 @@ Public Class Formmcq1
         printer()
 
         Label6.Text = timeLimit
-
-
+        Label7.Text = timePenalty
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         userAnswer = "A"
 
         If userAnswer = rightAnswer Then
@@ -169,20 +178,21 @@ Public Class Formmcq1
             Formmcq2.compare()
             showLeaderboard()
 
+
             Timer3.Start()  ' GREEN LIGHT USELESS
         Else
             Timer2.Start()  ' PENALTY TIME
             cQuestion += 1 ' binibilang yung natatanong
-            Button1.Enabled = False
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button4.Enabled = False
+            'Button1.Enabled = False
+            'Button2.Enabled = False
+            'Button3.Enabled = False
+            'Button4.Enabled = False
             timePenalty = 2
-            Button1.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
+            Button1.FillColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
-    Private Sub Button2_Click1(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         userAnswer = "B"
 
         If userAnswer = rightAnswer Then
@@ -197,16 +207,16 @@ Public Class Formmcq1
         Else
             Timer2.Start()  ' PENALTY TIME
             cQuestion += 1 ' binibilang yung natatanong
-            Button1.Enabled = False
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button4.Enabled = False
+            'Button1.Enabled = False
+            'Button2.Enabled = False
+            'Button3.Enabled = False
+            'Button4.Enabled = False
             timePenalty = 2
-            Button2.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
+            Button2.FillColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
-    Private Sub Button3_Click1(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         userAnswer = "C"
 
         If userAnswer = rightAnswer Then
@@ -222,12 +232,12 @@ Public Class Formmcq1
         Else
             Timer2.Start()  ' PENALTY TIME
             cQuestion += 1 ' binibilang yung natatanong
-            Button1.Enabled = False
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button4.Enabled = False
+            'Button1.Enabled = False
+            'Button2.Enabled = False
+            'Button3.Enabled = False
+            'Button4.Enabled = False
             timePenalty = 2
-            Button3.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
+            Button3.FillColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
@@ -247,12 +257,12 @@ Public Class Formmcq1
         Else
             Timer2.Start()  ' PENALTY TIME
             cQuestion += 1 ' binibilang yung natatanong
-            Button1.Enabled = False
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button4.Enabled = False
+            'Button1.Enabled = False
+            'Button2.Enabled = False
+            'Button3.Enabled = False
+            'Button4.Enabled = False
             timePenalty = 3
-            Button4.FillColor = Color.FromArgb(200, 25, 52) ' BUTTON TURNS RED IF WRONG ANSWER
+            Button4.FillColor = Color.Red ' BUTTON TURNS RED IF WRONG ANSWER
         End If
     End Sub
 
@@ -262,6 +272,7 @@ Public Class Formmcq1
 
         If timeLimit = -2 Then
             Timer1.Stop()
+            My.Computer.Audio.Stop()
             Formmcq2.Show()
             Me.Close()
 
@@ -269,44 +280,49 @@ Public Class Formmcq1
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-
-        ' PENALTY TIME
+        Label7.Text = timePenalty.ToString
         timePenalty -= 1
+        ' PENALTY TIME
+        Guna2Button1.Visible = True
+        Guna2Button2.Visible = True
+        Guna2Button3.Visible = True
+        Guna2Button4.Visible = True
         ' SHOW ANSWER
         If rightAnswer = "A" Then
-            Button1.FillColor = Color.FromArgb(15, 155, 21)
+            Guna2Button1.FillColor = Color.Green
         ElseIf rightAnswer = "B" Then
-            Button2.FillColor = Color.FromArgb(15, 155, 21)
+            Guna2Button2.FillColor = Color.Green
         ElseIf rightAnswer = "C" Then
-            Button3.FillColor = Color.FromArgb(15, 155, 21)
+            Guna2Button3.FillColor = Color.Green
         ElseIf rightAnswer = "D" Then
-            Button4.FillColor = Color.FromArgb(15, 155, 21)
+            Guna2Button4.FillColor = Color.Green
         End If
 
         If timePenalty < -1 Then
             Timer2.Stop()
             printer()
-            Button1.Enabled = True
-            Button2.Enabled = True
-            Button3.Enabled = True
-            Button4.Enabled = True
+            Guna2Button1.Visible = False
+            Guna2Button2.Visible = False
+            Guna2Button3.Visible = False
+            Guna2Button4.Visible = false
         End If
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
 
-
         If userAnswer = "A" Then
-            Button1.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
+            Button1.FillColor = Color.Green '   greenlight
         ElseIf userAnswer = "B" Then
 
-            Button2.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
+            Button2.FillColor = Color.Green '   greenlight
         ElseIf userAnswer = "C" Then
-            Button3.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
-        Else
-            Button4.FillColor = Color.FromArgb(15, 155, 21) '   greenlight
+            Button3.FillColor = Color.Green '   greenlight
+        ElseIf userAnswer = "D" Then
+            Button4.FillColor = Color.Green '   greenlight
         End If
+
         raTimer -= 1
+
         If raTimer = 0 Then
             Timer3.Stop()
             '   IBALIK SA NORMAL COLOR NG BUTTON
@@ -317,4 +333,5 @@ Public Class Formmcq1
 
         End If
     End Sub
+
 End Class
