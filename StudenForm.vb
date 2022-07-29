@@ -245,7 +245,7 @@ Public Class StudenForm
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         'OPENS PROFILE FORM
-        Dim profile = New ProfileForm(LastName, FirstName, MiddleName, UserName, StudentID, UserID)
+        Dim profile = New ProfileForm(LastName, FirstName, MiddleName, UserName, UserID)
         profile.Show()
     End Sub
 
