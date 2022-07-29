@@ -23,7 +23,7 @@ Public Class quizgameEdit
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         If TextBox1.Text = "" Or ComboBox1.SelectedIndex = -1 Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox5.Text = "" Then
             MsgBox("Please input something first before insert!", vbOKOnly + vbCritical, "Input fields")
         Else
@@ -51,7 +51,7 @@ Public Class quizgameEdit
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         If MsgBox("Are you sure you want to delete all the rows?", MsgBoxStyle.YesNoCancel, "Delete all the row") = MsgBoxResult.Yes Then
             Dim cmd As New OleDb.OleDbCommand
             Dim sql As String
@@ -69,7 +69,7 @@ Public Class quizgameEdit
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         If TextBox1.Text = "" Or ComboBox1.SelectedIndex = -1 Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox5.Text = "" Then
             MsgBox("Please select something from datafield before updating!", vbOKOnly + vbCritical, "Input fields")
 
@@ -92,7 +92,7 @@ Public Class quizgameEdit
         End If
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         ' this will make the data visible to the textbox if the cell is clicked in datagridview
         Dim index As Integer = e.RowIndex
         Dim selectedrow As DataGridViewRow = DataGridView1.Rows(index)
@@ -105,7 +105,7 @@ Public Class quizgameEdit
         TextBox5.Text = selectedrow.Cells(6).Value.ToString
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         ' clear the field
         TextBox1.Text = ""
         TextBox2.Text = ""
@@ -116,7 +116,7 @@ Public Class quizgameEdit
         ComboBox1.SelectedIndex = -1
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         quizgameEdit2.Show()
         Me.Hide()
 
