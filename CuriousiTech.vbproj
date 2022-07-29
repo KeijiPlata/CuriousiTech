@@ -207,6 +207,12 @@
     <Compile Include="quizgameEdit2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="QuiziItUpInstructions.Designer.vb">
+      <DependentUpon>QuiziItUpInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuiziItUpInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SectionForm.Designer.vb">
       <DependentUpon>SectionForm.vb</DependentUpon>
     </Compile>
@@ -280,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="quizgameEdit2.resx">
       <DependentUpon>quizgameEdit2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuiziItUpInstructions.resx">
+      <DependentUpon>QuiziItUpInstructions.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SectionForm.resx">
       <DependentUpon>SectionForm.vb</DependentUpon>
