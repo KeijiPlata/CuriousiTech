@@ -306,7 +306,7 @@ Public Class Formmcq1
             Guna2Button1.Visible = False
             Guna2Button2.Visible = False
             Guna2Button3.Visible = False
-            Guna2Button4.Visible = false
+            Guna2Button4.Visible = False
         End If
     End Sub
 
@@ -336,4 +336,15 @@ Public Class Formmcq1
         End If
     End Sub
 
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+        Dim usertypee As String = LogInForm.userType.ToString
+        If usertypee = "STUDENT" Then
+            Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
+            StudentForm.Show()
+            Me.Close()
+        ElseIf usertypee = "TEACHER" Then
+            TeacherForm.Show()
+            Me.Close()
+        End If
+    End Sub
 End Class
