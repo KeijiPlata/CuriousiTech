@@ -119,7 +119,5 @@ Public Class quizgameEdit
     Private Sub Button5_Click(sender As Object, e As EventArgs)
         quizgameEdit2.Show()
         Me.Hide()
-
-
     End Sub
 End Class
