@@ -5,24 +5,11 @@ Imports System.Data.OleDb.OleDbDataReader
 Public Class TeacherProfile
     Dim con As New OleDbConnection(My.Settings.loginConnectionString)
 
-    Dim LastName As String
-    Dim FirstName As String
-    Dim MiddleName As String
-    Dim UserName As String
-    Dim StudentID As String
-    Dim UserID As Integer
-    Public Sub New(ByVal varLastName As String, ByVal varFirstName As String, ByVal varMiddleName As String, ByVal varUserName As String, ByVal varStudentID As String, ByVal varUserID As String)
-        InitializeComponent()
-        LastName = varLastName
-        FirstName = varFirstName
-        MiddleName = varMiddleName
-        UserName = varUserName
-        StudentID = varStudentID
-        UserID = varUserID
-        If MiddleName = "n/a" Then
-            MiddleName = ""
-        End If
-    End Sub
+    Dim LastName As String = LogInForm.reader("TbUser", "LastName")
+    Dim FirstName As String = LogInForm.reader("TbUser", "FirstName")
+    Dim MiddleName As String = LogInForm.reader("TbUser", "MiddleName")
+    Dim UserName As String = LogInForm.reader("TbUser", "UserName")
+    Dim UserID As Integer = LogInForm.reader("TbUser", "UserID")
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblUserName.Text = UserName

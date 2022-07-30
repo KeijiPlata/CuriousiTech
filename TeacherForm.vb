@@ -12,22 +12,12 @@ Public Class TeacherForm
     'students
 
     Dim con As New OleDb.OleDbConnection(My.Settings.leaderboardConnectionString)
-    Dim LastName As String
-    Dim FirstName As String
-    Dim MiddleName As String
-    Dim UserName As String
-    Dim StudentID As String
-    Dim Section As String
-    Dim UserID As Integer
-    Public Sub New(ByVal varLastName As String, ByVal varFirstName As String, ByVal varMiddleName As String, ByVal varUserName As String, ByVal varUserID As String)
-        'CONSTRUCTOR
-        InitializeComponent()
-        LastName = varLastName
-        FirstName = varFirstName
-        MiddleName = varMiddleName
-        UserName = varUserName
-        UserID = varUserID
-    End Sub
+    Dim LastName As String = LogInForm.reader("TbUser", "LastName")
+    Dim FirstName As String = LogInForm.reader("TbUser", "FirstName")
+    Dim MiddleName As String = LogInForm.reader("TbUser", "MiddleName")
+    Dim UserName As String = LogInForm.reader("TbUser", "UserName")
+    Dim UserID As Integer = LogInForm.reader("TbUser", "UserID")
+
     Private Sub bind_data()
         Dim cmd As New OleDb.OleDbCommand
         Dim sql As String
@@ -109,6 +99,6 @@ Public Class TeacherForm
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-
+        TeacherProfile.Show()
     End Sub
 End Class

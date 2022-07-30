@@ -11,8 +11,8 @@ Public Class LogInForm
 
     'FOR TESTING
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtUserName.Text = "John"
-        txtPassword.Text = "1234"
+        txtUserName.Text = "Johnny"
+        txtPassword.Text = "4321"
     End Sub
 
 
@@ -45,8 +45,7 @@ Public Class LogInForm
                 Me.Hide()
             ElseIf txtPassword.Text = myreader("UserPassword") And myreader("UserType") = "TEACHER" Then
                 'LOGIN AS TEACHER
-                Dim MainMenu = New TeacherForm(myreader("LastName"), myreader("FirstName"), myreader("MiddleName"), myreader("UserName"), myreader("UserID"))
-                MainMenu.Show()
+                TeacherForm.Show()
                 Me.Hide()
             Else
                 MsgBox("wrong usersname or password")
@@ -89,7 +88,7 @@ Public Class LogInForm
 
             Return (myreader(field))
         Catch ex As Exception
-            MsgBox("ex.mesage")
+            MsgBox(ex.Message)
         Finally
             con.Close()
         End Try
