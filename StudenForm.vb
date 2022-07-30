@@ -260,6 +260,8 @@ Public Class StudenForm
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
         Oppsie.Show()
+        Me.Close()
+
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
@@ -322,6 +324,8 @@ Public Class StudenForm
 
     Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
         Oppsie.Show()
+        Me.Close()
+
     End Sub
 
     Private Sub Guna2PictureBox5_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox5.Click
