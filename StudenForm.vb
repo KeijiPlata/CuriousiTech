@@ -360,4 +360,16 @@ Public Class StudenForm
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
+    Private Sub top2score_Click(sender As Object, e As EventArgs) Handles top2score.Click
+
+    End Sub
+
+    Private Sub top1score_Click(sender As Object, e As EventArgs) Handles top1score.Click
+
+    End Sub
+
+    Private Sub top3score_Click(sender As Object, e As EventArgs) Handles top3score.Click
+
+    End Sub
 End Class
