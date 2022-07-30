@@ -17,6 +17,7 @@ Public Class TeacherForm
     Dim MiddleName As String = LogInForm.reader("TbUser", "MiddleName")
     Dim UserName As String = LogInForm.reader("TbUser", "UserName")
     Dim UserID As Integer = LogInForm.reader("TbUser", "UserID")
+    Dim MusicIsPlaying As Boolean
 
     Private Sub bind_data()
         Dim cmd As New OleDb.OleDbCommand
@@ -51,6 +52,8 @@ Public Class TeacherForm
         DataGridView1.DataSource = tablee
     End Sub
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
+        MusicIsPlaying = True
         bind_data()
         'SETS LABELS
         lblFullName.Text = LastName + " " + FirstName + " " + MiddleName
