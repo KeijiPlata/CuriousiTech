@@ -91,6 +91,7 @@ Partial Class TeacherForm
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(945, 509)
@@ -139,7 +140,7 @@ Partial Class TeacherForm
         Me.Guna2Button4.ImageOffset = New System.Drawing.Point(70, 0)
         Me.Guna2Button4.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button4.Location = New System.Drawing.Point(49, 636)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button4.Size = New System.Drawing.Size(319, 78)
@@ -163,7 +164,7 @@ Partial Class TeacherForm
         Me.Guna2Button1.ImageOffset = New System.Drawing.Point(80, 0)
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button1.Location = New System.Drawing.Point(49, 364)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button1.Size = New System.Drawing.Size(319, 78)
@@ -187,7 +188,7 @@ Partial Class TeacherForm
         Me.Guna2Button2.ImageOffset = New System.Drawing.Point(75, 0)
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button2.Location = New System.Drawing.Point(49, 730)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button2.Size = New System.Drawing.Size(319, 78)
@@ -225,7 +226,7 @@ Partial Class TeacherForm
         Me.Guna2Button3.ImageOffset = New System.Drawing.Point(40, 0)
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button3.Location = New System.Drawing.Point(49, 544)
-        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button3.Size = New System.Drawing.Size(319, 78)
@@ -249,7 +250,7 @@ Partial Class TeacherForm
         Me.Guna2Button7.ImageOffset = New System.Drawing.Point(30, 0)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(49, 453)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button7.Size = New System.Drawing.Size(319, 78)
@@ -272,7 +273,7 @@ Partial Class TeacherForm
         Me.Guna2Button6.ImageOffset = New System.Drawing.Point(75, 0)
         Me.Guna2Button6.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button6.Location = New System.Drawing.Point(1197, 750)
-        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button6.Size = New System.Drawing.Size(223, 58)
@@ -295,7 +296,7 @@ Partial Class TeacherForm
         Me.Guna2Button5.ImageOffset = New System.Drawing.Point(75, 0)
         Me.Guna2Button5.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button5.Location = New System.Drawing.Point(950, 750)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Guna2Button5.Size = New System.Drawing.Size(223, 58)
@@ -320,7 +321,7 @@ Partial Class TeacherForm
         Me.Controls.Add(Me.DataGridView1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "TeacherForm"
         Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

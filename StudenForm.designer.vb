@@ -73,8 +73,8 @@ Partial Class StudenForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New Guna.UI2.WinForms.Guna2CircleButton()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -682,9 +682,9 @@ Partial Class StudenForm
         '
         Me.bg1.BackColor = System.Drawing.Color.Transparent
         Me.bg1.Image = CType(resources.GetObject("bg1.Image"), System.Drawing.Image)
-        Me.bg1.Location = New System.Drawing.Point(-1509, -12)
+        Me.bg1.Location = New System.Drawing.Point(-1058, -5)
         Me.bg1.Name = "bg1"
-        Me.bg1.Size = New System.Drawing.Size(3110, 922)
+        Me.bg1.Size = New System.Drawing.Size(3110, 825)
         Me.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.bg1.TabIndex = 54
         Me.bg1.TabStop = False
@@ -730,15 +730,6 @@ Partial Class StudenForm
         Me.Guna2PictureBox5.TabStop = False
         Me.Guna2PictureBox5.UseTransparentBackground = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(1453, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 58
-        Me.Button1.Text = "Mute"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -750,6 +741,23 @@ Partial Class StudenForm
         Me.Label2.Size = New System.Drawing.Size(296, 73)
         Me.Label2.TabIndex = 59
         Me.Label2.Text = "START!!!"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(1460, 9)
+        Me.Button1.Name = "Button1"
+        Me.Button1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Button1.Size = New System.Drawing.Size(61, 60)
+        Me.Button1.TabIndex = 60
         '
         'StudenForm
         '
@@ -871,6 +879,6 @@ Partial Class StudenForm
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Guna.UI2.WinForms.Guna2CircleButton
 End Class
