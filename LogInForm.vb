@@ -42,13 +42,16 @@ Public Class LogInForm
                 userType = "STUDENT"
                 'LOGIN AS STUDENT
                 Dim MainMenu = New StudenForm(myreader("LastName"), myreader("FirstName"), myreader("MiddleName"), myreader("UserName"), myreader("StudentID"), myreader("UserID"))
+                con.Close()
                 MainMenu.Show()
                 Me.Hide()
             ElseIf txtPassword.Text = myreader("UserPassword") And myreader("UserType") = "TEACHER" Then
                 'LOGIN AS TEACHER
                 userType = "TEACHER"
+                con.Close()
                 TeacherForm.Show()
                 Me.Hide()
+
             Else
                 MsgBox("wrong usersname or password")
             End If
@@ -56,7 +59,7 @@ Public Class LogInForm
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
-            con.Close()
+
         End Try
 
 
