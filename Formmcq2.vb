@@ -64,8 +64,6 @@ Public Class Formmcq2
         Label2.Text = Formmcq1.points
 
         Label4.Text = highScore
-
-        My.Computer.Audio.Play(My.Resources.Game_Over, AudioPlayMode.WaitToComplete)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
@@ -77,14 +75,9 @@ Public Class Formmcq2
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
-        If LogInForm.reader("TbUser", "UserType") = "TEACHER" Then
-            TeacherForm.Show()
-        Else
-            Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
-            StudentForm.Show()
-        End If
+        Dim StudentForm = New StudenForm(LogInForm.reader("TbUser", "LastName"), LogInForm.reader("TbUser", "FirstName"), LogInForm.reader("TbUser", "MiddleName"), LogInForm.reader("TbUser", "UserName"), LogInForm.reader("TbUser", "StudentID"), LogInForm.reader("TbUser", "UserID"))
+        StudentForm.Show()
         Me.Close()
-
     End Sub
 
     Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
