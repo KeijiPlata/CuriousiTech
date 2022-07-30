@@ -166,6 +166,10 @@ Public Class StudenForm
         End If
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
+        MusicIsPlaying = True
+
         'transparent
         Me.PictureBox1.Location = Me.bg1.PointToClient(Me.PointToScreen(Me.PictureBox1.Location))
         Me.PictureBox1.Parent = Me.bg1
@@ -222,8 +226,7 @@ Public Class StudenForm
             con.Close()
         End Try
 
-        My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
-        MusicIsPlaying = True
+
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
@@ -240,6 +243,7 @@ Public Class StudenForm
         'OPENS PROFILE FORM
         Dim profile = New ProfileForm(LastName, FirstName, MiddleName, UserName, StudentID, UserID)
         profile.Show()
+        Me.Close()
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
@@ -269,8 +273,8 @@ Public Class StudenForm
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
-        Dim sectionForm = New SectionForm(UserID, Section)
-        sectionForm.Show()
+        Oppsie.Show()
+        Me.Close()
     End Sub
 
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
