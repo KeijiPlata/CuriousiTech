@@ -7,7 +7,7 @@ Public Class LogInForm
     Dim con As New OleDbConnection(My.Settings.loginConnectionString)
     ' This will get the value of user - Ginalaw ni miacky eto lang
     Public getUserNamee As String
-
+    Public userType As String
 
     'FOR TESTING
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,12 +39,14 @@ Public Class LogInForm
             myreader.Read()
 
             If txtPassword.Text = myreader("UserPassword") And myreader("UserType") = "STUDENT" Then
+                userType = "STUDENT"
                 'LOGIN AS STUDENT
                 Dim MainMenu = New StudenForm(myreader("LastName"), myreader("FirstName"), myreader("MiddleName"), myreader("UserName"), myreader("StudentID"), myreader("UserID"))
                 MainMenu.Show()
                 Me.Hide()
             ElseIf txtPassword.Text = myreader("UserPassword") And myreader("UserType") = "TEACHER" Then
                 'LOGIN AS TEACHER
+                userType = "TEACHER"
                 TeacherForm.Show()
                 Me.Hide()
             Else
