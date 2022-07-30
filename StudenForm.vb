@@ -290,7 +290,8 @@ Public Class StudenForm
         Label1.Text = timee.ToString
 
         If timee = 0 Then
-            Label1.Text = "Start!!"
+            Label2.Visible = True
+            Label1.Visible = False
         End If
 
         If timee = -1 Then
@@ -303,7 +304,6 @@ Public Class StudenForm
                 Formmcq1.Show()
                 Me.Close()
             End If
-
         End If
 
     End Sub
