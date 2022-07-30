@@ -389,7 +389,7 @@ Partial Class Formtf1
         Me.Guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1431, 34)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1429, 32)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(41, 37)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
