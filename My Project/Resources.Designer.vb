@@ -79,6 +79,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property mute() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mute", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
         Friend ReadOnly Property pixelland() As System.IO.UnmanagedMemoryStream
@@ -113,6 +123,16 @@ Namespace My.Resources
         Friend ReadOnly Property True_Or_False__Instructions() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("True_Or_False__Instructions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property unmute() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("unmute", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

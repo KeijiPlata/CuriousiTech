@@ -363,13 +363,15 @@ Public Class StudenForm
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         If MusicIsPlaying Then
-            Button1.Text = "Unmute"
+            Button1.Image = My.Resources.mute
             My.Computer.Audio.Stop()
             MusicIsPlaying = False
         Else
-            Button1.Text = "Mute"
+            Button1.Image = My.Resources.unmute
             My.Computer.Audio.Play(My.Resources.lobby_sound, AudioPlayMode.BackgroundLoop)
             MusicIsPlaying = True
         End If
+
+
     End Sub
 End Class

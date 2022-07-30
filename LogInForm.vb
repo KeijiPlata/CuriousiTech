@@ -11,8 +11,8 @@ Public Class LogInForm
 
     'FOR TESTING
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtUserName.Text = "Johnny"
-        txtPassword.Text = "4321"
+        txtUserName.Text = "John"
+        txtPassword.Text = "1234"
     End Sub
 
 
