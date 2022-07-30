@@ -80,10 +80,12 @@ Partial Class LogInForm
         Me.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtPassword.ForeColor = System.Drawing.Color.Black
         Me.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPassword.Location = New System.Drawing.Point(50, 210)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.PlaceholderForeColor = System.Drawing.Color.Black
         Me.txtPassword.PlaceholderText = ""
         Me.txtPassword.SelectedText = ""
         Me.txtPassword.Size = New System.Drawing.Size(204, 30)
@@ -120,10 +122,12 @@ Partial Class LogInForm
         Me.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtUserName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtUserName.ForeColor = System.Drawing.Color.Black
         Me.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtUserName.Location = New System.Drawing.Point(50, 132)
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtUserName.PlaceholderForeColor = System.Drawing.Color.Black
         Me.txtUserName.PlaceholderText = ""
         Me.txtUserName.SelectedText = ""
         Me.txtUserName.Size = New System.Drawing.Size(204, 30)
